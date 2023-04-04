@@ -466,7 +466,12 @@ let refreshPanel = setInterval(() => {
   let refreshBoxPanel = setInterval(() => {
       if (addedThingFunc === null && selectedThing === null) {
              showBoxPanel();
-       }
+       }else if (selectedThing !== null) {
+             showSelectedPanel(false);
+         }
+         if (gameEnd) {
+             clearInterval(refreshBoxPanel);
+         }
      }, 100);  
     
     
@@ -715,6 +720,8 @@ let refreshPanel = setInterval(() => {
                 case "Tower":
                     world.addTower(addedThing);
                     world.box.remove(addedThing);
+                    addedThing = null;
+                    world.user.putLoc.building = null;
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
