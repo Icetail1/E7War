@@ -449,15 +449,7 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
-            if(random < 0.5) {
-                thingsFuncArr.push(TowerFinally.BasicCannon);
-                thingsFuncArr.push(TowerFinally.AncientCannon);
-            }else{
-                thingsFuncArr.push(TowerFinally.TraditionalCannon);
-                thingsFuncArr.push(TowerFinally.FutureCannon_1);
-            }
-          
-
+       
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
