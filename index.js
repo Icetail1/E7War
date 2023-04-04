@@ -28,6 +28,17 @@ function getWordCnt(val,arr){
   } 
   return cnt; 
 }
+function unique(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    arr.splice(j, 1);
+                    j--;
+                }
+            }
+        }
+        return arr;
+    }
 /**
  * 主界面里的逻辑
  */
@@ -455,7 +466,8 @@ let refreshPanel = setInterval(() => {
         panelEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
-            for (let bFunc of world.box) {
+            let arrbox = unique(world.box);
+            for (let bFunc of arrbox) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
@@ -767,7 +779,13 @@ let refreshPanel = setInterval(() => {
     let freshBtn = setInterval(() => {
         // 右侧塔楼列表
         let towerBtnArr = document.getElementsByClassName(btnClassName);
-
+　　　　let refreshBtn = document.getElementById("refreshB");
+        if (world.user.money < 100) {
+                refreshBtn.setAttribute("disabled", "disabled");
+            }
+            else {
+                refreshBtn.removeAttribute("disabled");
+           }
         for (let btn of towerBtnArr) {
             if (btn.dataset.price > world.user.money) {
                 btn.setAttribute("disabled", "disabled");
