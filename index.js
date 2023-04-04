@@ -388,9 +388,7 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.innerText = "刷新/100";
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
-                 let thingsFuncArr = [];  // 即将添加的按钮数组
-                 thingsFuncArr.push(TowerFinally.TraditionalCannon);
-                 thingsFuncArr.push(TowerFinally.FutureCannon_1);
+               　clearInterval(panelEle);
             });
             
             panelEle.appendChild(refreshB);
