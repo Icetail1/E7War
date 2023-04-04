@@ -769,7 +769,7 @@ let refreshPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 
         for (let btn of towerBtnArr) {
-            if (btn.dataset.price > world.user.money && initPanelSelect) {
+            if (btn.dataset.price > world.user.money) {
                 btn.setAttribute("disabled", "disabled");
             }
             else {
