@@ -386,16 +386,6 @@ function endlessMode(mode, haveGroup = true) {
                 });
                 panelEle.appendChild(btn);
             }
-            // 取消选择按钮
-            let cancelBtn = document.createElement("button");
-            cancelBtn.innerText = "取消放置模式";
-            cancelBtn.id = "cancelSelect";
-            cancelBtn.addEventListener("click", () => {
-                addedThingFunc = null;
-                world.user.putLoc.building = null;
-            });
-            panelEle.appendChild(cancelBtn);
-
             // 刷新按钮
             let refreshB = document.createElement("button");
             refreshB.id = "refreshB";
@@ -463,6 +453,15 @@ let refreshPanel = setInterval(() => {
                 panelEle.appendChild(btn);
             }
         }
+            // 取消选择按钮
+            let cancelBtn = document.createElement("button");
+            cancelBtn.innerText = "取消放置模式";
+            cancelBtn.id = "cancelSelect";
+            cancelBtn.addEventListener("click", () => {
+                addedThingFunc = null;
+                world.user.putLoc.building = null;
+            });
+            panelEle.appendChild(cancelBtn);
     }    
   let refreshBoxPanel = setInterval(() => {
              showBoxPanel();
