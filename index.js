@@ -354,7 +354,7 @@ function endlessMode(mode, haveGroup = true) {
         hideAllPanel();
         panelEle.style.display = "block";
         panelEle.innerHTML = "";
-
+        world.user.money -= 100;
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
@@ -366,7 +366,7 @@ function endlessMode(mode, haveGroup = true) {
                 thingsFuncArr.push(TowerFinally.TraditionalCannon);
                 thingsFuncArr.push(TowerFinally.FutureCannon_1);
             }
-            
+           world.user.money -= 100;
 
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
