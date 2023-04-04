@@ -17,7 +17,7 @@ class TowerFinally {
             TowerFinally.FutureCannon_1,
         ];
         res.levelDownGetter = null;
-        res.price = 50 + Functions.TowerNumPriceAdded(world.batterys.length);
+        res.price = 50;
         res.comment = "最基础的炮塔，想获得厉害的炮塔就要从它开始进化，但是基础炮塔不太能无限获取，获取基础炮塔越多，需要的费用就越贵，其实只是在限制你不能在舞台上摆放太多的炮塔造成卡顿而已啦。";
 
         return res;
