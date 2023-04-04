@@ -378,7 +378,8 @@ function endlessMode(mode, haveGroup = true) {
                 btn.setAttribute("data-price", b.price.toString());
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
-                    addedThingFunc = bFunc;
+                  btn.remove()
+                //addedThingFunc = bFunc;
                 });
                 panelEle.appendChild(btn);
             }
