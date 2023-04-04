@@ -18,6 +18,16 @@ Array.prototype.remove = function(val) {
     this.splice(index, 1);
   }
 }
+
+function getWordCnt(val,arr){ 
+  var cnt = 0; 
+  for(var i= 0, l = arr.length; i< l; i++){  
+     if(arr[i]===val){
+         cnt++;
+     }
+  } 
+  return cnt; 
+}
 /**
  * 主界面里的逻辑
  */
@@ -449,9 +459,9 @@ let refreshPanel = setInterval(() => {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
-                btn.innerHTML = b.name + `<br>${b.price}￥`;
+                let num = getWordCnt(bFunc,world.box);
+                btn.innerHTML = b.name + `<br>${num}￥`;
                 btn.classList.add(b.gameType);
-                btn.setAttribute("data-price", b.price.toString());
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                 addedThingFunc = bFunc;
