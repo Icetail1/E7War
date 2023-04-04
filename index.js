@@ -719,8 +719,8 @@ let refreshPanel = setInterval(() => {
             switch (addedThing.gameType) {
                 case "Tower":
                     world.addTower(addedThing);
-                    addedThingFunc = null;
                     world.box.remove(addedThingFunc);
+                    addedThingFunc = null;
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
