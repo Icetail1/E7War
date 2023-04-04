@@ -446,7 +446,7 @@ let refreshPanel = setInterval(() => {
        
         let panelEle = document.querySelector(`.${boxListClassName}`);
         panelEle.style.display = "block";
-       
+        panelEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
@@ -465,9 +465,7 @@ let refreshPanel = setInterval(() => {
         }
     }    
   let refreshBoxPanel = setInterval(() => {
-         if (addedThingFunc === null && selectedThing === null) {
              showBoxPanel();
-         }
      }, 100);  
     
     
