@@ -347,7 +347,7 @@ function endlessMode(mode, haveGroup = true) {
      * 显示初始化面板
      */
     function showInitPanel() {
-        world.user.money -= 100;
+       
         let panelEle = document.querySelector(`.${initBtnListClassName}`);
         if (panelEle.style.display === "block") {
             return;
@@ -367,7 +367,7 @@ function endlessMode(mode, haveGroup = true) {
                 thingsFuncArr.push(TowerFinally.TraditionalCannon);
                 thingsFuncArr.push(TowerFinally.FutureCannon_1);
             }
-           world.user.money -= 100;
+          
 
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
@@ -398,6 +398,7 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.innerText = "刷新/100";
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
+                 panelEle.style.display = "none";
                  showInitPanel();
                 
             });
