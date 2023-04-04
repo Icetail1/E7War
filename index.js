@@ -439,7 +439,7 @@ function endlessMode(mode, haveGroup = true) {
                  world.user.money -= 100;
                  panelEle.innerHTML = "";
             });
-            
+            panelEle.appendChild(refreshB);
             });
             
             panelEle.appendChild(refreshB);
