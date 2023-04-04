@@ -472,7 +472,7 @@ let refreshPanel = setInterval(() => {
          if (gameEnd) {
              clearInterval(refreshBoxPanel);
          }
-     }, 100);  
+     }, 500);  
     
     
     /**
@@ -720,8 +720,7 @@ let refreshPanel = setInterval(() => {
                 case "Tower":
                     world.addTower(addedThing);
                     world.box.remove(addedThing);
-                    addedThing = null;
-                    world.user.putLoc.building = null;
+                    addedThingFunc(world) = null;
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
