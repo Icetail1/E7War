@@ -359,7 +359,7 @@ function endlessMode(mode, haveGroup = true) {
     let selectedListClassName = "choicePanel";  // 选择界面的选择对象面板 div类名
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
-    
+    let initPanelSelect = false;  // 控制初始面板
     /**
      * 显示初始化面板
      */
@@ -372,7 +372,7 @@ function endlessMode(mode, haveGroup = true) {
         hideAllPanel();
         panelEle.style.display = "block";
         panelEle.innerHTML = "";
-       
+        initPanelSelect = true;
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
@@ -412,7 +412,7 @@ function endlessMode(mode, haveGroup = true) {
                  showInitPanel();
                 
             });
-            
+            initPanelSelect = false;
             panelEle.appendChild(refreshB);
             let addCommon = document.createElement("p");
             addCommon.innerText = "如果无法放置炮塔，且画布在不停闪烁，请刷新浏览器重试。";
@@ -460,7 +460,7 @@ let refreshPanel = setInterval(() => {
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
                 let num = getWordCnt(bFunc,world.box);
-                btn.innerHTML = b.name + `<br>${num}￥`;
+                btn.innerHTML = b.name + `<br>${num}个`;
                 btn.classList.add(b.gameType);
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
@@ -769,10 +769,11 @@ let refreshPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 
         for (let btn of towerBtnArr) {
-            if (btn.dataset.price <= world.user.money) {
-                btn.removeAttribute("disabled");
-            } else {
+            if (btn.dataset.price > world.user.money && initPanelSelect) {
                 btn.setAttribute("disabled", "disabled");
+            }
+            else {
+                btn.removeAttribute("disabled");
             }
         }
         // 游戏结束
