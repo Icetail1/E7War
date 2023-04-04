@@ -464,7 +464,9 @@ let refreshPanel = setInterval(() => {
             panelEle.appendChild(cancelBtn);
     }    
   let refreshBoxPanel = setInterval(() => {
+      if (addedThingFunc === null && selectedThing === null) {
              showBoxPanel();
+       }
      }, 100);  
     
     
