@@ -408,6 +408,17 @@ function endlessMode(mode, haveGroup = true) {
         }
     }
 
+let refreshPanel = setInterval(() => {
+         if (addedThingFunc === null && selectedThing === null) {
+             showInitPanel();
+         } else if (selectedThing !== null) {
+             showSelectedPanel(false);
+         }
+         if (gameEnd) {
+             clearInterval(refreshPanel);
+         }
+     }, 100);
+
     /**
      * 更改右键行为
      * @param e
