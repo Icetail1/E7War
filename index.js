@@ -472,7 +472,7 @@ let refreshPanel = setInterval(() => {
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
                 let num = getWordCnt(bFunc,world.box);
-                btn.innerHTML = b.name + `<br>level:${b.level}`;
+                btn.innerHTML = b.name + `<br>LV:${b.level}`;
                 btn.classList.add(b.gameType);
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
