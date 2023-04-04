@@ -398,9 +398,9 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
                 
-                 showInitPanel();
+                
             });
-            
+            refreshB.onclick= showInitPanel();
             panelEle.appendChild(refreshB);
             let addCommon = document.createElement("p");
             addCommon.innerText = "如果无法放置炮塔，且画布在不停闪烁，请刷新浏览器重试。";
