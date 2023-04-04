@@ -468,7 +468,7 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             let arrbox = unique(world.box);
-            for (let bFunc of arrbox) {
+            for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
