@@ -388,7 +388,7 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.innerText = "刷新/100";
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
-               　clearInterval(panelEle);
+               　panelEle.innerHTML = "";
             });
             
             panelEle.appendChild(refreshB);
