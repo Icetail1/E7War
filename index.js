@@ -467,13 +467,12 @@ let refreshPanel = setInterval(() => {
         panelEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
-            let arrbox = unique(world.box);
-            for (let bFunc of arrbox) {
+            for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
                 let num = getWordCnt(bFunc,world.box);
-                btn.innerHTML = b.name + `<br>${num}个`;
+                btn.innerHTML = b.name + `<br>level:${b.level}`;
                 btn.classList.add(b.gameType);
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
