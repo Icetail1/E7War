@@ -397,49 +397,7 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
                  panelEle.innerHTML = "";
-                　   let thingsFuncArr = [];  // 即将添加的按钮数组
-            let random= Math.random(); 
-            if(random < 0.5) {
-                thingsFuncArr.push(TowerFinally.BasicCannon);
-                thingsFuncArr.push(TowerFinally.AncientCannon);
-            }else{
-                thingsFuncArr.push(TowerFinally.TraditionalCannon);
-                thingsFuncArr.push(TowerFinally.FutureCannon_1);
-            }
-            
-
-            for (let bFunc of thingsFuncArr) {
-                let btn = document.createElement('button');
-                btn.classList.add(btnClassName);
-                let b = bFunc(world);
-                btn.innerHTML = b.name + `<br>${b.price}￥`;
-                btn.classList.add(b.gameType);
-                btn.setAttribute("data-price", b.price.toString());
-                // 按钮点击后会把构造函数绑定在添加物品上
-                btn.addEventListener("click", () => {
-                    addedThingFunc = bFunc;
-                });
-                panelEle.appendChild(btn);
-            }
-            // 取消选择按钮
-            let cancelBtn = document.createElement("button");
-            cancelBtn.innerText = "取消放置模式";
-            cancelBtn.id = "cancelSelect";
-            cancelBtn.addEventListener("click", () => {
-                addedThingFunc = null;
-                world.user.putLoc.building = null;
-            });
-            panelEle.appendChild(cancelBtn);
-
-            // 刷新按钮
-            let refreshB = document.createElement("button");
-            refreshB.id = "refreshB";
-            refreshB.innerText = "刷新/100";
-            refreshB.addEventListener("click", () => {
-                 world.user.money -= 100;
-                 panelEle.innerHTML = "";
-            });
-            panelEle.appendChild(refreshB);
+                 showInitPanel();
             });
             
             panelEle.appendChild(refreshB);
