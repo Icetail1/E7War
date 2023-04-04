@@ -380,6 +380,7 @@ function endlessMode(mode, haveGroup = true) {
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
+                  world.box.push(bFunc);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
@@ -447,10 +448,8 @@ let refreshPanel = setInterval(() => {
         panelEle.style.display = "block";
        
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
-        if (panelEle.innerHTML === "") {
-            let thingsFuncArr = [];  // 即将添加的按钮数组
-       
-            for (let bFunc of thingsFuncArr) {
+        if (panelEle.innerHTML === "") {     
+            for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
