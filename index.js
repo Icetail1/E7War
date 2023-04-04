@@ -358,9 +358,7 @@ function endlessMode(mode, haveGroup = true) {
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
             thingsFuncArr.push(TowerFinally.BasicCannon);
-            for (let bF of BUILDING_FUNC_ARR) {
-                thingsFuncArr.push(bF);
-            }
+            thingsFuncArr.push(TowerFinally.AncientCannon);
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
@@ -384,15 +382,15 @@ function endlessMode(mode, haveGroup = true) {
             });
             panelEle.appendChild(cancelBtn);
 
-            // 测试按钮
-            // let testB = document.createElement("button");
-            // testB.id = "testBtn";
-            // testB.innerText = "多给钱";
-            // testB.addEventListener("click", () => {
-            //     world.user.money += 100000;
-            // });
-            //
-            // panelEle.appendChild(testB);
+            // 刷新按钮
+            let refreshB = document.createElement("button");
+            refreshB.id = "testBtn";
+            refreshB.innerText = "多给钱";
+            refreshB.addEventListener("click", () => {
+                world.user.money += 100000;
+            });
+            
+            panelEle.appendChild(refreshB);
             let addCommon = document.createElement("p");
             addCommon.innerText = "如果无法放置炮塔，且画布在不停闪烁，请刷新浏览器重试。";
             panelEle.appendChild(addCommon);
