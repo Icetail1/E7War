@@ -384,10 +384,13 @@ function endlessMode(mode, haveGroup = true) {
 
             // 刷新按钮
             let refreshB = document.createElement("button");
-            refreshB.id = "testBtn";
-            refreshB.innerText = "多给钱";
+            refreshB.id = "refreshB";
+            refreshB.innerText = "刷新/100";
             refreshB.addEventListener("click", () => {
-                world.user.money += 100000;
+                 world.user.money -= 100;
+                 let thingsFuncArr = [];  // 即将添加的按钮数组
+                 thingsFuncArr.push(TowerFinally.TraditionalCannon);
+                 thingsFuncArr.push(TowerFinally.FutureCannon_1);
             });
             
             panelEle.appendChild(refreshB);
