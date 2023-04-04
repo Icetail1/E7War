@@ -14,6 +14,7 @@ class World {
         this.height = height;
         this.batterys = [];
         this.buildings = [];
+        this.box = [];
         this.monsters = new Set();
         this.effects = new Set();  // 特效层
         this.othersBullys = [];  // 多余的子弹，比如子弹分裂后的子弹
