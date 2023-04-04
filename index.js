@@ -29,7 +29,7 @@ function getWordCnt(val,arr){
   return cnt; 
 }
 function unique(val) {
-        let arr = val;
+        var arr = Object.assign({}, val);
         for (let i = 0; i < arr.length; i++) {
             for (let j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
@@ -467,8 +467,8 @@ let refreshPanel = setInterval(() => {
         panelEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
-            // let arrbox = unique(world.box);
-            for (let bFunc of world.box) {
+            let arrbox = unique(world.box);
+            for (let bFunc of arrbox) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc(world);
