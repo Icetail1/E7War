@@ -18,6 +18,7 @@ class TowerFinally {
         ];
         res.levelDownGetter = null;
         res.price = 50;
+        res.level = 1;
         res.comment = "最基础的炮塔，想获得厉害的炮塔就要从它开始进化，但是基础炮塔不太能无限获取，获取基础炮塔越多，需要的费用就越贵，其实只是在限制你不能在舞台上摆放太多的炮塔造成卡顿而已啦。";
 
         return res;
@@ -40,6 +41,7 @@ class TowerFinally {
         res.levelDownGetter = TowerFinally.BasicCannon;
         res.imgIndex = 1;
         res.price = 60;
+        res.level = 1;
         res.comment = "从基础炮塔升到这一个炮塔之后，接下来的炮塔都是中世纪风格的炮塔。";
 
         return res;
@@ -60,6 +62,7 @@ class TowerFinally {
         ];
         res.price = 120;
         res.imgIndex = 20;
+        res.level = 1;
         res.comment = "接下来的风格都是军事风格的炮塔";
         res.audioSrcString = "sound/子弹音效/军事子弹.mp3";
         return res;
@@ -92,6 +95,7 @@ class TowerFinally {
         ];
         b.price = 800;
         b.imgIndex = 50;
+        b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
         b.audioSrcString = "sound/发射音效/高科技塔发射.mp3";
         return b;
