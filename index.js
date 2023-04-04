@@ -397,6 +397,7 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
                　panelEle.innerHTML = "";
+                 showInitPanel();
             });
             
             panelEle.appendChild(refreshB);
