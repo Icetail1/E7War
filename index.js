@@ -358,7 +358,7 @@ function endlessMode(mode, haveGroup = true) {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
-            var random= Math.random(); 
+            let random= Math.random(); 
             if(random < 0.5) {
                 thingsFuncArr.push(TowerFinally.BasicCannon);
                 thingsFuncArr.push(TowerFinally.AncientCannon);
