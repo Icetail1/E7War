@@ -347,6 +347,7 @@ function endlessMode(mode, haveGroup = true) {
      * 显示初始化面板
      */
     function showInitPanel() {
+        world.user.money -= 100;
         let panelEle = document.querySelector(`.${initBtnListClassName}`);
         if (panelEle.style.display === "block") {
             return;
@@ -354,7 +355,7 @@ function endlessMode(mode, haveGroup = true) {
         hideAllPanel();
         panelEle.style.display = "block";
         panelEle.innerHTML = "";
-        world.user.money -= 100;
+       
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
@@ -397,10 +398,10 @@ function endlessMode(mode, haveGroup = true) {
             refreshB.innerText = "刷新/100";
             refreshB.addEventListener("click", () => {
                  world.user.money -= 100;
-                
+                 showInitPanel();
                 
             });
-            refreshB.onclick= showInitPanel();
+            
             panelEle.appendChild(refreshB);
             let addCommon = document.createElement("p");
             addCommon.innerText = "如果无法放置炮塔，且画布在不停闪烁，请刷新浏览器重试。";
