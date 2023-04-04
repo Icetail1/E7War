@@ -342,13 +342,6 @@ function endlessMode(mode, haveGroup = true) {
     let initBtnListClassName = "initPanel";  // 选择界面的初始面板 div类名
     let selectedListClassName = "choicePanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
-
-    function randomTow() {
-            let thingsFuncArr = [];  // 即将添加的按钮数组
-            thingsFuncArr.push(TowerFinally.BasicCannon);
-            thingsFuncArr.push(TowerFinally.AncientCannon);
-    }
-    
     
     /**
      * 显示初始化面板
@@ -363,7 +356,17 @@ function endlessMode(mode, haveGroup = true) {
 
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
-            randomTow();
+            let thingsFuncArr = [];  // 即将添加的按钮数组
+            var random= Math.random(); 
+            if(random < 0.5) {
+                thingsFuncArr.push(TowerFinally.BasicCannon);
+                thingsFuncArr.push(TowerFinally.AncientCannon);
+            }else{
+                thingsFuncArr.push(TowerFinally.TraditionalCannon);
+                thingsFuncArr.push(TowerFinally.FutureCannon_1);
+            }
+            
+
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
