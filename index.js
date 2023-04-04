@@ -699,12 +699,6 @@ let refreshPanel = setInterval(() => {
         } else {
             // 手上有炮塔，放置炮塔
             let addedThing = addedThingFunc(world);
-            if (world.user.money < addedThing.price) {
-                let et = new EffectText("钱不够了！");
-                et.pos = addedThing.pos.copy();
-                world.addEffect(et);
-                return;
-            }
             addedThing.pos = clickPos;
             // 检测此处是否可以放建筑
             for (let item of world.getAllBuildingArr()) {
@@ -717,10 +711,10 @@ let refreshPanel = setInterval(() => {
                 }
             }
             // 可以放建筑
-            world.user.money -= addedThing.price;
             switch (addedThing.gameType) {
                 case "Tower":
                     world.addTower(addedThing);
+                    world.box.remove(addedThing);
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
