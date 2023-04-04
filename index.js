@@ -409,20 +409,6 @@ function endlessMode(mode, haveGroup = true) {
     }
 
     /**
-     * 时刻刷新右侧的选择面板
-     */
-    let refreshPanel = setInterval(() => {
-        if (addedThingFunc === null && selectedThing === null) {
-            showInitPanel();
-        } else if (selectedThing !== null) {
-            showSelectedPanel(false);
-        }
-        if (gameEnd) {
-            clearInterval(refreshPanel);
-        }
-    }, 100);
-
-    /**
      * 更改右键行为
      * @param e
      * @returns {boolean}
@@ -718,9 +704,6 @@ function endlessMode(mode, haveGroup = true) {
         // 右侧塔楼列表
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 
-        let basicC = TowerFinally.BasicCannon(world);
-        towerBtnArr[0].setAttribute("data-price", basicC.price.toString());
-        towerBtnArr[0].innerHTML = basicC.name + `<br>${basicC.price}￥`;
         for (let btn of towerBtnArr) {
             if (btn.dataset.price <= world.user.money) {
                 btn.removeAttribute("disabled");
