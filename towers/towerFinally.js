@@ -26,7 +26,7 @@ class TowerFinally {
         res.name = "中世纪炮塔";
         res.r += 1;
         res.level = 1;
-        res.hpInit(2000*res.level);
+        res.hpInit(2000);
         res.rangeR += 5;
         res.levelUpArr = [
         ];
@@ -55,7 +55,7 @@ class TowerFinally {
         res.price = 120;
         res.imgIndex = 20;
         res.level = 1;
-        res.hpInit(res.level);
+        res.hpInit(2000);
         res.comment = "接下来的风格都是军事风格的炮塔";
         res.audioSrcString = "sound/子弹音效/军事子弹.mp3";
         return res;
