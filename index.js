@@ -408,7 +408,6 @@ function endlessMode(mode, haveGroup = true) {
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
-                  let upload = bFunc;
                   b.level += 1;
                   console.log(b);
                   world.box.push(b);
@@ -474,7 +473,7 @@ let refreshPanel = setInterval(() => {
             for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
-                let b = bFunc(world);
+                let b = bFunc;
                 let num = getWordCnt(bFunc,world.box);
                 btn.innerHTML = b.name + `<br>LV:${b.level}`;
                 btn.classList.add(b.gameType);
