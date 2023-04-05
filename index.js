@@ -401,7 +401,7 @@ function endlessMode(mode, haveGroup = true) {
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
-                let b = bFunc(world);
+                let b = bFunc;
                 btn.innerHTML = b.name + `<br>${b.price}￥`;
                 btn.classList.add(b.gameType);
                 btn.setAttribute("data-price", b.price.toString());
@@ -471,7 +471,7 @@ let refreshPanel = setInterval(() => {
             for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
-                let b = bFunc(world);
+                let b = bFunc;
                 let num = getWordCnt(bFunc,world.box);
                 btn.innerHTML = b.name + `<br>LV:${b.level}`;
                 btn.classList.add(b.gameType);
