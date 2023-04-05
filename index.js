@@ -22,8 +22,6 @@ Array.prototype.remove = function(val) {
 function getWordCnt(val,m){ 
   var cnt = 0; 
   for(var i= 0, l = m.length; i< l; i++){  
-     console.log("boxname",m[i].name);    
-     console.log("boxlevel",m[i].level);
      if(m[i].name===val.name){
         if(m[i].level===val.level)
          { cnt++;}
@@ -472,12 +470,10 @@ let refreshPanel = setInterval(() => {
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
                 console.log("cnt:",getWordCnt(bFunc,world.box));
-                //console.log("b:",getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level));
-                
-                //if(getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level) === 3 && bFunc.level < 3){
-                //console.log("!!!!");
-                //world.box = world.box.filter(item => item != bFunc)
-                //}
+                if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
+                   console.log("!!!!");
+                   world.box = world.box.filter(item => item != bFunc)
+                }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc;
