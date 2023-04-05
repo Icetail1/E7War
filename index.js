@@ -514,7 +514,7 @@ let refreshPanel = setInterval(() => {
     }    
     
 let refreshBoxPanel = setInterval(() => {
-         if (changed= true) {
+         if (changed===true) {
              showBoxPanel();
          } else if (selectedThing !== null) {
              showSelectedPanel(false);
