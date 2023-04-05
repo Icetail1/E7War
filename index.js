@@ -484,6 +484,8 @@ let refreshPanel = setInterval(() => {
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                    console.log("!!!!");
                    deleteUnique(bFunc,world.box);
+                   bFunc.level += 1;
+                   world.box.push(bFunc);
                 }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
