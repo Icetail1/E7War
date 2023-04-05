@@ -38,7 +38,6 @@ function deleteUnique(val,m){
          {m.splice(i, 1)}
      }
   } 
-  return cnt; 
 }
 
 function unique(val) {
