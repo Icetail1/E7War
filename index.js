@@ -422,7 +422,8 @@ function endlessMode(mode, haveGroup = true) {
                   if(world.box.length<6){
                   world.user.money -= b.price;
                   world.box.push(b);
-                  btn.remove()
+                  btn.remove();
+                  showBoxPanel();
                   }else{
                     alert("未放置英雄已满！");
                   }
