@@ -469,6 +469,7 @@ let refreshPanel = setInterval(() => {
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
+                console.log("!!!!");
                 world.box = world.box.filter(item => item != bFunc)
                 }
                 let btn = document.createElement('button');
