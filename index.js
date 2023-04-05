@@ -418,7 +418,7 @@ function endlessMode(mode, haveGroup = true) {
                 btn.classList.add(b.gameType);
                 btn.setAttribute("data-price", b.price.toString());
                 // 按钮点击后会把构造函数绑定在添加物品上
-                btn.addEventListener("click", () => {
+                btn.addEventListener("click", (e) => {
                   if(world.box.length<6){
                   world.user.money -= b.price;
                   world.box.push(b);
