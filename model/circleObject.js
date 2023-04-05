@@ -22,7 +22,7 @@ class CircleObject {
 
         this.hp = 100;
         this.maxHp = 100;
-
+        this.level = 1;
         this.hpColor = new MyColor(122, 12, 12, 1);
         this.bodyColor = new MyColor(20, 20, 20, 1);
         this.bodyStrokeWidth = 5;
@@ -40,8 +40,8 @@ class CircleObject {
      * @param n
      */
     hpInit(n) {
-        this.hp = n;
-        this.maxHp = n;
+        this.hp = n*level;
+        this.maxHp = n*level;
     }
 
     /**
