@@ -471,7 +471,7 @@ let refreshPanel = setInterval(() => {
             for (let bFunc of world.box) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
-                let b = bFunc;
+                let b = bFunc(world);
                 let num = getWordCnt(bFunc,world.box);
                 btn.innerHTML = b.name + `<br>LV:${b.level}`;
                 btn.classList.add(b.gameType);
