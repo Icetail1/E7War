@@ -29,6 +29,17 @@ function getWordCnt(val,m){
   } 
   return cnt; 
 }
+
+function deleteUnique(val,m){ 
+  for(var i= 0, l = m.length; i< l; i++){  
+     if(m[i].name===val.name){
+        if(m[i].level===val.level)
+         {m.splice(i, 1)}
+     }
+  } 
+  return cnt; 
+}
+
 function unique(val) {
         var arr = val;
         for (let i = 0; i < arr.length; i++) {
@@ -472,12 +483,11 @@ let refreshPanel = setInterval(() => {
                 console.log("cnt:",getWordCnt(bFunc,world.box));
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                    console.log("!!!!");
-                   world.box = world.box.filter(item => item != bFunc)
+                   deleteUnique(bFunc,world.box);
                 }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc;
-                let num = getWordCnt(bFunc,world.box);
                 btn.innerHTML = b.name + `<br>LV:${b.level}`;
                 btn.classList.add(b.gameType);
                 // 按钮点击后会把构造函数绑定在添加物品上
