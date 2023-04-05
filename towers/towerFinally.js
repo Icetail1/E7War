@@ -25,7 +25,7 @@ class TowerFinally {
         let res = new Tower(0, 0, world);
         res.name = "中世纪炮塔";
         res.r += 1;
-        res.hpInit(2000*res.level);
+        res.hpInit(2000);
         res.rangeR += 5;
         res.levelUpArr = [
         ];
