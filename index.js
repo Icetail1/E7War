@@ -440,11 +440,10 @@ function endlessMode(mode, haveGroup = true) {
                  showInitPanel();
                 
             });
+            showBoxPanel();
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
-            let addCommon = document.createElement("p");
-            addCommon.innerText = "如果无法放置炮塔，且画布在不停闪烁，请刷新浏览器重试。";
-            panelEle.appendChild(addCommon);
+            
         }
     }
 
@@ -510,19 +509,11 @@ let refreshPanel = setInterval(() => {
             cancelBtn.addEventListener("click", () => {
                 addedThingFunc = null;
                 world.user.putLoc.building = null;
+                showBoxPanel();
             });
             panelEle.appendChild(cancelBtn);
     }    
-  let refreshBoxPanel = setInterval(() => {
-      if (addedThingFunc === null && selectedThing === null) {
-             showBoxPanel();
-       }else if (selectedThing !== null) {
-             showSelectedPanel(false);
-         }
-         if (gameEnd) {
-             clearInterval(refreshBoxPanel);
-         }
-     }, 500);  
+
     
     
     /**
@@ -771,6 +762,7 @@ let refreshPanel = setInterval(() => {
                     world.addTower(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
+                    showBoxPanel();
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
