@@ -437,7 +437,7 @@ function endlessMode(mode, haveGroup = true) {
             });
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
-            
+            let priceB = world.mainLevel * 100;
             // 升本按钮
             let levelupB = document.createElement("button");
             levelupB.id = "levelupB";        
