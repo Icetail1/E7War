@@ -383,7 +383,6 @@ function endlessMode(mode, haveGroup = true) {
     let selectedListClassName = "choicePanel";  // 选择界面的选择对象面板 div类名
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
-    let initPanelSelect = false;  // 控制初始面板
     /**
      * 显示初始化面板
      */
@@ -396,7 +395,6 @@ function endlessMode(mode, haveGroup = true) {
         hideAllPanel();
         panelEle.style.display = "block";
         panelEle.innerHTML = "";
-        initPanelSelect = true;
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
@@ -478,11 +476,11 @@ let refreshPanel = setInterval(() => {
      */
     function showBoxPanel() {
        
-        let panelEle = document.querySelector(`.${boxListClassName}`);
-        panelEle.style.display = "block";
-        panelEle.innerHTML = "";
+        let panelBoxEle = document.querySelector(`.${boxListClassName}`);
+        panelBoxEle.style.display = "block";
+        panelBoxEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
-        if (panelEle.innerHTML === "") {     
+        if (panelBoxEle.innerHTML === "") {     
             for (let bFunc of world.box) {
                 console.log("cnt:",getWordCnt(bFunc,world.box));
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
@@ -490,7 +488,7 @@ let refreshPanel = setInterval(() => {
                    deleteUnique(bFunc,world.box);
                    bFunc.level += 1;
                    world.box.push(bFunc);
-                   showBoxPanel();
+                  　showBoxPanel(); 
                 }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
@@ -501,7 +499,7 @@ let refreshPanel = setInterval(() => {
                 btn.addEventListener("click", () => {
                 addedThingFunc = bFunc;
                 });
-                panelEle.appendChild(btn);
+                panelBoxEle.appendChild(btn);
             }
         }
             // 取消选择按钮
@@ -513,7 +511,7 @@ let refreshPanel = setInterval(() => {
                 world.user.putLoc.building = null;
                 showBoxPanel();
             });
-            panelEle.appendChild(cancelBtn);
+            panelBoxEle.appendChild(cancelBtn);
     }    
 
     
