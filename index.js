@@ -481,6 +481,8 @@ let refreshPanel = setInterval(() => {
                    deleteUnique(bFunc,world.box);
                    bFunc.level += 1;
                    world.box.push(bFunc);
+                   showBoxPanel();
+                   return;
                 }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
