@@ -437,7 +437,7 @@ function endlessMode(mode, haveGroup = true) {
             panelEle.appendChild(refreshB);
             
             // 升本按钮
-            let refreshB = document.createElement("button");
+            let levelupB = document.createElement("button");
             levelupB.id = "levelupB";
             let priceB = world.mainLevel * 100;
             levelupB.innerText = "升本" + `<br>`   + priceB ;
