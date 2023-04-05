@@ -664,6 +664,40 @@ let refreshBoxPanel = setInterval(() => {
             });
         }
         let otherItemsEle = smallLevelUpPanelEle.querySelector(".otherItems");
+        otherItemsEle.innerHTML = ""; // 先清空
+        // 设置降级项
+        let levelDownEle = document.createElement("div");
+        levelDownEle.classList.add("item");
+        levelDownEle.classList.add("levelDown");
+        let iconDiv = document.createElement("div");
+        iconDiv.classList.add("icon");
+        levelDownEle.appendChild(iconDiv);
+
+        let textDiv = document.createElement("div");
+        textDiv.classList.add("inner-text");
+        textDiv.innerHTML = `降级<br>+${thing.price / 4}元`;
+        levelDownEle.appendChild(textDiv);
+
+        levelDownEle.addEventListener("click", () => {
+            // 降级点击函数
+            let fatherFunc = thing.levelDownGetter;
+            if (fatherFunc === null) {
+                // 已经不能降级了
+                let et = new EffectText("无法降级！");
+                et.pos = clickPos;
+                world.addEffect(et);
+            } else {
+                let downObj = fatherFunc(world);
+                world.user.money += thing.price / 4;
+                let newPos = thing.pos.copy();
+                thing.remove();
+                downObj.pos = newPos;
+                world.addTower(downObj);
+                // 更新
+                showSmallLevelUpPanel(downObj, clickPos);  // 刷新小面板
+            }
+        });
+        otherItemsEle.appendChild(levelDownEle);
         // 设置出售项
         let saleDownEle = document.createElement("div");
         saleDownEle.classList.add("item");
