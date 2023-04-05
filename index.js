@@ -468,6 +468,8 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
+                console.log("cnt:",getWordCnt(bFunc,world.box));
+                console.log("level:",bFunc.level);
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                 console.log("!!!!");
                 world.box = world.box.filter(item => item != bFunc)
