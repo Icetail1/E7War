@@ -35,7 +35,7 @@ class Tower extends CircleObject {
         this.bullySlideRate = 1;  // 子弹可滑行距离
         this.attackFunc = this.normalAttack;
 
-        this.hpInit(1000*this.level);
+        this.hpInit(1000);
 
         this.price = 10 // 这个炮塔需要花多少钱来买
         this.level = 1 //level
