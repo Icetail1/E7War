@@ -481,10 +481,10 @@ let refreshPanel = setInterval(() => {
                    deleteUnique(bFunc,world.box);
                    if(bFunc.level===1){
                    bFunc.level += 1;
-                   bFunc.hp *= 2;
+                   bFunc.maxHp *= 2;
                    }else{
                    bFunc.level += 1;
-                   bFunc.hp *= 3;
+                   bFunc.maxHp *= 3;
                    }
                     
                    world.box.push(bFunc);
