@@ -440,6 +440,12 @@ function endlessMode(mode, haveGroup = true) {
             let priceB = world.mainLevel * 100;
             // 升本按钮
             let levelupB = document.createElement("button");
+            if (world.user.money < priceB ) {
+                levelupB.setAttribute("disabled", "disabled");
+            }
+            else {
+                levelupB.removeAttribute("disabled");
+            }
             levelupB.id = "levelupB";        
             levelupB.innerText = "升本并刷新"+ priceB ;
             levelupB.addEventListener("click", () => {
@@ -749,13 +755,7 @@ let refreshBoxPanel = setInterval(() => {
             else {
                 refreshBtn.removeAttribute("disabled");
            }
-        
-        if (world.user.money < priceB ) {
-                levelupBtn.setAttribute("disabled", "disabled");
-            }
-            else {
-                levelupBtn.removeAttribute("disabled");
-           }
+       
                 
         
         for (let btn of towerBtnArr) {
