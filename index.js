@@ -377,6 +377,7 @@ function endlessMode(mode, haveGroup = true) {
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
     let changed= false;
+    let priceB = world.mainLevel * 100;
     
     /**
      * 显示初始化面板
@@ -439,8 +440,7 @@ function endlessMode(mode, haveGroup = true) {
             
             // 升本按钮
             let levelupB = document.createElement("button");
-            levelupB.id = "levelupB";
-            let priceB = world.mainLevel * 100;
+            levelupB.id = "levelupB";        
             levelupB.innerText = "升本并刷新"+ priceB ;
             levelupB.addEventListener("click", () => {
                  world.user.money -= priceB;
@@ -694,6 +694,13 @@ let refreshBoxPanel = setInterval(() => {
                     return;
                 }
             }
+            if(world.getAllBuildingArr().length>= world.mainLevel+5){
+            
+               alert("已经放置当前本数最多英雄！");
+               return;
+            }
+            
+            
             // 可以放建筑
             switch (addedThing.gameType) {
                 case "Tower":
@@ -735,12 +742,22 @@ let refreshBoxPanel = setInterval(() => {
         // 右侧塔楼列表
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　let refreshBtn = document.getElementById("refreshB");
+        let levelupBtn = document.getElementById("levelupB");
         if (world.user.money < 100) {
                 refreshBtn.setAttribute("disabled", "disabled");
             }
             else {
                 refreshBtn.removeAttribute("disabled");
            }
+        
+        if (world.user.money < priceB ) {
+                levelupBtn.setAttribute("disabled", "disabled");
+            }
+            else {
+                levelupBtn.removeAttribute("disabled");
+           }
+                
+        
         for (let btn of towerBtnArr) {
             if (btn.dataset.price > world.user.money) {
                 btn.setAttribute("disabled", "disabled");
