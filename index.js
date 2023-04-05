@@ -401,15 +401,15 @@ function endlessMode(mode, haveGroup = true) {
             for (let bFunc of thingsFuncArr) {
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
-                let b = bFunc;
+                let b = bFunc(world);
                 btn.innerHTML = b.name + `<br>${b.price}￥`;
                 btn.classList.add(b.gameType);
-                btn.setAttribute("data-price", b.price);
+                btn.setAttribute("data-price", b.price.toString());
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
                   b.level += 1;
-                  world.box.push(b);
+                  world.box.push(bFunc);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
