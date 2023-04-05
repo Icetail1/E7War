@@ -555,9 +555,9 @@ let refreshBoxPanel = setInterval(() => {
                  * 英雄信息展示界面
                  */
                 hideAllData();
-                panelEle.querySelector(".heroData").style.display = "block";
-                panelEle.querySelector(".heroName").innerHTML = selectedThing.name;
-                panelEle.querySelector(".heroLv").innerHTML = selectedThing.level;
+                panelEle.querySelector(".monsterData").style.display = "block";
+                panelEle.querySelector(".monsterName").innerHTML = selectedThing.name;
+                panelEle.querySelector(".monsterComment").innerHTML = selectedThing.level;
             }
         }
     }
@@ -602,7 +602,6 @@ let refreshBoxPanel = setInterval(() => {
                 }
             }
             selectedThing = null;
-            hideSmallLevelUpPanelEle();
         } else {
             // 手上有炮塔，放置炮塔
             let addedThing = addedThingFunc;
