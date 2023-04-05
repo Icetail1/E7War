@@ -29,7 +29,7 @@ function getWordCnt(val,arr){
   return cnt; 
 }
 function unique(val) {
-        var arr = val.slice(0);
+        var arr = val;
         for (let i = 0; i < arr.length; i++) {
             for (let j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
@@ -470,6 +470,7 @@ let refreshPanel = setInterval(() => {
             for (let bFunc of world.box) {
                 console.log("b:",bFunc);
                 console.log("box:",world.box);
+                unique(world.box);
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                 console.log("!!!!");
                 world.box = world.box.filter(item => item != bFunc)
