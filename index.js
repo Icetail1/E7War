@@ -457,8 +457,21 @@ function endlessMode(mode, haveGroup = true) {
                  console.log(world.mainLevel);
                  console.log(priceB);
             });
-            initPanelSelect = false;
+
             panelEle.appendChild(levelupB);
+            
+            // 测试按钮
+            let test = document.createElement("button");
+            test.id = "test";
+            test.innerText = "测试";
+            test.addEventListener("click", () => {
+            for(let item of world.getAllBuildingArr())
+                {
+                 item.maxHp *= 2;
+                }
+            });
+
+            panelEle.appendChild(test);
             
         }
     }
