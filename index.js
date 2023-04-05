@@ -801,11 +801,7 @@ let refreshPanel = setInterval(() => {
         }
         // 取消放置按钮
         let cancelSelectBtn = document.getElementById("cancelSelect");
-        if (addedThingFunc === null) {
-            cancelSelectBtn.setAttribute("disabled", "disabled");
-        } else {
-            cancelSelectBtn.removeAttribute("disabled");
-        }
+        cancelSelectBtn.removeAttribute("disabled");
         // 更新小面板可以放置 todo
         let itemArr = smallLevelUpPanelEle.getElementsByClassName("levelUpItem");
         for (let itemEle of itemArr) {
