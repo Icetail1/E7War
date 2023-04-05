@@ -277,6 +277,7 @@ class World {
         ctx.fillText("怪物数量：" + this.monsters.size, 20, 40);
         ctx.fillText("炮塔数量：" + this.batterys.length, 20, 60);
         ctx.fillText("炮塔数量：" + this.batterys.length, 20, 60);
+        ctx.fillText("当前本数：" + this.mainLevel, 20, 60);
         ctx.fillText("下一波：" + this.monsterFlow.toString(), 20, 80);
         ctx.fillText("当前波数：" + (this.monsterFlow.level - 1), 20, 100);
         ctx.fillText("倒计时：" + (this.monsterFlow.delayTick), 20, 120);
