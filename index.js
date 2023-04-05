@@ -19,7 +19,7 @@ Array.prototype.remove = function(val) {
   }
 }
 
-function getWordCnt(m,val){ 
+function getWordCnt(val,m){ 
   var cnt = 0; 
   for(var i= 0, l = m.length; i< l; i++){  
      console.log("boxname",m[i].name);    
