@@ -469,11 +469,16 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
-                console.log("b:",getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level));
-                if(getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level) === 3 && bFunc.level < 3){
-                console.log("!!!!");
-                world.box = world.box.filter(item => item != bFunc)
-                }
+                console.log("bname:",bFunc.name);
+                console.log("wname:",world.box.name);
+                console.log("blevel:",bFunc.level);
+                console.log("wlevel:",world.box.level);
+                //console.log("b:",getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level));
+                
+                //if(getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level) === 3 && bFunc.level < 3){
+                //console.log("!!!!");
+                //world.box = world.box.filter(item => item != bFunc)
+                //}
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc;
