@@ -587,7 +587,6 @@ let refreshBoxPanel = setInterval(() => {
                     // 这里有炮塔或者建筑
                     // selectedThing = item;
                     // showSelectedPanel(true);
-                    showSmallLevelUpPanel(item, clickPos);
                     item.selected = true;
                     return;
                 }
@@ -673,15 +672,6 @@ let refreshBoxPanel = setInterval(() => {
         // 游戏结束
         if (gameEnd) {
             clearInterval(freshBtn);
-        }
-        for (let itemEle of itemArr) {
-            if (itemEle.dataset.price <= world.user.money) {
-                itemEle.removeAttribute("disabled");
-                itemEle.style.opacity = "1";
-            } else {
-                itemEle.setAttribute("disabled", "disabled");
-                itemEle.style.opacity = "0.2";
-            }
         }
     }, 100);
 
