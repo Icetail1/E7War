@@ -765,6 +765,7 @@ let refreshBoxPanel = setInterval(() => {
                 case "Tower":
                     console.log("level:",addedThing.level);
                     console.log("hp:",addedThing.hp);
+                    console.log(addedThing);
                     world.addTower(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
