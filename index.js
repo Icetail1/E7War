@@ -22,6 +22,8 @@ Array.prototype.remove = function(val) {
 function getWordCnt(m,val){ 
   var cnt = 0; 
   for(var i= 0, l = m.length; i< l; i++){  
+     console.log("boxname",m[i].name);    
+     console.log("boxlevel",m[i].level);
      if(m[i].name===val.name){
         if(m[i].level===val.level)
          { cnt++;}
