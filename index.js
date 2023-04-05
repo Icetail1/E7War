@@ -409,7 +409,7 @@ function endlessMode(mode, haveGroup = true) {
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
                   b.level += 1;
-                  world.box.push(bFunc);
+                  world.box.push(b);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
