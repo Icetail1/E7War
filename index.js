@@ -468,7 +468,7 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
-                if(getWordCnt(bFunc,world.box)=3 && bFunc.level<3){
+                if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                 world.box = world.box.filter(item => item != bFunc)
                 }
                 let btn = document.createElement('button');
