@@ -25,7 +25,8 @@ class TowerFinally {
         let res = new Tower(0, 0, world);
         res.name = "中世纪炮塔";
         res.r += 1;
-        res.hpInit(2000);
+        res.level = 1;
+        res.hpInit(2000*res.level);
         res.rangeR += 5;
         res.levelUpArr = [
         ];
@@ -34,9 +35,8 @@ class TowerFinally {
         res.levelDownGetter = null;
         res.imgIndex = 1;
         res.price = 60;
-        res.level = 1;
-        res.comment = "从基础炮塔升到这一个炮塔之后，接下来的炮塔都是中世纪风格的炮塔。";
 
+        res.comment = "从基础炮塔升到这一个炮塔之后，接下来的炮塔都是中世纪风格的炮塔。";
         return res;
     }
 
@@ -44,7 +44,6 @@ class TowerFinally {
         let res = new Tower(0, 0, world);
         res.name = "军事炮塔";
         res.r += 1;
-        res.hpInit(5000);
         res.rangeR += 5;
         res.levelDownGetter = TowerFinally.BasicCannon;
         res.levelUpArr = [
@@ -56,6 +55,7 @@ class TowerFinally {
         res.price = 120;
         res.imgIndex = 20;
         res.level = 1;
+        res.hpInit(res.level);
         res.comment = "接下来的风格都是军事风格的炮塔";
         res.audioSrcString = "sound/子弹音效/军事子弹.mp3";
         return res;
