@@ -410,7 +410,9 @@ function endlessMode(mode, haveGroup = true) {
                   world.user.money -= b.price;
                   let upload = bFunc;
                   upload.level += 1;
+                  console.log(upload);
                   world.box.push(upload);
+                    console.log(world.box);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
