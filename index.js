@@ -383,11 +383,12 @@ function endlessMode(mode, haveGroup = true) {
     let selectedListClassName = "choicePanel";  // 选择界面的选择对象面板 div类名
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
+    let changed= false;
     /**
      * 显示初始化面板
      */
     function showInitPanel() {
-       
+        let changed= false;
         let panelEle = document.querySelector(`.${initBtnListClassName}`);
         if (panelEle.style.display === "block") {
             return;
@@ -421,7 +422,7 @@ function endlessMode(mode, haveGroup = true) {
                   world.user.money -= b.price;
                   world.box.push(b);
                   btn.remove();
-                  showBoxPanel();
+                  changed= true;    
                   }else{
                     alert("未放置英雄已满！");
                   }
@@ -437,9 +438,8 @@ function endlessMode(mode, haveGroup = true) {
                  world.user.money -= 100;
                  panelEle.style.display = "none";
                  showInitPanel();
-                
+                 changed= true;
             });
-            showBoxPanel();
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
             
@@ -509,11 +509,20 @@ let refreshPanel = setInterval(() => {
             cancelBtn.addEventListener("click", () => {
                 addedThingFunc = null;
                 world.user.putLoc.building = null;
-                showBoxPanel();
             });
             panelBoxEle.appendChild(cancelBtn);
     }    
-
+    
+let refreshBoxPanel = setInterval(() => {
+         if (changed= true) {
+             showBoxPanel();
+         } else if (selectedThing !== null) {
+             showSelectedPanel(false);
+         }
+         if (gameEnd) {
+             clearInterval(refreshBoxPanel);
+         }
+     }, 100);
     
     
     /**
@@ -762,7 +771,7 @@ let refreshPanel = setInterval(() => {
                     world.addTower(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
-                    showBoxPanel();
+                    changed= true;
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
