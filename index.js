@@ -481,9 +481,11 @@ let refreshPanel = setInterval(() => {
                    deleteUnique(bFunc,world.box);
                    if(bFunc.level===1){
                    bFunc.level += 1;
+                   bFunc.hp    *= 2;    
                    bFunc.maxHp *= 2;
                    }else{
                    bFunc.level += 1;
+                   bFunc.hp    *= 3;  
                    bFunc.maxHp *= 3;
                    }
                     
@@ -591,111 +593,7 @@ let refreshBoxPanel = setInterval(() => {
      * @param clickPos {Vector} 鼠标点击的位置
      */
     function showSmallLevelUpPanel(thing, clickPos) {
-        // 弹出一个升级界面
-        smallLevelUpPanelEle.style.display = "block";
-        smallLevelUpPanelEle.style.left = clickPos.x + 10 + "px";
-        smallLevelUpPanelEle.style.top = clickPos.y + 10 + "px";
-        // 设置弹出界面里面的内容
-        let nameSpan = smallLevelUpPanelEle.querySelector(".name");
-        nameSpan.innerHTML = thing.name;
-        let listEle = smallLevelUpPanelEle.querySelector(".levelUpItems");
-        listEle.innerHTML = "";  // 先清空
-        // 遍历可以升级的项
-        if (thing.levelUpArr.length === 0) {
-            // 已经顶级了
-            let tips = document.createElement("p");
-            tips.innerText = '这个建筑已经顶级啦！';
-            listEle.appendChild(tips);
-        }
-        for (let levelUpItemFunc of thing.levelUpArr) {
-            // 设置当前这个升级项目按钮
-            let levelUpObj = levelUpItemFunc(world);
-            let divLevelUpItemEle = document.createElement("div");
-            divLevelUpItemEle.classList.add("levelUpItem");
-            // 设置标签内容
-            // 名称
-            let nameDiv = document.createElement("div");
-            nameDiv.classList.add("name");
-            nameDiv.innerText = levelUpObj.name;
-            divLevelUpItemEle.appendChild(nameDiv);
-            let imgDiv = document.createElement("div");
-            // 图标
-            imgDiv.classList.add("icon");
-            imgDiv.style.backgroundImage = "url('towers/imgs/towers.png')";
-            let rate = 0.5; // 缩放比率
-            imgDiv.style.backgroundSize = `${TOWER_IMG_WIDTH * rate}px ${TOWER_IMG_HEIGHT * rate}px`;
-            let diffPos = levelUpObj.getImgStartPosByIndex(levelUpObj.imgIndex);
-            imgDiv.style.width = TOWER_IMG_PRE_WIDTH * rate + "px";
-            imgDiv.style.height = TOWER_IMG_PRE_HEIGHT * rate + "px";
-            imgDiv.style.outline = "solid 1px";
-
-            imgDiv.style.backgroundPositionX = -diffPos.x * rate + "px";
-            imgDiv.style.backgroundPositionY = -diffPos.y * rate + "px";
-            divLevelUpItemEle.appendChild(imgDiv);
-            // 价格
-            let priceDiv = document.createElement("div");
-            priceDiv.classList.add("price");
-            priceDiv.innerText = `${levelUpObj.price}元`;
-            divLevelUpItemEle.appendChild(priceDiv);
-            // 价格属性
-            divLevelUpItemEle.setAttribute("data-price", levelUpObj.price.toString());
-
-            listEle.appendChild(divLevelUpItemEle);
-
-            // 给这个升级项添加点击属性
-            divLevelUpItemEle.addEventListener("click", () => {
-                if (world.user.money >= divLevelUpItemEle.dataset.price) {
-                    // 点击之后，更换把炮塔升级，同时更新升级面板里的属性
-                    let pos = thing.pos.copy();
-                    world.user.money -= thing.price;
-                    let newThing = levelUpItemFunc(world);
-                    newThing.pos = pos;
-                    world.addTower(newThing);
-                    thing.remove();
-
-                    showSmallLevelUpPanel(newThing, clickPos);  // 看似是递归，但实际上又不是递归
-                } else {
-                    let et = new EffectText("钱不够！");
-                    et.pos = clickPos;
-                    world.addEffect(et);
-                }
-            });
-        }
         let otherItemsEle = smallLevelUpPanelEle.querySelector(".otherItems");
-        otherItemsEle.innerHTML = ""; // 先清空
-        // 设置降级项
-        let levelDownEle = document.createElement("div");
-        levelDownEle.classList.add("item");
-        levelDownEle.classList.add("levelDown");
-        let iconDiv = document.createElement("div");
-        iconDiv.classList.add("icon");
-        levelDownEle.appendChild(iconDiv);
-
-        let textDiv = document.createElement("div");
-        textDiv.classList.add("inner-text");
-        textDiv.innerHTML = `降级<br>+${thing.price / 4}元`;
-        levelDownEle.appendChild(textDiv);
-
-        levelDownEle.addEventListener("click", () => {
-            // 降级点击函数
-            let fatherFunc = thing.levelDownGetter;
-            if (fatherFunc === null) {
-                // 已经不能降级了
-                let et = new EffectText("无法降级！");
-                et.pos = clickPos;
-                world.addEffect(et);
-            } else {
-                let downObj = fatherFunc(world);
-                world.user.money += thing.price / 4;
-                let newPos = thing.pos.copy();
-                thing.remove();
-                downObj.pos = newPos;
-                world.addTower(downObj);
-                // 更新
-                showSmallLevelUpPanel(downObj, clickPos);  // 刷新小面板
-            }
-        });
-        otherItemsEle.appendChild(levelDownEle);
         // 设置出售项
         let saleDownEle = document.createElement("div");
         saleDownEle.classList.add("item");
