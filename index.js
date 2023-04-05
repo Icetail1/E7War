@@ -19,11 +19,11 @@ Array.prototype.remove = function(val) {
   }
 }
 
-function getWordCnt(m,val,arr,val2,arr2){ 
+function getWordCnt(m,val){ 
   var cnt = 0; 
   for(var i= 0, l = m.length; i< l; i++){  
-     if(arr[i]===val){
-        if(arr2[i]===val2)
+     if(m[i].name===val.name){
+        if(m[i].level===val.level)
          { cnt++;}
      }
   } 
@@ -469,10 +469,7 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
-                console.log("bname:",bFunc.name);
-                console.log("wname:",world.box.name);
-                console.log("blevel:",bFunc.level);
-                console.log("wlevel:",world.box.level);
+                console.log("cnt:",getWordCnt(bFunc,world.box);
                 //console.log("b:",getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level));
                 
                 //if(getWordCnt(world.box,bFunc.name,world.box.name,bFunc.level,world.box.level) === 3 && bFunc.level < 3){
