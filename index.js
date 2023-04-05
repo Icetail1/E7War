@@ -763,6 +763,8 @@ let refreshBoxPanel = setInterval(() => {
             // 可以放建筑
             switch (addedThing.gameType) {
                 case "Tower":
+                    console.log("level:",addedThing.level);
+                    console.log("hp:",addedThing.hpInit);
                     world.addTower(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
