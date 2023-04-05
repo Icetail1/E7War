@@ -424,6 +424,7 @@ function endlessMode(mode, haveGroup = true) {
                   world.box.push(b);
                   btn.remove()
                   }else{
+                    let clickPos = new Vector(e.clientX - canvasEle.offsetLeft, e.clientY - canvasEle.offsetTop);
                     let et = new EffectText("未放置英雄已满！");
                     et.pos = clickPos;
                     world.addEffect(et);
