@@ -273,13 +273,13 @@ class World {
         ctx.font = "16px Microsoft YaHei";
         ctx.fillStyle = "black";
         ctx.textAlign = "left";
-        ctx.fillText("当前本数：" + this.mainLevel, 20, 60);
-        ctx.fillText("金钱：" + this.user.money.toString(), 20, 20);
-        ctx.fillText("怪物数量：" + this.monsters.size, 20, 40);
-        ctx.fillText("炮塔数量：" + this.batterys.length, 20, 60);
-        ctx.fillText("炮塔数量：" + this.batterys.length, 20, 60);
-        ctx.fillText("下一波：" + this.monsterFlow.toString(), 20, 80);
-        ctx.fillText("当前波数：" + (this.monsterFlow.level - 1), 20, 100);
-        ctx.fillText("倒计时：" + (this.monsterFlow.delayTick), 20, 120);
+        ctx.fillText("当前本数：" + this.mainLevel, 20, 20);
+        ctx.fillText("金钱：" + this.user.money.toString(), 20, 40);
+        ctx.fillText("怪物数量：" + this.monsters.size, 20, 60);
+        ctx.fillText("炮塔数量：" + this.batterys.length, 20, 80);
+        ctx.fillText("炮塔数量：" + this.batterys.length, 20, 80);
+        ctx.fillText("下一波：" + this.monsterFlow.toString(), 20, 100);
+        ctx.fillText("当前波数：" + (this.monsterFlow.level - 1), 20, 120);
+        ctx.fillText("倒计时：" + (this.monsterFlow.delayTick), 20, 140);
     }
 }
