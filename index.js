@@ -408,10 +408,7 @@ function endlessMode(mode, haveGroup = true) {
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
-                  b.level += 1;
-                  console.log(b);
                   world.box.push(b);
-                    console.log(world.box);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
@@ -471,6 +468,9 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {     
             for (let bFunc of world.box) {
+                if(getWordCnt(bFunc,world.box)=3 && bFunc.level<3){
+                world.box = world.box.filter(item => item != bFunc)
+                }
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc;
