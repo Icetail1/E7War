@@ -439,9 +439,11 @@ function endlessMode(mode, haveGroup = true) {
             // 升本按钮
             let refreshB = document.createElement("button");
             levelupB.id = "levelupB";
-            levelupB.innerText = "升本";
+            let priceB = world.mainLevel * 100;
+            levelupB.innerText = "升本" + `<br>`   + priceB ;
             levelupB.addEventListener("click", () => {
-                 world.user.money -= 100;
+                 world.user.money -= priceB;
+                 world.mainLevel += 1;
             });
             initPanelSelect = false;
             panelEle.appendChild(levelupB);
