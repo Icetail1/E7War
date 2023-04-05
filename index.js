@@ -441,10 +441,11 @@ function endlessMode(mode, haveGroup = true) {
             let levelupB = document.createElement("button");
             levelupB.id = "levelupB";
             
-            levelupB.innerText = "升本<br>"    + priceB ;
+            levelupB.innerText = "升本"    + priceB ;
             levelupB.addEventListener("click", () => {
                  world.user.money -= priceB;
-                 world.mainLevel += 1;
+                 world.mainLevel ++;
+                 console.log(world.mainLevel);
             });
             initPanelSelect = false;
             panelEle.appendChild(levelupB);
