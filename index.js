@@ -756,7 +756,7 @@ let refreshPanel = setInterval(() => {
             hideSmallLevelUpPanelEle();
         } else {
             // 手上有炮塔，放置炮塔
-            let addedThing = addedThingFunc(world);
+            let addedThing = addedThingFunc;
             addedThing.pos = clickPos;
             // 检测此处是否可以放建筑
             for (let item of world.getAllBuildingArr()) {
@@ -790,7 +790,7 @@ let refreshPanel = setInterval(() => {
         if (addedThingFunc === null) {
             return;
         }
-        world.user.putLoc.building = addedThingFunc(world);
+        world.user.putLoc.building = addedThingFunc;
         world.user.putLoc.x = e.clientX - canvasEle.offsetLeft;
         world.user.putLoc.y = e.clientY - canvasEle.offsetTop;
     }
