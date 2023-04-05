@@ -550,6 +550,15 @@ let refreshBoxPanel = setInterval(() => {
                 panelEle.querySelector(".monsterName").innerHTML = selectedThing.name;
                 panelEle.querySelector(".monsterComment").innerHTML = selectedThing.comment;
             }
+            if (selectedThing.gameType === "Tower") {
+                /**
+                 * 英雄信息展示界面
+                 */
+                hideAllData();
+                panelEle.querySelector(".heroData").style.display = "block";
+                panelEle.querySelector(".heroName").innerHTML = selectedThing.name;
+                panelEle.querySelector(".heroLv").innerHTML = selectedThing.level;
+            }
         }
     }
 
@@ -665,8 +674,6 @@ let refreshBoxPanel = setInterval(() => {
         if (gameEnd) {
             clearInterval(freshBtn);
         }
-        // 更新小面板可以放置 todo
-        let itemArr = smallLevelUpPanelEle.getElementsByClassName("levelUpItem");
         for (let itemEle of itemArr) {
             if (itemEle.dataset.price <= world.user.money) {
                 itemEle.removeAttribute("disabled");
