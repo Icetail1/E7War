@@ -377,6 +377,7 @@ function endlessMode(mode, haveGroup = true) {
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
     let changed= false;
+    let priceB = world.mainLevel * 100;
     /**
      * 显示初始化面板
      */
@@ -439,8 +440,8 @@ function endlessMode(mode, haveGroup = true) {
             // 升本按钮
             let levelupB = document.createElement("button");
             levelupB.id = "levelupB";
-            let priceB = world.mainLevel * 100;
-            levelupB.innerText = "升本" + `<br>`   + priceB ;
+            
+            levelupB.innerText = "升本<br>"    + priceB ;
             levelupB.addEventListener("click", () => {
                  world.user.money -= priceB;
                  world.mainLevel += 1;
