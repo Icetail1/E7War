@@ -504,6 +504,7 @@ let refreshPanel = setInterval(() => {
                 world.user.putLoc.building = null;
             });
             panelBoxEle.appendChild(cancelBtn);
+            changed= false;
     }    
     
 let refreshBoxPanel = setInterval(() => {
