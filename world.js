@@ -19,6 +19,7 @@ class World {
         this.effects = new Set();  // 特效层
         this.othersBullys = [];  // 多余的子弹，比如子弹分裂后的子弹
         this.time = 0;
+        this.mainLevel = 1;
         this.mode = "normal";
         // 安置大本
         let RootBuilding = BuildingFinally.Root(this);
