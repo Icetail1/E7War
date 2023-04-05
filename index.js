@@ -440,7 +440,7 @@ function endlessMode(mode, haveGroup = true) {
             // 升本按钮
             let levelupB = document.createElement("button");
             levelupB.id = "levelupB";
-            let priceB = world.mainLevel * 100;
+            let priceB = world.mainLevel ;
             levelupB.innerText = "升本"    + priceB ;
             levelupB.addEventListener("click", () => {
                  world.user.money -= priceB;
