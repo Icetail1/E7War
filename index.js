@@ -409,9 +409,9 @@ function endlessMode(mode, haveGroup = true) {
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
                   let upload = bFunc;
-                  upload.level += 1;
-                  console.log(upload);
-                  world.box.push(upload);
+                  b.level += 1;
+                  console.log(b);
+                  world.box.push(b);
                     console.log(world.box);
                   btn.remove()
                 //addedThingFunc = bFunc;
