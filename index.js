@@ -436,6 +436,16 @@ function endlessMode(mode, haveGroup = true) {
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
             
+            // 升本按钮
+            let refreshB = document.createElement("button");
+            levelupB.id = "levelupB";
+            levelupB.innerText = "升本";
+            levelupB.addEventListener("click", () => {
+                 world.user.money -= 100;
+            });
+            initPanelSelect = false;
+            panelEle.appendChild(levelupB);
+            
         }
     }
 
