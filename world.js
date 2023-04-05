@@ -28,7 +28,7 @@ class World {
         this.addBuilding(this.rootBuilding);
 
         this.user = {
-            money: 600000,
+            money: 6000,
             putLoc: {x: 0, y: 0, able: false, building: null}
         };
 
