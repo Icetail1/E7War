@@ -12,9 +12,6 @@ class TowerFinally {
         let res = new Tower(0, 0, world);
         res.name = "基础炮塔";
         res.levelUpArr = [
-            TowerFinally.AncientCannon,
-            TowerFinally.TraditionalCannon,
-            TowerFinally.FutureCannon_1,
         ];
         res.levelDownGetter = null;
         res.price = 50;
@@ -28,17 +25,13 @@ class TowerFinally {
         let res = new Tower(0, 0, world);
         res.name = "中世纪炮塔";
         res.r += 1;
-        res.hpInit(2000);
+        res.hpInit(2000*res.level);
         res.rangeR += 5;
         res.levelUpArr = [
-            TowerFinally.Boomerang,
-            TowerFinally.ArrowBow_1,
-            TowerFinally.Hammer,
-            TowerFinally.StoneCannon,
         ];
         res.getmMainBullyFunc = BullyFinally.littleStone;
         res.price = 100;
-        res.levelDownGetter = TowerFinally.BasicCannon;
+        res.levelDownGetter = null;
         res.imgIndex = 1;
         res.price = 60;
         res.level = 1;
