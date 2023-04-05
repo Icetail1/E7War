@@ -335,13 +335,6 @@ function endlessMode(mode, haveGroup = true) {
     /**
      * 返回按钮点击事件
      */
-    thisInterface.querySelector(".backPage").addEventListener("click", () => {
-        // 点击返回按钮，应该让游戏立刻结束
-        gameEnd = true;
-        choiceBtn.style.display = "none";
-        Sounds.switchBgm("main");
-        gotoPage("modeChoice-interface");
-    });
 
     // 背景音乐切换
     Sounds.switchBgm("war");
@@ -388,7 +381,7 @@ function endlessMode(mode, haveGroup = true) {
      * 显示初始化面板
      */
     function showInitPanel() {
-        let changed= false;
+
         let panelEle = document.querySelector(`.${initBtnListClassName}`);
         if (panelEle.style.display === "block") {
             return;
