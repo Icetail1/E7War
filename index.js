@@ -31,7 +31,8 @@ function getWordCnt(val,m){
 }
 
 function deleteUnique(val,m){ 
-  for(var i= 0, l = m.length; i< l; i++){  
+  i = m.length;
+  while(i--){  
      if(m[i].name===val.name){
         if(m[i].level===val.level)
          {m.splice(i, 1)}
