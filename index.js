@@ -447,6 +447,7 @@ function endlessMode(mode, haveGroup = true) {
                  world.mainLevel ++;
                  panelEle.style.display = "none";
                  showInitPanel();
+                 changed= true;
                  console.log(world.mainLevel);
                  console.log(priceB);
             });
