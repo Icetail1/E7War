@@ -408,7 +408,7 @@ function endlessMode(mode, haveGroup = true) {
                 // 按钮点击后会把构造函数绑定在添加物品上
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
-                  bFunc.level++;
+                  b.level += 1;
                   world.box.push(bFunc);
                   btn.remove()
                 //addedThingFunc = bFunc;
