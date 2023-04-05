@@ -418,16 +418,13 @@ function endlessMode(mode, haveGroup = true) {
                 btn.classList.add(b.gameType);
                 btn.setAttribute("data-price", b.price.toString());
                 // 按钮点击后会把构造函数绑定在添加物品上
-                btn.addEventListener("click", (e) => {
+                btn.addEventListener("click", () => {
                   if(world.box.length<6){
                   world.user.money -= b.price;
                   world.box.push(b);
                   btn.remove()
                   }else{
-                    let clickPos = new Vector(e.clientX - canvasEle.offsetLeft, e.clientY - canvasEle.offsetTop);
-                    let et = new EffectText("未放置英雄已满！");
-                    et.pos = clickPos;
-                    world.addEffect(et);
+                    alert("未放置英雄已满！");
                   }
                 //addedThingFunc = bFunc;
                 });
