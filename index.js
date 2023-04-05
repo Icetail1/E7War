@@ -479,7 +479,14 @@ let refreshPanel = setInterval(() => {
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                    console.log("!!!!");
                    deleteUnique(bFunc,world.box);
+                   if(bFunc.level===1){
                    bFunc.level += 1;
+                   bFunc.hp *= 2;
+                   }else{
+                   bFunc.level += 1;
+                   bFunc.hp *= 3;
+                   }
+                    
                    world.box.push(bFunc);
                    showBoxPanel();
                    return;
