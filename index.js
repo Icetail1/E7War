@@ -409,7 +409,7 @@ function endlessMode(mode, haveGroup = true) {
                 btn.addEventListener("click", () => {
                   world.user.money -= b.price;
                   b.level += 1;
-                  world.box.push(bFunc);
+                  world.box.push(b);
                   btn.remove()
                 //addedThingFunc = bFunc;
                 });
@@ -799,9 +799,6 @@ let refreshPanel = setInterval(() => {
         if (gameEnd) {
             clearInterval(freshBtn);
         }
-        // 取消放置按钮
-        let cancelSelectBtn = document.getElementById("cancelSelect");
-        cancelSelectBtn.removeAttribute("disabled");
         // 更新小面板可以放置 todo
         let itemArr = smallLevelUpPanelEle.getElementsByClassName("levelUpItem");
         for (let itemEle of itemArr) {
