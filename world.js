@@ -115,7 +115,7 @@ class World {
     
     jibanSelect(){
          let jibanR="无羁绊";
-         if(countClassType("knight") >= 3){
+         if(this.countClassType("knight") >= 3){
             jibanR="三骑士"  ;      
          }
          return jibanR;
