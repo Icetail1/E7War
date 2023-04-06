@@ -46,6 +46,7 @@ class TowerFinally {
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
+        res.classType = "warrior";
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -57,7 +58,7 @@ class TowerFinally {
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
+        b.classType = "thief";
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -76,6 +77,7 @@ class TowerFinally {
     static archer_1(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -93,7 +95,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆"
         b.r += 7;
-
+        b.classType = "knight";
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -110,6 +112,7 @@ class TowerFinally {
     static heller_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -126,7 +129,6 @@ class TowerFinally {
     static witcher_2(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师☆☆";
-
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
@@ -153,6 +155,7 @@ class TowerFinally {
     static  warrior_2(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士☆☆";
+        res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -171,7 +174,7 @@ class TowerFinally {
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
+        b.classType = "thief";
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -190,6 +193,7 @@ class TowerFinally {
     static archer_2(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -207,7 +211,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆☆"
         b.r += 7;
-
+        b.classType = "knight";
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -224,6 +228,7 @@ class TowerFinally {
     static heller_2(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -240,7 +245,6 @@ class TowerFinally {
     static witcher_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师☆☆☆";
-
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
@@ -267,6 +271,7 @@ class TowerFinally {
     static  warrior_3(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士☆☆☆";
+        res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -282,10 +287,10 @@ class TowerFinally {
     static thief_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客☆☆☆"
+        b.classType = "thief";
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -304,6 +309,7 @@ class TowerFinally {
     static archer_3(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆☆☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -320,8 +326,8 @@ class TowerFinally {
     static knight_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆☆☆"
+        b.classType = "knight";
         b.r += 7;
-
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -338,6 +344,7 @@ class TowerFinally {
     static heller_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆☆☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -354,7 +361,6 @@ class TowerFinally {
     static witcher_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师☆☆☆☆";
-
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
@@ -381,6 +387,7 @@ class TowerFinally {
     static  warrior_4(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士☆☆☆☆";
+        res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -396,10 +403,10 @@ class TowerFinally {
     static thief_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客☆☆☆☆"
+        b.classType = "thief";
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -418,6 +425,7 @@ class TowerFinally {
     static archer_4(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆☆☆☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -435,7 +443,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆☆☆☆"
         b.r += 7;
-
+        b.classType = "knight";
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -452,6 +460,7 @@ class TowerFinally {
     static heller_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆☆☆☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -469,7 +478,6 @@ class TowerFinally {
     static witcher_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师☆☆☆☆☆";
-
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
@@ -496,6 +504,7 @@ class TowerFinally {
     static  warrior_5(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士☆☆☆☆☆";
+        res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -511,10 +520,10 @@ class TowerFinally {
     static thief_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客☆☆☆☆☆"
+        b.classType = "thief";
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -533,6 +542,7 @@ class TowerFinally {
     static archer_5(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆☆☆☆☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -549,8 +559,8 @@ class TowerFinally {
     static knight_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆☆☆☆☆"
+        b.classType = "knight";
         b.r += 7;
-
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -567,6 +577,7 @@ class TowerFinally {
     static heller_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆☆☆☆☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -583,7 +594,6 @@ class TowerFinally {
     static witcher_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师☆☆☆☆☆☆";
-
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
@@ -610,6 +620,7 @@ class TowerFinally {
     static  warrior_6(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士☆☆☆☆☆☆";
+        res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -625,10 +636,10 @@ class TowerFinally {
     static thief_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客☆☆☆☆☆☆"
+        b.classType = "thief";
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
-
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -647,6 +658,7 @@ class TowerFinally {
     static archer_6(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手☆☆☆☆☆☆";
+        res.classType = "archer";
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
@@ -663,8 +675,8 @@ class TowerFinally {
     static knight_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士☆☆☆☆☆☆"
+        b.classType = "knight";
         b.r += 7;
-
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
@@ -681,6 +693,7 @@ class TowerFinally {
     static heller_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈☆☆☆☆☆☆"
+        b.classType = "heller";
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
