@@ -40,6 +40,21 @@ function deleteUnique(val,m){
   } 
 }
 
+function levelUp(val){ 
+  if(val.level===1)
+  {
+     val.level += 1;
+     val.hp    *= 2;    
+     val.maxHp *= 2;
+  }else
+  {
+     val.level += 1;
+     val.hp    *= 3;  
+     val.maxHp *= 3;
+  }
+}
+
+
 function unique(val) {
         var arr = val;
         for (let i = 0; i < arr.length; i++) {
@@ -519,16 +534,7 @@ let refreshPanel = setInterval(() => {
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
                    console.log("!!!!");
                    deleteUnique(bFunc,world.box);
-                   if(bFunc.level===1){
-                   bFunc.level += 1;
-                   bFunc.hp    *= 2;    
-                   bFunc.maxHp *= 2;
-                   }else{
-                   bFunc.level += 1;
-                   bFunc.hp    *= 3;  
-                   bFunc.maxHp *= 3;
-                   }
-                    
+                   levelUp(bFunc);             
                    world.box.push(bFunc);
                    showBoxPanel();
                    return;
@@ -733,6 +739,19 @@ let refreshBoxPanel = setInterval(() => {
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
                     changed= true;
+                    
+                    if(getWordCnt(addedThing,world.getAllBuildingArr()) === 3 && addedThing.level < 3)
+                    {
+                        for(let item of world.getAllBuildingArr())
+                          {
+                           if (item.name ===addedThing.name && item.level ===addedThing.level )
+                              {
+                                item.remove();
+                              }
+                          }
+                        levelUp(addedThing);             
+                        world.box.push(addedThing);
+                    }
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
