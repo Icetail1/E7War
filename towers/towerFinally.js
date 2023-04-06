@@ -80,7 +80,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-
+        b.classType = "archer";
         b.levelDownGetter = TowerFinally.BasicCannon;
         b.levelUpArr = [
             TowerFinally.FutureCannon_2,
