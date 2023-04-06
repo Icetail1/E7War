@@ -715,6 +715,7 @@ let refreshBoxPanel = setInterval(() => {
             // 当前已经是在展示的了，不用再被刷新了
             // 但是这样会导致点击查看一个东西之后还要点击一下空白的地方才能查看另一个东西
             if (!forceAble) {
+                panelEle.style.display === "none"
                 return;
             }
         }
