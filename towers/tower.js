@@ -226,6 +226,5 @@ class Tower extends CircleObject {
     }
 
 
-        return false;
-    }
+    
 }
