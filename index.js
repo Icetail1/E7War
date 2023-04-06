@@ -409,8 +409,14 @@ function endlessMode(mode, haveGroup = true) {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
-            let random= Math.random(); 
-            if(random < 0.5) {
+            let pSix=0+Math.floor(world.mainLevel/5)*5;
+            let pFive=0 +Math.floor(world.mainLevel/4)*10;
+            let pFour=0 +Math.floor(world.mainLevel/3)*10;
+            let pThree=5+Math.floor(world.mainLevel/2)*5;
+            let pTwo= 10 +Math.floor(world.mainLevel)*5;
+            let pOne= 100-pOne-pTwo-pThree-pFour-pfive;
+            let random= Math.floor(Math.random()*100)+1; 
+            if(random < =pOne) {
                 let select=Math.floor(Math.random()*6);
                 switch(select) {
                 case 0:
@@ -424,16 +430,42 @@ function endlessMode(mode, haveGroup = true) {
                 case 4:
                 thingsFuncArr.push(TowerFinally.heller_1);
                 case 5:        
-                thingsFuncArr.push(TowerFinally.knight_1
-                 }
-            }else{
-                thingsFuncArr.push(TowerFinally.witcher_1);
-                thingsFuncArr.push(TowerFinally.warrior_1);
-                thingsFuncArr.push(TowerFinally.thief_1);
-                thingsFuncArr.push(TowerFinally.archer_1);
-                thingsFuncArr.push(TowerFinally.heller_1);
                 thingsFuncArr.push(TowerFinally.knight_1);
-            }
+                 }
+            }else if(random < =pOne+pTwo){
+                let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
+                thingsFuncArr.push(TowerFinally.witcher_2);
+                case 1:        
+                thingsFuncArr.push(TowerFinally.warrior_2);
+                case 2:
+                thingsFuncArr.push(TowerFinally.thief_2);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_2);       
+                case 4:
+                thingsFuncArr.push(TowerFinally.heller_2);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_2);
+                 }
+            } else if(random < =pOne+pTwo+pThree){
+                let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
+                thingsFuncArr.push(TowerFinally.witcher_3);
+                case 1:        
+                thingsFuncArr.push(TowerFinally.warrior_3);
+                case 2:
+                thingsFuncArr.push(TowerFinally.thief_3);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_3);       
+                case 4:
+                thingsFuncArr.push(TowerFinally.heller_3);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_3);
+                 }
+          }
+  
           
 
             for (let bFunc of thingsFuncArr) {
