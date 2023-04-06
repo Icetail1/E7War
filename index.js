@@ -469,8 +469,6 @@ function endlessMode(mode, haveGroup = true) {
                  panelEle.style.display = "none";
                  showInitPanel();
                  changed= true;
-                 console.log(world.mainLevel);
-                 console.log(priceB);
             });
 
             panelEle.appendChild(levelupB);
@@ -530,9 +528,7 @@ let refreshPanel = setInterval(() => {
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
         if (panelBoxEle.innerHTML === "") {     
             for (let bFunc of world.box) {
-                console.log("cnt:",getWordCnt(bFunc,world.box));
                 if(getWordCnt(bFunc,world.box) === 3 && bFunc.level < 3){
-                   console.log("!!!!");
                    deleteUnique(bFunc,world.box);
                    levelUp(bFunc);             
                    world.box.push(bFunc);
@@ -732,9 +728,6 @@ let refreshBoxPanel = setInterval(() => {
             // 可以放建筑
             switch (addedThing.gameType) {
                 case "Tower":
-                    console.log("level:",addedThing.level);
-                    console.log("hp:",addedThing.hp);
-                    console.log(addedThing);
                     world.addTower(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
@@ -746,7 +739,10 @@ let refreshBoxPanel = setInterval(() => {
                           {
                            if (item.name ===addedThing.name && item.level ===addedThing.level )
                               {
-                                world.removeTower(item);
+                                //world.removeTower(item);
+                                  console.log(world.getAllBuildingArr());
+                                  item.remove();
+                                  console.log(world.getAllBuildingArr());
                               }
                           }
                         levelUp(addedThing);             
