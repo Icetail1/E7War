@@ -114,7 +114,7 @@ class World {
     }
     
     jibanSelect(){
-         jibanR="无羁绊";
+         let jibanR="无羁绊";
          if(countClassType("knight") >= 3){
             jibanR="三骑士"  ;      
          }
