@@ -105,12 +105,12 @@ class World {
         let cnt=0;
         for(let item of this.batterys)
         {
-           console.log(classType);
-           console.log("ITEM",item.classType);
-           if(item.classType===classType){
+           let itemname=[];
+           if(item.classType===classType &&  item.name !in itemname  ){
                cnt++;
+               itemname.push(item.name);
            }
-         
+           console.log(cnt);
         }
         return cnt;
     }
