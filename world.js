@@ -105,6 +105,8 @@ class World {
         let cnt=0;
         for(let item of this.batterys)
         {
+           console.log(classType);
+           console.log("ITEM",item.classtype);
            if(item.classtype===classType){
                cnt++;
            }
@@ -114,7 +116,7 @@ class World {
     }
     
     jibanSelect(){
-         console.log(this.countClassType("knight"));
+         
          let jibanR="无羁绊";
          if(this.countClassType("knight") >= 3){
             jibanR="三骑士"  ;      
