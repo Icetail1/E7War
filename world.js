@@ -116,17 +116,20 @@ class World {
     
     jibanSelect(){
          
-         let jibanR="无羁绊";
+         let jibanR="";
          if(this.countClassType("knight") >= 3){
-            jibanR="三骑士"  ;
+            jibanR.concat("三骑士");
             for(let item of this.batterys)
             {
                 item.maxHp*=2;
             }
-        }
+           }
+         
+         if(jibanR===""){
+            jibanR="无羁绊"  ;
          }
          return jibanR;
-         
+        
     }
     /**
      *
