@@ -439,6 +439,7 @@ function endlessMode(mode, haveGroup = true) {
                   if(world.box.length<6){
                   world.user.money -= b.price;
                   world.box.push(b);
+                  console.log(b);
                   btn.remove();
                   changed= true;    
                   }else{
