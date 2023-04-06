@@ -667,7 +667,6 @@ let refreshBoxPanel = setInterval(() => {
             world.removeTower(thing);
             // 隐藏小面板
             hideSmallLevelUpPanelEle();
-            world.jiban=world.jibanSelect();
         });
         otherItemsEle.appendChild(saleDownEle);
     }
@@ -746,7 +745,7 @@ let refreshBoxPanel = setInterval(() => {
                         levelUp(addedThing);             
                         world.box.push(addedThing);
                     }
-                    world.jiban=world.jibanSelect();
+                    
                     break;
                 case "Building":
                     world.addBuilding(addedThing);
@@ -775,6 +774,7 @@ let refreshBoxPanel = setInterval(() => {
      * 更新是否取消放置的按钮
      */
     let freshBtn = setInterval(() => {
+        world.jiban=world.jibanSelect();
         // 右侧塔楼列表
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　let refreshBtn = document.getElementById("refreshB");
