@@ -602,6 +602,7 @@ function endlessMode(mode, haveGroup = true) {
                  if(world.mainLevel===world.maxLevel)
                  {
                     alert("已经到达当前难度最大本数!");
+                    return;
                  }
                  world.user.money -= priceB;
                  world.mainLevel ++;
