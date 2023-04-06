@@ -9,9 +9,9 @@ class TowerFinally {
      * @returns {Tower}
      */
 
-    static FutureCannon_1(world) {
+    static witcher_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "高科技炮塔";
+        b.name = "法师☆";
 
         b.hpInit(5000);
         b.rangeR = 150;
@@ -37,13 +37,9 @@ class TowerFinally {
         return b;
     }
 
-    /**
-     *  中世纪塔部分-------------
-     */
-
-    static Boomerang(world) {
+    static  warrior_1(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "回旋镖";
+        res.name = "战士☆";
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
@@ -56,9 +52,9 @@ class TowerFinally {
     }
 
 
-    static AirCannon_1(world) {
+    static thief_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "1级空气炮"
+        b.name = "刺客☆"
         b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
@@ -78,10 +74,27 @@ class TowerFinally {
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
-
-    static Laser_Red(world) {
+    static archer_1(world) {
+        let res = new TowerBoomerang(0, 0, world);
+        res.name = "弓手☆";
+        res.hpInit(3000);
+        res.damage = 250;
+        res.rangeR = 100;
+        res.barWidth = 10;
+        res.barLen = 20;
+        res.r += 2;
+        res.barRotateSelfSpeed = 0.2;
+        res.bar = res.initBar();
+        res.levelUpArr = [TowerFinally.Boomerang_Power_2];
+        res.levelDownGetter = TowerFinally.Boomerang;
+        res.imgIndex = 2;
+        res.price = 300;
+        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
+        return res;
+    }
+    static knight_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "红激光"
+        b.name = "骑士☆"
         b.r += 7;
 
         b.rangeR = 250;
@@ -97,9 +110,9 @@ class TowerFinally {
         return b;
     }
 
-    static Laser_Red_Beta_1(world) {
+    static heller_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "1级Beta红激光"
+        b.name = "奶妈☆"
         b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
@@ -120,54 +133,12 @@ class TowerFinally {
 
 const TOWER_FUNC_ARR = [
 
-    TowerFinally.BasicCannon,
-    TowerFinally.MachineGun_1,
-    TowerFinally.MachineGun_2,
-    TowerFinally.MachineGun_3,
-
-    TowerFinally.Artillery_1,
-    TowerFinally.Artillery_2,
-    TowerFinally.Artillery_3,
-
-    TowerFinally.MissileGun_1,
-
-    TowerFinally.Shotgun_1,
-
-    TowerFinally.ShotCannon_1,
-    TowerFinally.ShotCannon_2,
-
-    TowerFinally.ArmorPiercing_1,
-    TowerFinally.ArmorPiercing_2,
-    TowerFinally.ArmorPiercing_3,
-
-    TowerFinally.FrozenCannon_1,
-    TowerFinally.FrozenCannon_2,
-
-    TowerFinally.SprayCannon_1,
-    TowerFinally.SprayCannon_2,
-    TowerFinally.SprayCannon_3,
-    TowerFinally.SprayCannon_Double,
-
-    TowerFinally.Flamethrower_1,
-    TowerFinally.Flamethrower_2,
-
-    TowerFinally.Poison_1,
-    TowerFinally.Poison_2,
-
-    TowerFinally.FutureCannon_2,
-
-    TowerFinally.Laser_Hell_1,
-
-    TowerFinally.Laser_Red,
-
-    TowerFinally.Earthquake,
-    TowerFinally.Thunder_1,
-
-    TowerFinally.Hammer,
-    TowerFinally.Boomerang,
-
-    TowerFinally.ThunderBall_1,
-    TowerFinally.AirCannon_1,
+    TowerFinally.witcher_1,
+    TowerFinally.warrior_1,
+    TowerFinally.thief_1,
+    TowerFinally.archer_1,
+    TowerFinally.heller_1,
+    TowerFinally.knight_1
 ];
 
 const TOWERS_IMG = new Image();
