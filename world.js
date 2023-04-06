@@ -118,7 +118,12 @@ class World {
          
          let jibanR="无羁绊";
          if(this.countClassType("knight") >= 3){
-            jibanR="三骑士"  ;      
+            jibanR="三骑士"  ;
+            for(let item of this.batterys)
+            {
+                item.maxHp*=2;
+            }
+        }
          }
          return jibanR;
          
