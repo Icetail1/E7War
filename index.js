@@ -687,9 +687,7 @@ let refreshBoxPanel = setInterval(() => {
                     // 这里有炮塔或者建筑
                     // selectedThing = item;
                     // showSelectedPanel(true);
-                    console.log(world.getAllBuildingArr());
                     showSmallLevelUpPanel(item, clickPos);
-                    console.log(world.getAllBuildingArr());
                     item.selected = true;
                     return;
                 }
@@ -741,9 +739,8 @@ let refreshBoxPanel = setInterval(() => {
                           {
                            if (item.name ===addedThing.name && item.level ===addedThing.level )
                               {
-                                //world.removeTower(item);
                                   console.log(world.getAllBuildingArr());
-                                  item.remove();
+                                  world.removeTower(item);
                                   console.log(world.getAllBuildingArr());
                               }
                           }
