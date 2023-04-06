@@ -40,7 +40,7 @@ class World {
         this.monsterAddFreezeTick = 200;
         this.monsterPreAdd = 3;  // 每次增加多少个怪物
         this.maxMonsterNum = 250;  // 最多怪物数量
-        this.jiban=this.jibanSelect();
+        this.jiban="无羁绊";
 
     }
 
@@ -105,7 +105,6 @@ class World {
         let cnt=0;
         for(let item of this.batterys)
         {
-           console.log(item);
            if(item.classtype===classType){
                cnt++;
            }
