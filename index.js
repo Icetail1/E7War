@@ -629,7 +629,6 @@ function endlessMode(mode, haveGroup = true) {
 let refreshPanel = setInterval(() => {
          if (addedThingFunc === null && selectedThing === null) {
              showInitPanel();
-             showSelectedPanel(false);
          } else if (selectedThing !== null) {
              showSelectedPanel(false);
          }
@@ -712,17 +711,13 @@ let refreshBoxPanel = setInterval(() => {
      */
     function showSelectedPanel(forceAble) {
         let panelEle = document.querySelector(`.${selectedListClassName}`);
-        if (!forceAble) {
-                panelEle.style.display === "none"
-                return;
-        }
+
         if (panelEle.style.display === "block") {
             // 当前已经是在展示的了，不用再被刷新了
             // 但是这样会导致点击查看一个东西之后还要点击一下空白的地方才能查看另一个东西
 
             if (!forceAble) {
                 panelEle.style.display === "none"
-                return;
             }
         }
         hideAllPanel();
