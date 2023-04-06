@@ -952,7 +952,9 @@ let refreshBoxPanel = setInterval(() => {
          if (world.hellForThree) {
               for(let item of world.getAllBuildingArr())
                 {
-                   item.hp += 1;
+                   if(item.hp < item.maxHp){
+                        item.hp += 1;
+                    }
                 }
 
          } 
