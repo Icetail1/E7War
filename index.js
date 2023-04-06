@@ -412,12 +412,20 @@ function endlessMode(mode, haveGroup = true) {
             let random= Math.random(); 
             if(random < 0.5) {
                 let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
                 thingsFuncArr.push(TowerFinally.witcher_1);
+                case 1:        
                 thingsFuncArr.push(TowerFinally.warrior_1);
+                case 2:
                 thingsFuncArr.push(TowerFinally.thief_1);
-                thingsFuncArr.push(TowerFinally.archer_1);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_1);       
+                case 4:
                 thingsFuncArr.push(TowerFinally.heller_1);
-                thingsFuncArr.push(TowerFinally.knight_1);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_1
+                 }
             }else{
                 thingsFuncArr.push(TowerFinally.witcher_1);
                 thingsFuncArr.push(TowerFinally.warrior_1);
