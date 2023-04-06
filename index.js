@@ -416,7 +416,7 @@ function endlessMode(mode, haveGroup = true) {
             let pTwo= 10 +Math.floor(world.mainLevel)*5;
             let pOne= 100-pOne-pTwo-pThree-pFour-pfive;
             let random= Math.floor(Math.random()*100)+1; 
-            if(random < =pOne) {
+            if(random <= pOne) {
                 let select=Math.floor(Math.random()*6);
                 switch(select) {
                 case 0:
@@ -432,7 +432,7 @@ function endlessMode(mode, haveGroup = true) {
                 case 5:        
                 thingsFuncArr.push(TowerFinally.knight_1);
                  }
-            }else if(random < =pOne+pTwo){
+            }else if(random <= (pOne + pTwo)){
                 let select=Math.floor(Math.random()*6);
                 switch(select) {
                 case 0:
@@ -448,7 +448,7 @@ function endlessMode(mode, haveGroup = true) {
                 case 5:        
                 thingsFuncArr.push(TowerFinally.knight_2);
                  }
-            } else if(random < =pOne+pTwo+pThree){
+            } else if(random <= (pOne + pTwo + pThree)){
                 let select=Math.floor(Math.random()*6);
                 switch(select) {
                 case 0:
@@ -463,6 +463,54 @@ function endlessMode(mode, haveGroup = true) {
                 thingsFuncArr.push(TowerFinally.heller_3);
                 case 5:        
                 thingsFuncArr.push(TowerFinally.knight_3);
+                 }
+          }else if(random <= (pOne + pTwo + pThree + pFour)){
+                let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
+                thingsFuncArr.push(TowerFinally.witcher_4);
+                case 1:        
+                thingsFuncArr.push(TowerFinally.warrior_4);
+                case 2:
+                thingsFuncArr.push(TowerFinally.thief_4);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_4);       
+                case 4:
+                thingsFuncArr.push(TowerFinally.heller_4);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_4);
+                 }
+          }else if(random <= (pOne + pTwo + pThree + pFour + pFive)){
+                let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
+                thingsFuncArr.push(TowerFinally.witcher_5);
+                case 1:        
+                thingsFuncArr.push(TowerFinally.warrior_5);
+                case 2:
+                thingsFuncArr.push(TowerFinally.thief_5);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_5);       
+                case 4:
+                thingsFuncArr.push(TowerFinally.heller_5);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_5);
+                 }
+          }else{
+                let select=Math.floor(Math.random()*6);
+                switch(select) {
+                case 0:
+                thingsFuncArr.push(TowerFinally.witcher_6);
+                case 1:        
+                thingsFuncArr.push(TowerFinally.warrior_6);
+                case 2:
+                thingsFuncArr.push(TowerFinally.thief_6);
+                case 3:        
+                thingsFuncArr.push(TowerFinally.archer_6);       
+                case 4:
+                thingsFuncArr.push(TowerFinally.heller_6);
+                case 5:        
+                thingsFuncArr.push(TowerFinally.knight_6);
                  }
           }
   
