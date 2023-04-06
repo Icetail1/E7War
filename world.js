@@ -121,9 +121,9 @@ class World {
             jibanR+="三骑士";
             for(let item of this.batterys)
             {
-                if(!item.3knightbuff){
+                if(!item.threeKnightBuff){
                     item.maxHp*=2;
-                    item.3knightbuff = true;
+                    item.threeKnightBuff = true;
                 }
             }
            }
