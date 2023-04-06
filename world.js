@@ -106,8 +106,8 @@ class World {
         for(let item of this.batterys)
         {
            console.log(classType);
-           console.log("ITEM",item.classtype);
-           if(item.classtype===classType){
+           console.log("ITEM",item.classType);
+           if(item.classType===classType){
                cnt++;
            }
          
