@@ -21,6 +21,7 @@ class World {
         this.time = 0;
         this.mainLevel = 1;
         this.mode = "normal";
+        this.hellForThree = false;
         // 安置大本
         let RootBuilding = BuildingFinally.Root(this);
         RootBuilding.pos = new Vector(this.width / 2, this.height / 2);
@@ -133,9 +134,19 @@ class World {
                     item.maxHp/=2;
                     item.threeKnightBuff = false;
                 }
-            }
-             
-           }
+            } 
+         }
+        
+         if(this.countClassType("heller") >= 3){
+            jibanR+="三奶";
+            this.hellForThree=true;
+           }else{
+            this.hellForThree=false;
+         }        
+        
+        
+        
+        
          
          if(jibanR===""){
             jibanR="无羁绊"  ;
