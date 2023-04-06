@@ -84,7 +84,7 @@ class TowerFinally {
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "archer";
-        res.threeKnightBuff = false;
+        b.threeKnightBuff = false;
         b.levelDownGetter = TowerFinally.BasicCannon;
         b.levelUpArr = [
             TowerFinally.FutureCannon_2,
