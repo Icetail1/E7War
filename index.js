@@ -664,7 +664,7 @@ let refreshBoxPanel = setInterval(() => {
         saleDownEle.addEventListener("click", () => {
             // 卖了点击函数
             world.user.money += Math.floor(thing.price / 2);
-            thing.remove();
+            world.removeTower(thing);
             // 隐藏小面板
             hideSmallLevelUpPanelEle();
         });
@@ -739,9 +739,7 @@ let refreshBoxPanel = setInterval(() => {
                           {
                            if (item.name ===addedThing.name && item.level ===addedThing.level )
                               {
-                                  console.log(world.getAllBuildingArr());
                                   world.removeTower(item);
-                                  console.log(world.getAllBuildingArr());
                               }
                           }
                         levelUp(addedThing);             
