@@ -84,6 +84,10 @@ class World {
     addTower(battery) {
         this.batterys.push(battery);
     }
+    
+    removeTower(battery){
+        this.batterys.remove(battery);
+    }
 
     /**
      * 往世界中添加一个怪物
