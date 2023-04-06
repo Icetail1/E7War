@@ -126,6 +126,15 @@ class World {
                     item.threeKnightBuff = true;
                 }
             }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.threeKnightBuff){
+                    item.maxHp/=2;
+                    item.threeKnightBuff = false;
+                }
+            }
+             
            }
          
          if(jibanR===""){
