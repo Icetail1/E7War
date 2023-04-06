@@ -687,7 +687,9 @@ let refreshBoxPanel = setInterval(() => {
                     // 这里有炮塔或者建筑
                     // selectedThing = item;
                     // showSelectedPanel(true);
+                    console.log(world.getAllBuildingArr());
                     showSmallLevelUpPanel(item, clickPos);
+                    console.log(world.getAllBuildingArr());
                     item.selected = true;
                     return;
                 }
