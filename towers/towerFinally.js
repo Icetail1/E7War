@@ -18,6 +18,7 @@ class TowerFinally {
         res.level = 1;
         res.comment = "最基础的炮塔，想获得厉害的炮塔就要从它开始进化，但是基础炮塔不太能无限获取，获取基础炮塔越多，需要的费用就越贵，其实只是在限制你不能在舞台上摆放太多的炮塔造成卡顿而已啦。";
         res.classType = "knight";
+        res.3knightbuff = false;
         return res;
     }
 
@@ -36,6 +37,7 @@ class TowerFinally {
         res.imgIndex = 1;
         res.price = 60;
         res.classType = "knight";
+        res.3knightbuff = false;
         res.comment = "从基础炮塔升到这一个炮塔之后，接下来的炮塔都是中世纪风格的炮塔。";
         return res;
     }
@@ -53,6 +55,7 @@ class TowerFinally {
             TowerFinally.TraditionalCannon_MultiTube,
         ];
         res.classType = "knight";
+        res.3knightbuff = false;
         res.price = 120;
         res.imgIndex = 20;
         res.level = 1;
@@ -81,6 +84,7 @@ class TowerFinally {
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "archer";
+        res.3knightbuff = false;
         b.levelDownGetter = TowerFinally.BasicCannon;
         b.levelUpArr = [
             TowerFinally.FutureCannon_2,
