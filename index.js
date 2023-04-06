@@ -594,9 +594,15 @@ function endlessMode(mode, haveGroup = true) {
             else {
                 levelupB.removeAttribute("disabled");
             }
+
+            
             levelupB.id = "levelupB";        
             levelupB.innerText = "升本并刷新"+ priceB ;
             levelupB.addEventListener("click", () => {
+                 if(world.mainLevel===world.maxLevel)
+                 {
+                    alert("已经到达当前难度最大本数!");
+                 }
                  world.user.money -= priceB;
                  world.mainLevel ++;
                  panelEle.style.display = "none";
