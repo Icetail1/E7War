@@ -106,7 +106,7 @@ class World {
         let itemname=[];
         for(let item of this.batterys)
         {
-           if(item.classType===classType &&  !(item.name in itemname) ){
+           if(item.classType===classType &&  itemname.indexOf(item.name)=== -1 ){
                cnt++;
                itemname.push(item.name);
            }
