@@ -40,7 +40,7 @@ class World {
         this.monsterAddFreezeTick = 200;
         this.monsterPreAdd = 3;  // 每次增加多少个怪物
         this.maxMonsterNum = 250;  // 最多怪物数量
-        this.jiban="无羁绊";
+        this.jiban="";
 
     }
 
@@ -114,6 +114,7 @@ class World {
     }
     
     jibanSelect(){
+         console.log(this.countClassType("knight"));
          let jibanR="无羁绊";
          if(this.countClassType("knight") >= 3){
             jibanR="三骑士"  ;      
