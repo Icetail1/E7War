@@ -729,10 +729,10 @@ let refreshBoxPanel = setInterval(() => {
             switch (addedThing.gameType) {
                 case "Tower":
                     world.addTower(addedThing);
+                    console.log(addedThing);
                     world.box.remove(addedThingFunc);
                     addedThingFunc = null;
-                    changed= true;
-                    
+                    changed= true;  
                     if(getWordCnt(addedThing,world.getAllBuildingArr()) === 3 && addedThing.level < 3)
                     {
                         for(let item of world.getAllBuildingArr())
