@@ -118,7 +118,7 @@ class World {
          
          let jibanR="";
          if(this.countClassType("knight") >= 3){
-            jibanR.concat("三骑士");
+            jibanR+="三骑士";
             for(let item of this.batterys)
             {
                 item.maxHp*=2;
