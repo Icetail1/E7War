@@ -85,8 +85,6 @@ class TowerFinally {
         res.r += 2;
         res.barRotateSelfSpeed = 0.2;
         res.bar = res.initBar();
-        res.levelUpArr = [TowerFinally.Boomerang_Power_2];
-        res.levelDownGetter = TowerFinally.Boomerang;
         res.imgIndex = 2;
         res.price = 300;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
@@ -120,7 +118,6 @@ class TowerFinally {
         b.rayWidth = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
-
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
