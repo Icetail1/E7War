@@ -403,7 +403,6 @@ function endlessMode(mode, haveGroup = true) {
         if (panelEle.style.display === "block") {
             return;
         }
-        hideAllPanel();
         panelEle.style.display = "block";
         panelEle.innerHTML = "";
         // 如果初始化面板里面还没有被填充内容，则就先填充内容
