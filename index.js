@@ -742,7 +742,7 @@ let refreshBoxPanel = setInterval(() => {
                     
                     if(getWordCnt(addedThing,world.getAllBuildingArr()) === 3 && addedThing.level < 3)
                     {
-                        for(let item of world.getAllBuildingArr())
+                        for(let item of world.buildings)
                           {
                            if (item.name ===addedThing.name && item.level ===addedThing.level )
                               {
