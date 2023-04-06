@@ -15,13 +15,12 @@ class TowerFinally {
 
         b.hpInit(5000);
         b.rangeR = 150;
-        b.r += 1;
         b.rayMoveSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 1;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
@@ -40,9 +39,8 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士<br/>☆";
         res.hpInit(3000);
-        res.damage = 100;
+        res.damage = 1;
         res.rangeR = 120;
-        res.r += 2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -55,7 +53,6 @@ class TowerFinally {
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆"
-        b.r += 5;
         b.rayMoveSpeed = 8;
         b.rayMaxRange = 300;
         b.classType = "thief";
@@ -71,6 +68,7 @@ class TowerFinally {
         b.levelUpArr = [TowerFinally.AirCannon_2];
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 1;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -79,11 +77,10 @@ class TowerFinally {
         res.name = "弓手<br/>☆";
         res.classType = "archer";
         res.hpInit(3000);
-        res.damage = 250;
+        res.damage = 1;
         res.rangeR = 100;
         res.barWidth = 10;
         res.barLen = 20;
-        res.r += 2;
         res.barRotateSelfSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
@@ -94,13 +91,12 @@ class TowerFinally {
     static knight_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士<br/>☆"
-        b.r += 7;
         b.classType = "knight";
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
         b.rayWidth = 5;
-        b.damage = 100;
+        b.damage = 1;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
@@ -113,7 +109,6 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈<br/>☆"
         b.classType = "heller";
-        b.r += 8;
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
