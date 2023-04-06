@@ -746,7 +746,7 @@ let refreshBoxPanel = setInterval(() => {
                           {
                            if (item.name ===addedThing.name && item.level ===addedThing.level )
                               {
-                                item.remove();
+                                world.removeTower(item);
                               }
                           }
                         levelUp(addedThing);             
