@@ -27,8 +27,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "archer";
-        b.threeKnightBuff = false;
+        b.classType = "witcher";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
