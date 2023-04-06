@@ -214,21 +214,7 @@ class Tower extends CircleObject {
         for (let b of this.bullys) {
             b.render(ctx);
         }
-        // 渲染升级图
-        if (this.isUpLevelAble()) {
-            let upDateImgStartPos = this.pos.plus(new Vector(this.r * 0.2, -this.r * 1.5));
-            ctx.drawImage(
-                UP_LEVEL_ICON,
-                standardize(0),
-                standardize(0),
-                standardize(100),
-                standardize(100),
-                standardize(upDateImgStartPos.x),
-                standardize(upDateImgStartPos.y + Math.sin(this.liveTime / 5) * 5),
-                standardize(20),
-                standardize(20)
-            );
-        }
+
     }
 
     /**
@@ -239,15 +225,7 @@ class Tower extends CircleObject {
         return new Circle(this.pos.x, this.pos.y, this.rangeR);
     }
 
-    /**
-     * 判断是否可以升级了
-     */
-    isUpLevelAble() {
-        for (let getterFunc of this.levelUpArr) {
-            if (this.world.user.money >= getterFunc(this.world).price) {
-                return true;
-            }
-        }
+
         return false;
     }
 }
