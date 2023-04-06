@@ -103,9 +103,9 @@ class World {
     }
     countClassType(classType){
         let cnt=0;
+        let itemname=[];
         for(let item of this.batterys)
         {
-           let itemname=[];
            if(item.classType===classType &&  !(item.name in itemname) ){
                cnt++;
                itemname.push(item.name);
