@@ -40,6 +40,7 @@ class Tower extends CircleObject {
         this.price = 10 ;// 这个炮塔需要花多少钱来买
         this.level = 1 ;//level
         this.classType = "knight"; //level
+        this.3knightbuff = false;
         this.levelUpArr = [  // 这个炮塔接下来可以升级成什么建筑
         ];
         this.levelDownGetter = null;
