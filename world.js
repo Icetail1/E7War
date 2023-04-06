@@ -40,6 +40,7 @@ class World {
         this.monsterAddFreezeTick = 200;
         this.monsterPreAdd = 3;  // 每次增加多少个怪物
         this.maxMonsterNum = 250;  // 最多怪物数量
+        this.jiban=this.jibanSelect();
 
     }
 
@@ -100,7 +101,26 @@ class World {
     addEffect(effect) {
         this.effects.add(effect);
     }
-
+    countClassType(classType){
+        let cnt=0;
+        for(item of this.batterys)
+        {
+           if(item.classtype===classType){
+               cnt++;
+           }
+         
+        }
+        return cnt;
+    }
+    
+    jibanSelect(){
+         jibanR="无羁绊";
+         if(countClassType("knight") >= 3){
+            jibanR="三骑士"  ;      
+         }
+         return jibanR;
+         
+    }
     /**
      *
      * @param building {Building}
@@ -285,5 +305,6 @@ class World {
         ctx.fillText("下一波：" + this.monsterFlow.toString(), 20, 100);
         ctx.fillText("当前波数：" + (this.monsterFlow.level - 1), 20, 120);
         ctx.fillText("倒计时：" + (this.monsterFlow.delayTick), 20, 140);
+        ctx.fillText("羁绊：" + (this.jiban), 20, 160);
     }
 }
