@@ -103,7 +103,7 @@ class World {
     }
     countClassType(classType){
         let cnt=0;
-        for(item of this.batterys)
+        for(let item of this.batterys)
         {
            console.log(item);
            if(item.classtype===classType){
