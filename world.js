@@ -41,6 +41,7 @@ class World {
         this.monsterAddFreezeTick = 200;
         this.monsterPreAdd = 3;  // 每次增加多少个怪物
         this.maxMonsterNum = 250;  // 最多怪物数量
+        this.maxLevel=10;// 最大本数
         this.jiban="";
 
     }
