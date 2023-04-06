@@ -467,7 +467,10 @@ function endlessMode(mode, haveGroup = true) {
             test.addEventListener("click", () => {
             for(let item of world.getAllBuildingArr())
                 {
-                 item.maxHp *= 2;
+                 if (selectedThing.gameType === "Tower")
+                  {
+                   item.maxHp *= 2;
+                  }
                 }
             });
 
