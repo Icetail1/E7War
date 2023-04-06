@@ -415,8 +415,8 @@ function endlessMode(mode, haveGroup = true) {
             let pThree=5+Math.floor(world.mainLevel/2)*5;
             let pTwo= 10 +Math.floor(world.mainLevel)*5;
             let pOne= 100-pTwo-pThree-pFour-pFive-pSix;
-            let random= Math.floor(Math.random()*100)+1; 
             for(let i=0;i<6;i++){
+                let random= Math.floor(Math.random()*100)+1; 
                 if(random <= pOne) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
