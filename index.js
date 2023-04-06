@@ -388,7 +388,6 @@ function endlessMode(mode, haveGroup = true) {
     let selectedThing = null; // 当前选中的东西
     let btnClassName = "towerBtn";
     let initBtnListClassName = "initPanel";  // 选择界面的初始面板 div类名
-    let selectedListClassName = "choicePanel";  // 选择界面的选择对象面板 div类名
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
     let changed= false;
@@ -629,9 +628,7 @@ function endlessMode(mode, haveGroup = true) {
 let refreshPanel = setInterval(() => {
          if (addedThingFunc === null && selectedThing === null) {
              showInitPanel();
-         } else if (selectedThing !== null) {
-             showSelectedPanel(false);
-         }
+         } 
          if (gameEnd) {
              clearInterval(refreshPanel);
          }
@@ -696,50 +693,13 @@ let refreshPanel = setInterval(() => {
 let refreshBoxPanel = setInterval(() => {
          if (changed===true) {
              showBoxPanel();
-         } else if (selectedThing !== null) {
-             showSelectedPanel(false);
-         }
+         } 
          if (gameEnd) {
              clearInterval(refreshBoxPanel);
          }
      }, 100);
     
-    
-    /**
-     * 显示舞台上选中了的物品的界面
-     * @param forceAble 是否是强制刷新
-     */
-    function showSelectedPanel(forceAble) {
-        let panelEle = document.querySelector(`.${selectedListClassName}`);
-
-        if (panelEle.style.display === "block") {
-            // 当前已经是在展示的了，不用再被刷新了
-            // 但是这样会导致点击查看一个东西之后还要点击一下空白的地方才能查看另一个东西
-
-            if (!forceAble) {
-                panelEle.style.display === "none"
-            }
-        }
-        hideAllPanel();
-        panelEle.style.display = "block";
-        if (panelEle.innerHTML === "") {
-        } else {
-            let hideAllData = () => {
-                for (let data of panelEle.children) {
-                    data.style.display = "none";
-                }
-            };
-            if (selectedThing.gameType === "Monster") {
-                /**
-                 * 怪物信息展示界面
-                 */
-                hideAllData();
-                panelEle.querySelector(".monsterData").style.display = "block";
-                panelEle.querySelector(".monsterName").innerHTML = selectedThing.name;
-                panelEle.querySelector(".monsterComment").innerHTML = selectedThing.comment;
-            }
-        }
-    }
+   
 
     /**
      * 隐藏所有面板
@@ -822,7 +782,6 @@ let refreshBoxPanel = setInterval(() => {
                 if (item.getBodyCircle().pointIn(clickPos.x, clickPos.y)) {
                     // 这里有炮塔或者建筑
                     // selectedThing = item;
-                    // showSelectedPanel(true);
                     showSmallLevelUpPanel(item, clickPos);
                     item.selected = true;
                     return;
@@ -833,7 +792,6 @@ let refreshBoxPanel = setInterval(() => {
                 if (item.getBodyCircle().pointIn(clickPos.x, clickPos.y)) {
                     // 这里有怪物
                     selectedThing = item;
-                    showSelectedPanel(true);
                     item.selected = true;
                     return;
                 }
