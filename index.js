@@ -411,6 +411,7 @@ function endlessMode(mode, haveGroup = true) {
             let thingsFuncArr = [];  // 即将添加的按钮数组
             let random= Math.random(); 
             if(random < 0.5) {
+                let select=Math.floor(Math.random()*6);
                 thingsFuncArr.push(TowerFinally.witcher_1);
                 thingsFuncArr.push(TowerFinally.warrior_1);
                 thingsFuncArr.push(TowerFinally.thief_1);
