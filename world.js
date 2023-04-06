@@ -110,9 +110,6 @@ class World {
                cnt++;
                itemname.push(item.name);
            }
-           console.log(item.name); 
-           console.log(itemname);
-           console.log(cnt);
         }
         return cnt;
     }
