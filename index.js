@@ -776,7 +776,7 @@ let refreshBoxPanel = setInterval(() => {
         smallLevelUpPanelEle.style.top = clickPos.y + 10 + "px";
         // 设置弹出界面里面的内容
         let nameSpan = smallLevelUpPanelEle.querySelector(".name");
-        nameSpan.innerHTML = thing.name;
+        nameSpan.innerHTML = thing.name + "Lv" + thing.level + "伤害" + thing.damage;
         let listEle = smallLevelUpPanelEle.querySelector(".levelUpItems");
         listEle.innerHTML = "";  // 先清空
         
@@ -947,6 +947,18 @@ let refreshBoxPanel = setInterval(() => {
             }
         }
     }, 100);
+    
+ let hellForThree = setInterval(() => {
+         if (world.hellForThree) {
+              for(let item of world.getAllBuildingArr())
+                {
+                   item.hp += 1;
+                }
+
+         } 
+     }, 100);   
+    
+    
 
 
 }
