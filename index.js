@@ -5,7 +5,6 @@
 
 let app = document.querySelector(".gameApp");
 let interfaceArr = app.children;
-let maxMonsterLevel = 0;
 const UP_LEVEL_ICON = new Image();
 UP_LEVEL_ICON.src = "icon/icon_upgrade.png";
 
@@ -341,6 +340,7 @@ function endlessMode(mode, haveGroup = true) {
      */
     let pauseBtn = document.querySelector(".pause");
     let isGamePause = false;
+    let maxMonsterLevel = 0;
     pauseBtn.addEventListener("click", () => {
         isGamePause = !isGamePause;
         if (isGamePause) {
@@ -377,7 +377,6 @@ function endlessMode(mode, haveGroup = true) {
     }else{
         maxMonsterLevel=99999;
     }
-}   
     
     /**
      * 开启游戏循环迭代
