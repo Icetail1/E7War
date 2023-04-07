@@ -168,7 +168,7 @@ class World {
             for(let item of this.batterys)
             {
                 if(!item.twoWarriorBuff ){
-                    item.demage*=2;
+                    item.damage*=2;
                     item.twoWarriorBuff = true;
                 }
             }
@@ -176,7 +176,7 @@ class World {
               for(let item of this.batterys)
             {
                 if(item.twoWarriorBuff ){
-                    item.demage/=2;
+                    item.damage/=2;
                     item.twoWarriorBuff = false;
                 }
             } 
@@ -187,7 +187,7 @@ class World {
             for(let item of this.batterys)
             {
                 if(!item.fourWarriorrBuff  ){
-                    item.demage*=2;
+                    item.damage*=2;
                     item.fourWarriorrBuff  = true;
                 }
             }
@@ -195,7 +195,7 @@ class World {
               for(let item of this.batterys)
             {
                 if(item.fourWarriorrBuff  ){
-                    item.demage/=2;
+                    item.damage/=2;
                     item.fourWarriorrBuff  = false;
                 }
             } 
@@ -206,7 +206,7 @@ class World {
             for(let item of this.batterys)
             {
                 if(!item.sixWarriorrBuff  ){
-                    item.demage*=2;
+                    item.damage*=2;
                     item.sixWarriorrBuff  = true;
                 }
             }
@@ -214,7 +214,7 @@ class World {
               for(let item of this.batterys)
             {
                 if(item.sixWarriorrBuff  ){
-                    item.demage/=2;
+                    item.damage/=2;
                     item.sixWarriorrBuff  = false;
                 }
             } 
