@@ -107,7 +107,7 @@ class TowerFinally {
 
     static heller_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "毒奶<br/>☆"
+        b.name = "偶像<br/>☆"
         b.classType = "heller";
         b.damage = 1;
         b.rangeR = 100;
