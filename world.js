@@ -163,7 +163,7 @@ class World {
          }
         
         
-         if(this.countClassType("warroir") >= 2){
+         if(this.countClassType("warrior") >= 2){
             jibanR+="二战士";
             for(let item of this.batterys)
             {
@@ -182,7 +182,7 @@ class World {
             } 
          }
         
-         if(this.countClassType("warroir") >= 4){
+         if(this.countClassType("warrior") >= 4){
             jibanR+="四战士";
             for(let item of this.batterys)
             {
@@ -201,7 +201,7 @@ class World {
             } 
          }      
         
-         if(this.countClassType("warroir") >= 6){
+         if(this.countClassType("warrior") >= 6){
             jibanR+="六战士";
             for(let item of this.batterys)
             {
