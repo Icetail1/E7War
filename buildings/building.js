@@ -82,9 +82,40 @@ class Building extends CircleObject {
         this.hpSet(0);
         super.remove();
     }
+    
+    
+    getImgStartPosByIndex(n) {
+        let x = n % Math.floor(TOWERS_IMG.width / TOWER_IMG_PRE_WIDTH);
+        let y = Math.floor(n / Math.floor(TOWERS_IMG.height / TOWER_IMG_PRE_HEIGHT));
+        return new Vector(x * TOWER_IMG_PRE_WIDTH, y * TOWER_IMG_PRE_HEIGHT);
+    } 
 
+    /**
+     * 获取视野圆形
+     * @returns {Circle}
+     */
+    getViewCircle() {
+        return new Circle(this.pos.x, this.pos.y, this.rangeR);
+    }
+    
+    
+    
     render(ctx) {
         super.render(ctx);
+        let imgStartPos = this.getImgStartPosByIndex(this.imgIndex);
+        ctx.drawImage(
+            TOWERS_IMG,
+            imgStartPos.x,
+            imgStartPos.y,
+            TOWER_IMG_PRE_WIDTH,
+            TOWER_IMG_PRE_HEIGHT,
+            standardize(this.pos.x - this.r),
+            standardize(this.pos.y - this.r),
+            standardize(this.r * 2),
+            standardize(this.r * 2),
+        );
+        
+        
         // 绘制加血范围圈
         if (this.otherHpAddAble) {
             let c = new Circle(this.pos.x, this.pos.y, this.otherHpAddRadius);
