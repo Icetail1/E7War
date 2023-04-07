@@ -22,6 +22,7 @@ class World {
         this.mainLevel = 1;
         this.mode = "normal";
         this.hellForThree = false;
+        this.hellForSix = false;
         // 安置大本
         let RootBuilding = BuildingFinally.Root(this);
         RootBuilding.pos = new Vector(this.width / 2, this.height / 2);
