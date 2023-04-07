@@ -380,8 +380,8 @@ function endlessMode(mode, haveGroup = true) {
 
     let mainAni = setInterval(() => {
         console.log("max*",maxMonsterLevel);
-        console.log("max*",world.monsterLevel);
-        if(world.monsterLevel > maxMonsterLevel) {
+        console.log("bo*",(world.monsterFlow.level - 1));
+        if((world.monsterFlow.level - 1) > maxMonsterLevel) {
             alert("胜利！！！！");
             location.reload();
             clearInterval(mainAni);
