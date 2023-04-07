@@ -149,15 +149,15 @@ class Functions {
      * @param level
      */
     static levelAddPrice(level) {
-        return Math.floor(Math.log(level) * (level / 10)) + 10;
+        return Math.floor((level / 4)) + 1;
     }
 
     static levelAddPriceNormal(level) {
-        return Math.floor(Math.log(level) * (level / 10));
+        return Math.floor((level / 5))+ 1;
     }
 
     static levelAddPriceHard(level) {
-        return Math.floor(Math.log(level) * (level / 20));
+        return Math.floor((level / 10))+ 1;
     }
 
     /**
