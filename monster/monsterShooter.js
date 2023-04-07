@@ -10,7 +10,7 @@ class MonsterShooter extends Monster {
         this.gameType = "Monster";
         this.name = "射手怪物";
 
-        this.rangeR = 100;
+        this.rangeR = 10;
         this.dirction = new Vector(1, 2).to1();  // 炮塔的朝向
 
         this.getmMainBullyFunc = BullyFinally.S;  // 发射的主子弹，获取新子弹对象的方法
