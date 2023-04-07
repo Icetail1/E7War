@@ -383,11 +383,11 @@ function endlessMode(mode, haveGroup = true) {
      */
 
     let mainAni = setInterval(() => {
-//        if(world.monsterLevel > maxMonsterLevel) {
-//            alert("胜利！！！！");
-//            location.reload();
-//            clearInterval(mainAni);
-//        }
+        if(world.monsterLevel > maxMonsterLevel) {
+            alert("胜利！！！！");
+            location.reload();
+            clearInterval(mainAni);
+        }
         
         
         if (!isGamePause) {
