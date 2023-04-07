@@ -763,7 +763,7 @@ let refreshBoxPanel = setInterval(() => {
         smallLevelUpPanelEle.style.top = clickPos.y + 10 + "px";
         // 设置弹出界面里面的内容
         let nameSpan = smallLevelUpPanelEle.querySelector(".name");
-        nameSpan.innerHTML = thing.name + "Lv" + thing.level + "伤害" + thing.damage;
+        nameSpan.innerHTML = thing.name + "Lv" + thing.level + "伤害" + thing.damage + "攻速" + thing.speed + "攻击范围" + thing.rangeR + "攻击宽度" + thing.width;
         let listEle = smallLevelUpPanelEle.querySelector(".levelUpItems");
         listEle.innerHTML = "";  // 先清空
         
