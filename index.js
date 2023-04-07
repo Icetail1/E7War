@@ -120,10 +120,6 @@ function choiceInterface() {
         endlessMode("infinitehard");
     });
 
-
-    thisInterface.querySelector(".backPage").addEventListener("click", () => {
-        gotoPage("main-interface");
-    });
 }
 
 /**
@@ -381,8 +377,10 @@ function endlessMode(mode, haveGroup = true) {
     /**
      * 开启游戏循环迭代
      */
-    console.log("max*",maxMonsterLevel);
+
     let mainAni = setInterval(() => {
+        console.log("max*",maxMonsterLevel);
+        console.log("max*",world.monsterLevel);
         if(world.monsterLevel > maxMonsterLevel) {
             alert("胜利！！！！");
             location.reload();
