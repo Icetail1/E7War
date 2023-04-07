@@ -381,7 +381,7 @@ function endlessMode(mode, haveGroup = true) {
     /**
      * 开启游戏循环迭代
      */
-
+    console.log("max*",maxMonsterLevel);
     let mainAni = setInterval(() => {
         if(world.monsterLevel > maxMonsterLevel) {
             alert("胜利！！！！");
