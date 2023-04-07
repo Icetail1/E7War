@@ -341,6 +341,7 @@ class World {
             {
                 if(!item.twoArcherBuff    ){
                     item.width*=2;
+                    item.rayLen*=2;
                     item.twoArcherBuff   = true;
                 }
             }
@@ -349,6 +350,7 @@ class World {
             {
                 if(item.twoArcherBuff ){
                     item.width/=2;
+                    item.rayLen/=2;
                     item.twoArcherBuff = false;
                 }
             } 
@@ -360,6 +362,7 @@ class World {
             {
                 if(!item.fourArcherBuff ){
                     item.width*=2;
+                    item.rayLen*=2;
                     item.fourArcherBuff  = true;
                 }
             }
@@ -368,6 +371,7 @@ class World {
             {
                 if(item.fourArcherBuff ){
                     item.width/=2;
+                    item.rayLen/=2;
                     item.fourArcherBuff  = false;
                 }
             } 
@@ -379,6 +383,7 @@ class World {
             {
                 if(!item.sixArcherBuff){
                     item.width*=2;
+                    item.rayLen*=2;
                     item.sixArcherBuff  = true;
                 }
             }
@@ -387,6 +392,7 @@ class World {
             {
                 if(item.sixArcherBuff){
                     item.width/=2;
+                    item.rayLen/=2;
                     item.sixArcherBuff = false;
                 }
             } 
