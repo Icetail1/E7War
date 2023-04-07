@@ -23,7 +23,7 @@ class TowerFinally {
         b.damage = 1;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 15;  // 射线的长度
+        b.rayLen = 2;  // 射线的长度
         b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -42,6 +42,7 @@ class TowerFinally {
         res.damage = 1;
         res.rangeR = 100;
         res.atkSpeed = 1;
+        res.rayLen=1;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -58,7 +59,7 @@ class TowerFinally {
         b.rayMaxRange = 300;
         b.classType = "thief";
         b.rayClock = 50;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 1;
         b.rayRepel = 0.1;
@@ -81,7 +82,7 @@ class TowerFinally {
         res.damage = 1;
         res.rangeR = 100;
         res.width = 1;
-        res.barLen = 20;
+        res.rayLen = 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
@@ -94,7 +95,7 @@ class TowerFinally {
         b.name = "骑士<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.rayLen = 300;
+        b.rayLen = 3;
         b.rayClock = 10;
         b.width = 1;
         b.damage = 1;
@@ -112,7 +113,7 @@ class TowerFinally {
         b.classType = "heller";
         b.damage = 1;
         b.rangeR = 100;
-        b.rayLen = 300;
+        b.rayLen = 3;
         b.width = 1;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -155,6 +156,8 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 100;
         res.rangeR = 120;
+        res.atkSpeed = 1;
+        res.rayLen=1;
         res.r += 2;
         res.bar = res.initBar();
         res.imgIndex = 2;
@@ -194,7 +197,7 @@ class TowerFinally {
         res.damage = 250;
         res.rangeR = 100;
         res.width = 10;
-        res.barLen = 20;
+        res.rayLen = 20;
         res.r += 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
@@ -270,6 +273,8 @@ class TowerFinally {
         res.classType = "warrior";
         res.hpInit(3000);
         res.damage = 100;
+        res.atkSpeed = 1;
+        res.rayLen=1;
         res.rangeR = 120;
         res.r += 2;
         res.bar = res.initBar();
@@ -310,7 +315,7 @@ class TowerFinally {
         res.damage = 250;
         res.rangeR = 100;
         res.width = 10;
-        res.barLen = 20;
+        res.rayLen = 20;
         res.r += 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
@@ -385,6 +390,8 @@ class TowerFinally {
         res.name = "战士<br/>☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(3000);
+        res.atkSpeed = 1;
+        res.rayLen=1;
         res.damage = 100;
         res.rangeR = 120;
         res.r += 2;
@@ -426,7 +433,7 @@ class TowerFinally {
         res.damage = 250;
         res.rangeR = 100;
         res.width = 10;
-        res.barLen = 20;
+        res.rayLen = 20;
         res.r += 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
@@ -502,6 +509,8 @@ class TowerFinally {
         res.name = "战士<br/>☆☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(3000);
+        res.atkSpeed = 1;
+        res.rayLen=1;
         res.damage = 100;
         res.rangeR = 120;
         res.r += 2;
@@ -543,7 +552,7 @@ class TowerFinally {
         res.damage = 250;
         res.rangeR = 100;
         res.width = 10;
-        res.barLen = 20;
+        res.rayLen = 20;
         res.r += 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
@@ -618,6 +627,8 @@ class TowerFinally {
         res.name = "战士<br/>☆☆☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(3000);
+        res.atkSpeed = 1;
+        res.rayLen=1;
         res.damage = 100;
         res.rangeR = 120;
         res.r += 2;
@@ -659,7 +670,7 @@ class TowerFinally {
         res.damage = 250;
         res.rangeR = 100;
         res.width = 10;
-        res.barLen = 20;
+        res.rayLen = 20;
         res.r += 2;
         res.atkSpeed = 0.2;
         res.bar = res.initBar();
