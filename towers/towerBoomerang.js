@@ -24,14 +24,14 @@ class TowerBoomerang extends Tower {
     /**
      * 初始化一个棒子
      */
-    initBar(this.rayLen,this.width) {
+    initBar(rayLen,width) {
         let barCenterLoc = this.pos.plus(Vector.randCircle().mul(this.barDis));
-        let p1 = barCenterLoc.plus(this.barDirect.mul(this.rayLen));
-        let p2 = barCenterLoc.sub(this.barDirect.mul(this.rayLen));
+        let p1 = barCenterLoc.plus(this.barDirect.mul(rayLen));
+        let p2 = barCenterLoc.sub(this.barDirect.mul(rayLen));
 
         let barLine = new Line(p1, p2);
         barLine.strokeColor = new MyColor(255, 124, 36, 0.8);
-        barLine.strokeWidth = this.width;
+        barLine.strokeWidth = width;
         // console.log(barLine);
         return barLine;
     }
