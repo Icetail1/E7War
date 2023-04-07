@@ -551,13 +551,7 @@ function endlessMode(mode, haveGroup = true) {
             test.id = "test";
             test.innerText = "测试";
             test.addEventListener("click", () => {
-            for(let item of world.getAllBuildingArr())
-                {
-                 if (item.gameType === "Tower")
-                  {
-                   item.maxHp *= 2;
-                  }
-                }
+                world.user.money += 10000;
             });
 
             panelEle.appendChild(test);
