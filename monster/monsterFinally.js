@@ -34,7 +34,7 @@ class MonsterFinally {
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
         m.maxSpeedN = 5;
-        m.imgIndex = 27;
+        m.imgIndex = 25;
         m.comment = "速度会越来越快";
         return m;
     }
@@ -46,7 +46,7 @@ class MonsterFinally {
         m.speedNumb = 0.01;
         m.accelerationV = 0.05;
         m.maxSpeedN = 7;
-        m.imgIndex = 27;
+        m.imgIndex = 25;
         m.comment = "加速度，速度越来越快";
         return m;
     }
@@ -58,7 +58,7 @@ class MonsterFinally {
         m.speedNumb = 0.01;
         m.accelerationV = 0.1;
         m.maxSpeedN = 10;
-        m.imgIndex = 27;
+        m.imgIndex = 25;
         m.comment = "比普通冲锋加速的更快";
         return m;
     }
