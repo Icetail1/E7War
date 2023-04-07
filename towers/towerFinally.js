@@ -15,7 +15,7 @@ class TowerFinally {
 
         b.hpInit(5000);
         b.rangeR = 100;
-        b.speed = 1;
+        b.atkSpeed = 1;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -41,7 +41,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 1;
         res.rangeR = 100;
-        res.speed = 1;
+        res.atkSpeed = 1;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -54,7 +54,7 @@ class TowerFinally {
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆"
-        b.speed = 1;
+        b.atkSpeed = 1;
         b.rayMaxRange = 300;
         b.classType = "thief";
         b.rayClock = 50;
@@ -82,7 +82,7 @@ class TowerFinally {
         res.rangeR = 100;
         res.width = 1;
         res.barLen = 20;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -128,7 +128,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
-        b.speed = 10;
+        b.atkSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -168,7 +168,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆☆"
         b.r += 5;
-        b.speed = 8;
+        b.atkSpeed = 8;
         b.rayMaxRange = 300;
         b.classType = "thief";
         b.rayClock = 50;
@@ -196,7 +196,7 @@ class TowerFinally {
         res.width = 10;
         res.barLen = 20;
         res.r += 2;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -244,7 +244,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
-        b.speed = 10;
+        b.atkSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -285,7 +285,7 @@ class TowerFinally {
         b.name = "刺客<br/>☆☆☆"
         b.classType = "thief";
         b.r += 5;
-        b.speed = 8;
+        b.atkSpeed = 8;
         b.rayMaxRange = 300;
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
@@ -312,7 +312,7 @@ class TowerFinally {
         res.width = 10;
         res.barLen = 20;
         res.r += 2;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -360,7 +360,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
-        b.speed = 10;
+        b.atkSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -401,7 +401,7 @@ class TowerFinally {
         b.name = "刺客<br/>☆☆☆☆"
         b.classType = "thief";
         b.r += 5;
-        b.speed = 8;
+        b.atkSpeed = 8;
         b.rayMaxRange = 300;
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
@@ -428,7 +428,7 @@ class TowerFinally {
         res.width = 10;
         res.barLen = 20;
         res.r += 2;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -477,7 +477,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
-        b.speed = 10;
+        b.atkSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -518,7 +518,7 @@ class TowerFinally {
         b.name = "刺客<br/>☆☆☆☆☆"
         b.classType = "thief";
         b.r += 5;
-        b.speed = 8;
+        b.atkSpeed = 8;
         b.rayMaxRange = 300;
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
@@ -545,7 +545,7 @@ class TowerFinally {
         res.width = 10;
         res.barLen = 20;
         res.r += 2;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -593,7 +593,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rangeR = 150;
         b.r += 1;
-        b.speed = 10;
+        b.atkSpeed = 10;
         b.rayMaxRange = 200;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -634,7 +634,7 @@ class TowerFinally {
         b.name = "刺客<br/>☆☆☆☆☆☆"
         b.classType = "thief";
         b.r += 5;
-        b.speed = 8;
+        b.atkSpeed = 8;
         b.rayMaxRange = 300;
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
@@ -661,7 +661,7 @@ class TowerFinally {
         res.width = 10;
         res.barLen = 20;
         res.r += 2;
-        res.speed = 0.2;
+        res.atkSpeed = 0.2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
