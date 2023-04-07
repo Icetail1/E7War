@@ -43,7 +43,6 @@ class World {
         this.monsterPreAdd = 3;  // 每次增加多少个怪物
         this.maxMonsterNum = 250;  // 最多怪物数量
         this.maxLevel=10;// 最大本数
-        this.monsterLevel = MonsterGroup.getMonsterFlow(this, 1, this.mode).level - 1;//当前波数
         this.jiban="";
 
     }
