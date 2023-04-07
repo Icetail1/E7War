@@ -43,7 +43,7 @@ class TowerFinally {
         res.atkSpeed = 0.1;
         res.width = 1;
         res.rayLen=1;
-        res.bar = res.initBar(res.rayLen,res.width);
+        res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
         res.classType = "warrior";
@@ -80,7 +80,7 @@ class TowerFinally {
         res.rangeR = 100;
         res.width = 1;
         res.rayLen = 2;
-        res.bar = res.initBar(res.rayLen,res.width)
+        res.bar = res.initBar();
         res.atkSpeed = 0.2;
         res.imgIndex = 2;
         res.price = 300;
