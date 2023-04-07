@@ -12,7 +12,7 @@ class Monster extends CircleObject {
     constructor(pos, world) {
         super(pos, world);
         this.gameType = "Monster";
-        this.name = "默认怪物";
+        this.name = "默认乌龟人";
 
         this.speed = null;
         this.speedNumb = 1; // 指向目的地方向的速度适量的倍数 用于设置
