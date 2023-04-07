@@ -25,7 +25,7 @@ class TowerRay extends Tower {
         this.rayNum = 1;  // 射线的数量
         this.rayDeviationRotate = 0;  // 子弹平面随机偏移 方向方面的
         this.rayDeviation = 0;  // 子弹平面随机偏移
-        this.rayMaxRange = 1000;  // 射线中心点最远的移动范围，超过范围会消失
+        this.rayMaxRange = this.rangeR;  // 射线中心点最远的移动范围，超过范围会消失
         this.rayClock = 1;  // 发射线的频率
         this.rayBullys = new Set();  // 发射线段
         this.rayThrowAble = true;
