@@ -377,7 +377,7 @@ function endlessMode(mode, haveGroup = true) {
     }else{
         maxMonsterLevel=99999;
     }
-    
+}   
     
     /**
      * 开启游戏循环迭代
