@@ -339,7 +339,7 @@ class World {
         ctx.fillText("炮塔数量：" + this.batterys.length, 20, 80);
         ctx.fillText("炮塔数量：" + this.batterys.length, 20, 80);
         ctx.fillText("下一波：" + this.monsterFlow.toString(), 20, 100);
-        ctx.fillText("当前波数：" + this.monsterLevel, 20, 120);
+        ctx.fillText("当前波数：" + (this.monsterFlow.level - 1), 20, 120);
         ctx.fillText("倒计时：" + (this.monsterFlow.delayTick), 20, 140);
         ctx.fillText("羁绊：" + (this.jiban), 20, 160);
     }
