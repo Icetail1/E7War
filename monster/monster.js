@@ -39,7 +39,7 @@ class Monster extends CircleObject {
         // 死亡自爆特性
         this.bombSelfAble = false;
         this.bombSelfRange = 100;
-        this.bombSelfDamage = 500;
+        this.bombSelfDamage = 100;
 
         // 穿过特性
         this.throwAble = false;
