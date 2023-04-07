@@ -83,7 +83,7 @@ class TowerFinally {
         res.rangeR = 100;
         res.width = 1;
         res.rayLen = 2;
-        res.atkSpeed = 0.2;
+        res.atkSpeed = 5;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -100,6 +100,7 @@ class TowerFinally {
         b.width = 1;
         b.damage = 1;
         b.hpInit(10000);
+        b.atkSpeed = 1;
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
@@ -115,6 +116,7 @@ class TowerFinally {
         b.rangeR = 100;
         b.rayLen = 3;
         b.width = 1;
+        b.atkSpeed = 1;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -217,6 +219,7 @@ class TowerFinally {
         b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
+        b.atkSpeed = 1;
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
@@ -234,6 +237,7 @@ class TowerFinally {
         b.rayLen = 300;
         b.width = 2;
         b.hpInit(10000);
+        b.atkSpeed = 1;
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
@@ -337,6 +341,7 @@ class TowerFinally {
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
+        b.atkSpeed = 1;
         b.price = 800;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
@@ -356,6 +361,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
+        b.atkSpeed = 1;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -456,6 +462,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
+        b.atkSpeed = 1;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -474,6 +481,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
+        b.atkSpeed = 1;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -575,6 +583,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
+        b.atkSpeed = 1;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -593,6 +602,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
+        b.atkSpeed = 1;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -693,6 +703,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
+        b.atkSpeed = 1;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -711,6 +722,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
+        b.atkSpeed = 1;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
