@@ -15,7 +15,7 @@ class TowerBoomerang extends Tower {
         this.barLen = 20;
         this.barDis = this.rangeR;  // 棒子中心到塔楼中心点的距离
         this.width = 10;
-        this.speed = 0.5;  // 棒子自转角速度 弧度/tick
+        this.atkSpeed = 0.5;  // 棒子自转角速度 弧度/tick
 
         this.barDirect = Vector.randCircle(); // 棒子的方向向量
         this.bar = this.initBar();
@@ -50,7 +50,7 @@ class TowerBoomerang extends Tower {
      */
     barRotate() {
         let center = this.bar.getCenter();
-        let a = this.speed; // 一次旋转度数
+        let a = this.atkSpeed; // 一次旋转度数
         let p1 = Vector.rotatePoint(center, this.bar.PosStart, a);
         let p2 = Vector.rotatePoint(center, this.bar.PosEnd, a);
         this.bar.resetLine(p1, p2);
