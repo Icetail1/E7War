@@ -14,7 +14,7 @@ class TowerBoomerang extends Tower {
         this.rangeR = 200;
         this.barLen = 20;
         this.barDis = this.rangeR;  // 棒子中心到塔楼中心点的距离
-        this.barWidth = 10;
+        this.width = 10;
         this.speed = 0.5;  // 棒子自转角速度 弧度/tick
 
         this.barDirect = Vector.randCircle(); // 棒子的方向向量
@@ -31,7 +31,7 @@ class TowerBoomerang extends Tower {
 
         let barLine = new Line(p1, p2);
         barLine.strokeColor = new MyColor(255, 124, 36, 0.8);
-        barLine.strokeWidth = this.barWidth;
+        barLine.strokeWidth = this.width;
         // console.log(barLine);
         return barLine;
     }
