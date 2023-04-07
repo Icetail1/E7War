@@ -9,7 +9,7 @@ class TowerFinally {
      * @returns {Tower}
      */
 
-    static witcher_1(world) {
+    static mage_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆";
 
@@ -26,7 +26,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -121,7 +121,7 @@ class TowerFinally {
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
-    static witcher_2(world) {
+    static mage_2(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆";
         b.hpInit(5000);
@@ -138,7 +138,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -237,7 +237,7 @@ class TowerFinally {
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
-    static witcher_3(world) {
+    static mage_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆";
         b.hpInit(5000);
@@ -254,7 +254,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -353,7 +353,7 @@ class TowerFinally {
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
-    static witcher_4(world) {
+    static mage_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆";
         b.hpInit(5000);
@@ -370,7 +370,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -470,7 +470,7 @@ class TowerFinally {
         return b;
     }
 
-    static witcher_5(world) {
+    static mage_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆☆";
         b.hpInit(5000);
@@ -487,7 +487,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -586,7 +586,7 @@ class TowerFinally {
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
-    static witcher_6(world) {
+    static mage_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆☆☆";
         b.hpInit(5000);
@@ -603,7 +603,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayWidth = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
-        b.classType = "witcher";
+        b.classType = "mage";
         b.price = 800;
         b.imgIndex = 50;
         b.level = 1;
@@ -707,7 +707,7 @@ class TowerFinally {
 
 const TOWER_FUNC_ARR = [
 
-    TowerFinally.witcher_1,
+    TowerFinally.mage_1,
     TowerFinally.warrior_1,
     TowerFinally.thief_1,
     TowerFinally.archer_1,
