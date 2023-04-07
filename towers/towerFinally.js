@@ -23,7 +23,7 @@ class TowerFinally {
         b.damage = 1;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 2;  // 射线的长度
+        b.rayLen = 20;  // 射线的长度
         b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -114,7 +114,7 @@ class TowerFinally {
         b.classType = "heller";
         b.damage = 1;
         b.rangeR = 100;
-        b.rayLen = 3;
+        b.rayLen = 30;
         b.width = 1;
         b.atkSpeed = 1;
         b.hpInit(10000);
