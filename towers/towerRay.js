@@ -21,7 +21,7 @@ class TowerRay extends Tower {
 
         this.attackFunc = this.attack;
 
-        this.speed = 0;  // 射线向前前进的速度
+        this.atkSpeed = 0;  // 射线向前前进的速度
         this.rayNum = 1;  // 射线的数量
         this.rayDeviationRotate = 0;  // 子弹平面随机偏移 方向方面的
         this.rayDeviation = 0;  // 子弹平面随机偏移
@@ -95,7 +95,7 @@ class TowerRay extends Tower {
      */
     scanningAttack() {
         // 旋转自动
-        let theta = this.speed *0.01 *this.liveTime;
+        let theta = this.atkSpeed *0.01 *this.liveTime;
         this.dirction = new Vector(Math.sin(theta), Math.cos(theta));
         // 进攻目标
         this.shoot();
@@ -119,11 +119,11 @@ class TowerRay extends Tower {
                     for (let i = 0; i < this.rayNum; i++) {
                         // 随机化后了的方向
                         let bDir = this.dirction.copy().deviation(this.rayDeviationRotate).to1();
-                        // let bDir = this.dirction.copy().mul(this.speed);
+                        // let bDir = this.dirction.copy().mul(this.atkSpeed);
                         // console.log("发射子弹")
                         let line = new Line(this.pos.copy(), this.pos.plus(bDir.mul(this.rayLen)));
                         let rayBully = new LineObject(line, this.world);
-                        rayBully.speed = bDir.mul(this.speed);
+                        rayBully.atkSpeed = bDir.mul(this.atkSpeed);
                         this.rayBullys.add(rayBully);
                         // this.world.addEffect(new EffectLine(line.PosStart, line.PosEnd));
                     }
@@ -152,7 +152,7 @@ class TowerRay extends Tower {
                         let x2 = x1.copy().rotate90().rotate90();
                         let line = new Line(this.pos.plus(x1), this.pos.plus(x2));
                         let rayBully = new LineObject(line, this.world);
-                        rayBully.speed = bDir.mul(this.speed);
+                        rayBully.atkSpeed = bDir.mul(this.atkSpeed);
                         this.rayBullys.add(rayBully);
                     }
                 }
@@ -184,7 +184,7 @@ class TowerRay extends Tower {
                     }
                     // 击退能力
                     if (this.rayRepel !== 0) {
-                        m.pos = m.pos.copy().plus(br.speed.mul(this.rayRepel));
+                        m.pos = m.pos.copy().plus(br.atkSpeed.mul(this.rayRepel));
                     }
                 }
             }
