@@ -376,7 +376,7 @@ class MonsterFinally {
         m.imgIndex = 15;
         m.getmMainBullyFunc = BullyFinally.CannonStone_L;
         m.clock = 50;
-        m.rangeR = 170;
+        m.rangeR = 50;
         m.comment = "会对你的建筑进行远程射击伤害巨大的石头蛋子";
         return m;
     }
@@ -391,7 +391,7 @@ class MonsterFinally {
         m.imgIndex = 15;
         m.getmMainBullyFunc = BullyFinally.H_S;
         m.clock = 50;
-        m.rangeR = 170;
+        m.rangeR = 50;
         m.comment = "会对你的建筑进行远程射击伤害巨大的火炮";
         return m;
     }
@@ -406,7 +406,7 @@ class MonsterFinally {
         m.imgIndex = 15;
         m.getmMainBullyFunc = BullyFinally.SpikeBully;
         m.clock = 8;
-        m.rangeR = 100;
+        m.rangeR = 50;
         m.comment = "会对你的建筑进行远程射击仙人球";
         return m;
     }
