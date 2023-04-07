@@ -123,7 +123,7 @@ class TowerRay extends Tower {
                         // console.log("发射子弹")
                         let line = new Line(this.pos.copy(), this.pos.plus(bDir.mul(this.rayLen)));
                         let rayBully = new LineObject(line, this.world);
-                        rayBully.atkSpeed = bDir.mul(this.atkSpeed);
+                        rayBully.speed = bDir.mul(this.atkSpeed);
                         this.rayBullys.add(rayBully);
                         // this.world.addEffect(new EffectLine(line.PosStart, line.PosEnd));
                     }
@@ -152,7 +152,7 @@ class TowerRay extends Tower {
                         let x2 = x1.copy().rotate90().rotate90();
                         let line = new Line(this.pos.plus(x1), this.pos.plus(x2));
                         let rayBully = new LineObject(line, this.world);
-                        rayBully.atkSpeed = bDir.mul(this.atkSpeed);
+                        rayBully.speed = bDir.mul(this.atkSpeed);
                         this.rayBullys.add(rayBully);
                     }
                 }
