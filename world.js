@@ -126,6 +126,7 @@ class World {
             {
                 if(!item.threeKnightBuff){
                     item.maxHp*=2;
+                    item.Hp*=2;
                     item.threeKnightBuff = true;
                 }
             }
@@ -134,10 +135,263 @@ class World {
             {
                 if(item.threeKnightBuff){
                     item.maxHp/=2;
+                    item.Hp*=2;
                     item.threeKnightBuff = false;
                 }
             } 
          }
+        
+         if(this.countClassType("knight") >= 6){
+            jibanR+="六骑士";
+            for(let item of this.batterys)
+            {
+                if(!item.sixKnightBuff){
+                    item.maxHp*=2;
+                    item.Hp*=2;
+                    item.sixKnightBuff = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.sixKnightBuff){
+                    item.maxHp/=2;
+                    item.Hp/=2;
+                    item.sixKnightBuff = false;
+                }
+            } 
+         }
+        
+        
+         if(this.countClassType("warroir") >= 2){
+            jibanR+="二战士";
+            for(let item of this.batterys)
+            {
+                if(!item.twoWarriorBuff ){
+                    item.demage*=2;
+                    item.twoWarriorBuff = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.twoWarriorBuff ){
+                    item.demage/=2;
+                    item.twoWarriorBuff = false;
+                }
+            } 
+         }
+        
+         if(this.countClassType("warroir") >= 4){
+            jibanR+="四战士";
+            for(let item of this.batterys)
+            {
+                if(!item.fourWarriorrBuff  ){
+                    item.demage*=2;
+                    item.fourWarriorrBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.fourWarriorrBuff  ){
+                    item.demage/=2;
+                    item.fourWarriorrBuff  = false;
+                }
+            } 
+         }      
+        
+         if(this.countClassType("warroir") >= 6){
+            jibanR+="六战士";
+            for(let item of this.batterys)
+            {
+                if(!item.sixWarriorrBuff  ){
+                    item.demage*=2;
+                    item.sixWarriorrBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.sixWarriorrBuff  ){
+                    item.demage/=2;
+                    item.sixWarriorrBuff  = false;
+                }
+            } 
+         }         
+        
+        
+         if(this.countClassType("mage") >= 2){
+            jibanR+="二法师";
+            for(let item of this.batterys)
+            {
+                if(!item.twoMageBuff  ){
+                    item.rangeR*=2;
+                    item.twoMageBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.twoMageBuff  ){
+                    item.rangeR/=2;
+                    item.twoMageBuff = false;
+                }
+            } 
+         }
+        
+         if(this.countClassType("mage") >= 4){
+            jibanR+="四法师";
+            for(let item of this.batterys)
+            {
+                if(!item.fourMageBuff   ){
+                    item.rangeR*=2;
+                    item.fourMageBuff   = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.fourMageBuff   ){
+                    item.rangeR/=2;
+                    item.fourMageBuff   = false;
+                }
+            } 
+         }      
+        
+         if(this.countClassType("mage") >= 6){
+            jibanR+="六法师";
+            for(let item of this.batterys)
+            {
+                if(!item.sixMageBuff   ){
+                    item.rangeR*=2;
+                    item.sixMageBuff   = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.sixMageBuff   ){
+                    item.rangeR/=2;
+                    item.sixMageBuff   = false;
+                }
+            } 
+         } 
+        
+         if(this.countClassType("thief") >= 2){
+            jibanR+="二盗贼";
+            for(let item of this.batterys)
+            {
+                if(!item.twoThiefBuff   ){
+                    item.speed*=2;
+                    item.twoThiefBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.twoThiefBuff  ){
+                    item.speed/=2;
+                    item.twoThiefBuff = false;
+                }
+            } 
+         }
+        
+         if(this.countClassType("thief") >= 4){
+            jibanR+="四盗贼";
+            for(let item of this.batterys)
+            {
+                if(!item.fourThiefBuff    ){
+                    item.speed*=2;
+                    item.fourThiefBuff    = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.fourThiefBuff    ){
+                    item.speed/=2;
+                    item.fourThiefBuff    = false;
+                }
+            } 
+         }      
+        
+         if(this.countClassType("thief") >= 6){
+            jibanR+="六盗贼";
+            for(let item of this.batterys)
+            {
+                if(!item.sixThiefBuff    ){
+                    item.speed*=2;
+                    item.sixThiefBuff    = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.sixThiefBuff    ){
+                    item.speed/=2;
+                    item.sixThiefBuff    = false;
+                }
+            } 
+         } 
+        
+         if(this.countClassType("archer") >= 2){
+            jibanR+="二弓";
+            for(let item of this.batterys)
+            {
+                if(!item.twoArcherBuff    ){
+                    item.width*=2;
+                    item.twoArcherBuff   = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.twoArcherBuff ){
+                    item.width/=2;
+                    item.twoArcherBuff = false;
+                }
+            } 
+         }
+        
+         if(this.countClassType("archer") >= 4){
+            jibanR+="四弓";
+            for(let item of this.batterys)
+            {
+                if(!item.fourArcherBuff ){
+                    item.width*=2;
+                    item.fourArcherBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.fourArcherBuff ){
+                    item.width/=2;
+                    item.fourArcherBuff  = false;
+                }
+            } 
+         }      
+        
+         if(this.countClassType("archer") >= 6){
+            jibanR+="六弓";
+            for(let item of this.batterys)
+            {
+                if(!item.sixArcherBuff){
+                    item.width*=2;
+                    item.sixArcherBuff  = true;
+                }
+            }
+           }else{
+              for(let item of this.batterys)
+            {
+                if(item.sixArcherBuff){
+                    item.width/=2;
+                    item.sixArcherBuff = false;
+                }
+            } 
+         }         
+        
         
          if(this.countClassType("heller") >= 3){
             jibanR+="三奶";
