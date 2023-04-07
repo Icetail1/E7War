@@ -95,7 +95,7 @@ class TowerFinally {
         b.name = "骑士<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.rayLen = 3;
+        b.rayLen = 30;
         b.rayClock = 10;
         b.width = 1;
         b.damage = 1;
