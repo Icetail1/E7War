@@ -78,7 +78,7 @@ class TowerFinally {
         res.hpInit(200);
         res.damage = 1;
         res.rangeR = 100;
-        res.width = 1;
+        res.width = 3;
         res.rayLen = 2;
         res.bar = res.initBar();
         res.atkSpeed = 0.2;
@@ -190,7 +190,7 @@ class TowerFinally {
         res.hpInit(300);
         res.damage = 3;
         res.rangeR = 110;
-        res.width = 2;
+        res.width = 5;
         res.rayLen = 4;
         res.atkSpeed = 0.4;
         res.bar = res.initBar();
@@ -302,7 +302,7 @@ class TowerFinally {
         res.hpInit(400);
         res.damage = 4;
         res.rangeR = 120;
-        res.width = 3;
+        res.width = 7;
         res.rayLen = 6;
         res.atkSpeed = 0.6;
         res.bar = res.initBar();
@@ -414,7 +414,7 @@ class TowerFinally {
         res.hpInit(500);
         res.damage = 5;
         res.rangeR = 130;
-        res.width = 5;
+        res.width = 7;
         res.rayLen = 8;
         res.atkSpeed = 0.8;
         res.bar = res.initBar();
@@ -528,7 +528,7 @@ class TowerFinally {
         res.hpInit(600);
         res.damage = 6;
         res.rangeR = 140;
-        res.width = 6;
+        res.width = 9;
         res.rayLen = 10;
         res.atkSpeed = 1;
         res.bar = res.initBar();
@@ -640,7 +640,7 @@ class TowerFinally {
         res.hpInit(700);
         res.damage = 10;
         res.rangeR = 150;
-        res.width = 10;
+        res.width = 12;
         res.rayLen = 15;
         res.atkSpeed = 1.5;
         res.bar = res.initBar();
