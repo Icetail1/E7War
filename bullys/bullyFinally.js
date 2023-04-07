@@ -13,7 +13,7 @@ class BullyFinally {
      */
     static littleStone() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 7;
+        res.damage = 1;
         res.r = 3;
         res.bodyColor = new MyColor(130, 131, 133, 1);
         res.bodyStrokeColor = MyColor.BLACK();
@@ -27,7 +27,7 @@ class BullyFinally {
      */
     static Arrow() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 10;
+        res.damage = 1;
         res.r = 2;
         res.bodyColor = new MyColor(104, 128, 144, 1);
         res.bodyStrokeColor = MyColor.BLACK();
@@ -42,7 +42,7 @@ class BullyFinally {
      */
     static Arrow_L() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 15;
+        res.damage = 2;
         res.r = 2.5;
         res.bodyColor = new MyColor(104, 128, 144, 1);
         res.bodyStrokeColor = MyColor.BLACK();
@@ -57,7 +57,7 @@ class BullyFinally {
      */
     static Arrow_LL() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 70;
+        res.damage = 7;
         res.r = 2.7;
         res.bodyColor = new MyColor(177, 119, 49, 1);
         res.bodyStrokeColor = MyColor.BLACK();
@@ -72,7 +72,7 @@ class BullyFinally {
      */
     static CannonStone_S() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 500;
+        res.damage = 50;
         res.r = 4;
         res.bodyColor = new MyColor(66, 66, 66, 1);
         res.bodyStrokeColor = new MyColor(135, 147, 154, 1);
@@ -82,7 +82,7 @@ class BullyFinally {
 
     static CannonStone_M() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 800;
+        res.damage = 80;
         res.r = 6;
         res.bodyColor = new MyColor(66, 66, 66, 1);
         res.bodyStrokeColor = new MyColor(135, 147, 154, 1);
@@ -92,7 +92,7 @@ class BullyFinally {
 
     static CannonStone_L() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 1000;
+        res.damage = 100;
         res.r = 8;
         res.bodyColor = new MyColor(66, 66, 66, 1);
         res.bodyStrokeColor = new MyColor(135, 147, 154, 1);
@@ -112,7 +112,7 @@ class BullyFinally {
      */
     static Bully_S() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 40;
+        res.damage = 4;
         res.r = 1.5;
         res.bodyColor = new MyColor(86, 94, 39, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -122,7 +122,7 @@ class BullyFinally {
 
     static Bully_M() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 50;
+        res.damage = 5;
         res.r = 1.7;
         res.bodyColor = new MyColor(86, 94, 39, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -132,7 +132,7 @@ class BullyFinally {
 
     static Bully_L() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 75;
+        res.damage = 7;
         res.r = 2;
         res.bodyColor = new MyColor(86, 94, 39, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -146,7 +146,7 @@ class BullyFinally {
      */
     static Rifle_Bully_S() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 70;
+        res.damage = 7;
         res.r = 1;
         res.bodyColor = new MyColor(64, 182, 224, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -156,7 +156,7 @@ class BullyFinally {
 
     static Rifle_Bully_M() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 100;
+        res.damage = 10;
         res.r = 1.1;
         res.bodyColor = new MyColor(64, 182, 224, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -166,7 +166,7 @@ class BullyFinally {
 
     static Rifle_Bully_L() {
         let res = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        res.damage = 150;
+        res.damage = 15;
         res.r = 1.2;
         res.bodyColor = new MyColor(64, 182, 224, 1);
         res.bodyStrokeColor = new MyColor(98, 151, 85, 1);
@@ -179,7 +179,7 @@ class BullyFinally {
     static F_S() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 0.8;
-        b.damage = 10;
+        b.damage = 1;
         b.bodyColor = new MyColor(20, 20, 20, 1);
         b.bodyStrokeWidth = 0;
         b.bodyStrokeColor = MyColor.arrTo([0, 0, 0, 0]);
@@ -189,7 +189,7 @@ class BullyFinally {
     static F_M() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 0.9;
-        b.damage = 30;
+        b.damage = 3;
 
         b.bodyColor = MyColor.arrTo([10, 10, 10, 1]);
         b.bodyStrokeWidth = 0;
@@ -200,7 +200,7 @@ class BullyFinally {
     static F_L() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 1;
-        b.damage = 30;
+        b.damage = 3;
 
         b.bodyColor = MyColor.arrTo([0, 0, 0, 1]);
         b.bodyStrokeWidth = 0;
@@ -214,7 +214,7 @@ class BullyFinally {
     static H_S() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 4;
-        b.damage = 100;
+        b.damage = 10;
 
         b.haveBomb = true;
         b.bombDamage = 1000;
@@ -232,7 +232,7 @@ class BullyFinally {
     static H_L() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 6;
-        b.damage = 200;
+        b.damage = 20;
 
         b.haveBomb = true;
         b.bombDamage = 2000;
@@ -249,7 +249,7 @@ class BullyFinally {
 
     static H_LL() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 10);
-        b.damage = 500;
+        b.damage = 50;
 
         b.haveBomb = true;
         b.bombDamage = 3500;
@@ -268,7 +268,7 @@ class BullyFinally {
     static S() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 1.6;
-        b.damage = 40;
+        b.damage = 4;
         b.bodyColor = MyColor.arrTo([0, 0, 255, 1]);
 
         return b;
@@ -280,7 +280,7 @@ class BullyFinally {
         b.throughable = true;
         b.throughCutNum = 0.1;
 
-        b.damage = 30;
+        b.damage = 3;
         b.bodyColor = MyColor.arrTo([0, 200, 255, 1]);
         b.bodyStrokeColor = MyColor.BLACK();
         return b;
@@ -294,7 +294,7 @@ class BullyFinally {
 
         b.r = 4;
         // b.accelerationV = -0.1;
-        b.damage = 40;
+        b.damage = 4;
         b.bodyColor = MyColor.arrTo([0, 150, 255, 1]);
         b.bodyStrokeColor = MyColor.BLACK();
         return b;
@@ -304,7 +304,7 @@ class BullyFinally {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 8);
         b.throughable = true;
         b.throughCutNum = 1;
-        b.damage = 120;
+        b.damage = 12;
         b.bodyColor = MyColor.arrTo([0, 100, 255, 1]);
         b.bodyStrokeColor = MyColor.BLACK();
         return b;
@@ -376,7 +376,7 @@ class BullyFinally {
     static SS_S() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 5);
 
-        b.damage = 30;
+        b.damage = 3;
         // 分裂子弹特性
         b.splitAble = true;
         b.splitNum = 6;  // 分裂后子弹的数量
@@ -391,7 +391,7 @@ class BullyFinally {
     // 中型分裂弹
     static SS_M() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 5);
-        b.damage = 20;
+        b.damage = 2;
         b.r = 6;
         // 分裂子弹特性
         b.splitAble = true;
@@ -406,7 +406,7 @@ class BullyFinally {
     // 大型分裂弹
     static SS_L() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 5);
-        b.damage = 50;
+        b.damage = 5;
         b.r = 8;
         // 爆炸炮弹的特性
         b.haveBomb = true;
@@ -427,7 +427,7 @@ class BullyFinally {
     // 超级分裂弹
     static SS_Second() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 5);
-        b.damage = 100;
+        b.damage = 10;
         b.r = 15;
         // 爆炸炮弹的特性
         b.haveBomb = true;
@@ -447,7 +447,7 @@ class BullyFinally {
 
     static SS_Third() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 5);
-        b.damage = 120;
+        b.damage = 12;
         b.r = 20;
         // 爆炸炮弹的特性
         b.haveBomb = true;
@@ -631,7 +631,7 @@ class BullyFinally {
     static H_Target_S() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
         b.r = 6;
-        b.damage = 100;
+        b.damage = 10;
 
         b.haveBomb = true;
         b.bombDamage = 100;
@@ -655,7 +655,7 @@ class BullyFinally {
      */
     static ThunderBall() {
         let b = new Bully(Vector.zero(), Vector.zero(), null, 5, 2.5);
-        b.damage = 100;
+        b.damage = 10;
         b.dDamage = 5;
         b.r = 10;
         b.dr = 0.3;
