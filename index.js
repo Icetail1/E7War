@@ -360,7 +360,7 @@ function endlessMode(mode, haveGroup = true) {
 
     let world = new World(canvasEle.width, canvasEle.height);
     world.resizeCanvas(canvasEle);
-    if(mode != infinitehard){
+    if(mode != "infinitehard"){
         world.mode = mode;
     }else{
         world.mode = "hard";
