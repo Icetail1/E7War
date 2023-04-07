@@ -81,7 +81,6 @@ class TowerFinally {
         res.width = 1;
         res.rayLen = 2;
         res.atkSpeed = 0.2;
-        res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
