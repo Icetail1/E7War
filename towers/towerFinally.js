@@ -24,7 +24,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -59,7 +59,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -79,7 +79,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 1;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.speed = 0.2;
         res.bar = res.initBar();
@@ -95,7 +95,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 1;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -112,7 +112,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -136,7 +136,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -173,7 +173,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -192,7 +192,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.r += 2;
         res.speed = 0.2;
@@ -210,7 +210,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -228,7 +228,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -252,7 +252,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -289,7 +289,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -308,7 +308,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.r += 2;
         res.speed = 0.2;
@@ -326,7 +326,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -344,7 +344,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -368,7 +368,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -405,7 +405,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -424,7 +424,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.r += 2;
         res.speed = 0.2;
@@ -442,7 +442,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -460,7 +460,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -485,7 +485,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -522,7 +522,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -541,7 +541,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.r += 2;
         res.speed = 0.2;
@@ -559,7 +559,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -577,7 +577,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
@@ -601,7 +601,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 15;  // 射线的长度
-        b.rayWidth = 2;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -638,7 +638,7 @@ class TowerFinally {
         b.rayClock = 50;
         b.rayLen = 30;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.rayWidth = 10;
+        b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(4000);
         b.rangeR = 120;
@@ -657,7 +657,7 @@ class TowerFinally {
         res.hpInit(3000);
         res.damage = 250;
         res.rangeR = 100;
-        res.barWidth = 10;
+        res.width = 10;
         res.barLen = 20;
         res.r += 2;
         res.speed = 0.2;
@@ -675,7 +675,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.rayLen = 300;
         b.rayClock = 10;
-        b.rayWidth = 5;
+        b.width = 5;
         b.damage = 100;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -693,7 +693,7 @@ class TowerFinally {
         b.damage = 50;
         b.rangeR = 0;
         b.rayLen = 300;
-        b.rayWidth = 2;
+        b.width = 2;
         b.hpInit(10000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
