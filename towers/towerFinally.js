@@ -11,7 +11,7 @@ class TowerFinally {
 
     static mage_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆";
+        b.name = "捷娜<br/>☆";
 
         b.hpInit(200);
         b.rangeR = 100;
@@ -36,7 +36,7 @@ class TowerFinally {
 
     static  warrior_1(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆";
+        res.name = "卡米拉<br/>☆";
         res.hpInit(300);
         res.damage = 2;
         res.rangeR = 100;
@@ -54,7 +54,7 @@ class TowerFinally {
 
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆"
+        b.name = "小光刺<br/>☆"
         b.atkSpeed = 3;
         b.classType = "thief";
         b.rayClock = 50;
@@ -73,7 +73,7 @@ class TowerFinally {
     }
     static archer_1(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆";
+        res.name = "小光弓<br/>☆";
         res.classType = "archer";
         res.hpInit(200);
         res.damage = 1;
@@ -89,7 +89,7 @@ class TowerFinally {
     }
     static knight_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆"
+        b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
         b.rayLen = 30;
@@ -107,7 +107,7 @@ class TowerFinally {
 
     static heller_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆"
+        b.name = "毒奶<br/>☆"
         b.classType = "heller";
         b.damage = 1;
         b.rangeR = 100;
@@ -124,7 +124,7 @@ class TowerFinally {
     }
     static mage_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆☆";
+        b.name = "小王子<br/>☆☆";
         b.hpInit(200);
         b.rangeR = 110;
         b.atkSpeed = 2;
@@ -148,7 +148,7 @@ class TowerFinally {
 
     static  warrior_2(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆☆";
+        res.name = "水龙<br/>☆☆";
         res.classType = "warrior";
         res.hpInit(500);
         res.damage = 5;
@@ -166,7 +166,7 @@ class TowerFinally {
 
     static thief_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆☆"
+        b.name = "岚<br/>☆☆"
         b.atkSpeed = 6;
         b.classType = "thief";
         b.rayClock = 50;
@@ -185,7 +185,7 @@ class TowerFinally {
     }
     static archer_2(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆☆";
+        res.name = "水弓<br/>☆☆";
         res.classType = "archer";
         res.hpInit(300);
         res.damage = 3;
@@ -201,7 +201,7 @@ class TowerFinally {
     }
     static knight_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆☆"
+        b.name = "火龙<br/>☆☆"
         b.classType = "knight";
         b.rangeR = 110;
         b.rayLen = 40;
@@ -219,7 +219,7 @@ class TowerFinally {
 
     static heller_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆☆"
+        b.name = "暗水奶<br/>☆☆"
         b.classType = "heller";
         b.damage = 2;
         b.rangeR = 110;
@@ -236,7 +236,7 @@ class TowerFinally {
     }
     static mage_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆☆☆";
+        b.name = "火双<br/>☆☆☆";
         b.hpInit(300);
         b.rangeR = 120;
         b.atkSpeed = 3;
@@ -260,7 +260,7 @@ class TowerFinally {
 
     static  warrior_3(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆☆☆";
+        res.name = "Jacko<br/>☆☆☆";
         res.classType = "warrior";
         res.hpInit(700);
         res.damage = 7;
@@ -278,7 +278,7 @@ class TowerFinally {
 
     static thief_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆☆☆"
+        b.name = "木席德<br/>☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 8;
         b.rayClock = 50;
@@ -297,7 +297,7 @@ class TowerFinally {
     }
     static archer_3(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆☆☆";
+        res.name = "木蜻蜓<br/>☆☆☆";
         res.classType = "archer";
         res.hpInit(400);
         res.damage = 4;
@@ -313,7 +313,7 @@ class TowerFinally {
     }
     static knight_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆☆☆"
+        b.name = "火呆<br/>☆☆☆"
         b.classType = "knight";
         b.rangeR = 120;
         b.rayLen = 50;
@@ -331,7 +331,7 @@ class TowerFinally {
 
     static heller_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆☆☆"
+        b.name = "EMT<br/>☆☆☆"
         b.classType = "heller";
         b.damage = 3;
         b.rangeR = 120;
@@ -348,7 +348,7 @@ class TowerFinally {
     }
     static mage_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆☆☆☆";
+        b.name = "艾妲<br/>☆☆☆☆";
         b.hpInit(400);
         b.rangeR = 130;
         b.atkSpeed = 4;
@@ -372,7 +372,7 @@ class TowerFinally {
 
     static  warrior_4(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆☆☆☆";
+        res.name = "扎哈克<br/>☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(1000);
         res.atkSpeed = 0.4;
@@ -390,7 +390,7 @@ class TowerFinally {
 
     static thief_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆☆☆☆"
+        b.name = "木25<br/>☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 10;
         b.rayClock = 50;
@@ -409,7 +409,7 @@ class TowerFinally {
     }
     static archer_4(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆☆☆☆";
+        res.name = "光水琴<br/>☆☆☆☆";
         res.classType = "archer";
         res.hpInit(500);
         res.damage = 5;
@@ -425,7 +425,7 @@ class TowerFinally {
     }
     static knight_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆☆☆☆"
+        b.name = "水泰<br/>☆☆☆☆"
         b.r += 7;
         b.classType = "knight";
         b.rangeR = 130;
@@ -444,7 +444,7 @@ class TowerFinally {
 
     static heller_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆☆☆☆"
+        b.name = "圣女<br/>☆☆☆☆"
         b.classType = "heller";
         b.damage = 4;
         b.rangeR = 130;
@@ -462,7 +462,7 @@ class TowerFinally {
 
     static mage_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆☆☆☆☆";
+        b.name = "智武<br/>☆☆☆☆☆";
         b.hpInit(500);
         b.rangeR = 140;
         b.atkSpeed = 5;
@@ -486,7 +486,7 @@ class TowerFinally {
 
     static  warrior_5(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆☆☆☆☆";
+        res.name = "光莉莉<br/>☆☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(1200);
         res.atkSpeed = 0.5;
@@ -504,7 +504,7 @@ class TowerFinally {
 
     static thief_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆☆☆☆☆"
+        b.name = "水镰刀<br/>☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 12;
         b.rayClock = 50;
@@ -523,7 +523,7 @@ class TowerFinally {
     }
     static archer_5(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆☆☆☆☆";
+        res.name = "暗飞<br/>☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(600);
         res.damage = 6;
@@ -539,7 +539,7 @@ class TowerFinally {
     }
     static knight_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆☆☆☆☆"
+        b.name = "火莉莉<br/>☆☆☆☆☆"
         b.classType = "knight";
         b.rangeR = 140;
         b.rayLen = 60;
@@ -557,7 +557,7 @@ class TowerFinally {
 
     static heller_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆☆☆☆☆"
+        b.name = "光兔<br/>☆☆☆☆☆"
         b.classType = "heller";
         b.damage = 5;
         b.rangeR = 140;
@@ -574,7 +574,7 @@ class TowerFinally {
     }
     static mage_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "法师<br/>☆☆☆☆☆☆";
+        b.name = "暗露露卡<br/>☆☆☆☆☆☆";
         b.hpInit(600);
         b.rangeR = 150;
         b.atkSpeed = 6;
@@ -598,7 +598,7 @@ class TowerFinally {
 
     static  warrior_6(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "战士<br/>☆☆☆☆☆☆";
+        res.name = "史瑞杰思<br/>☆☆☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(1500);
         res.atkSpeed = 0.8;
@@ -616,7 +616,7 @@ class TowerFinally {
 
     static thief_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "刺客<br/>☆☆☆☆☆☆"
+        b.name = "血卡<br/>☆☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 15;
         b.rayClock = 50;
@@ -635,7 +635,7 @@ class TowerFinally {
     }
     static archer_6(world) {
         let res = new TowerBoomerang(0, 0, world);
-        res.name = "弓手<br/>☆☆☆☆☆☆";
+        res.name = "芙兰<br/>☆☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(700);
         res.damage = 10;
@@ -651,7 +651,7 @@ class TowerFinally {
     }
     static knight_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "骑士<br/>☆☆☆☆☆☆"
+        b.name = "水呆<br/>☆☆☆☆☆☆"
         b.classType = "knight"; 
         b.rangeR = 150;
         b.rayLen = 80;
@@ -669,7 +669,7 @@ class TowerFinally {
 
     static heller_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "奶妈<br/>☆☆☆☆☆☆"
+        b.name = "YMD<br/>☆☆☆☆☆☆"
         b.classType = "heller";
         b.damage = 8;
         b.rangeR = 150;
