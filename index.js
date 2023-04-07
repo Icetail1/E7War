@@ -521,14 +521,7 @@ function endlessMode(mode, haveGroup = true) {
             let priceB = world.mainLevel * 10;
             // 升本按钮
             let levelupB = document.createElement("button");
-            if (world.user.money < priceB ) {
-                levelupB.setAttribute("disabled", "disabled");
-            }
-            else {
-                levelupB.removeAttribute("disabled");
-            }
-
-            
+           
             levelupB.id = "levelupB";        
             levelupB.innerText = "升本并刷新"+ priceB ;
             levelupB.addEventListener("click", () => {
@@ -804,8 +797,16 @@ let refreshBoxPanel = setInterval(() => {
         world.jiban=world.jibanSelect();
         // 右侧塔楼列表
         let towerBtnArr = document.getElementsByClassName(btnClassName);
-　　　　let refreshBtn = document.getElementById("refreshB");
+　　　　  let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
+        let priceB = world.mainLevel * 10;
+        if (world.user.money < priceB ) {
+                levelupBtn.setAttribute("disabled", "disabled");
+            }
+            else {
+                levelupBtn.removeAttribute("disabled");
+            }
+
         if (world.user.money < 2) {
                 refreshBtn.setAttribute("disabled", "disabled");
             }
