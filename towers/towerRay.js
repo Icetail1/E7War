@@ -32,7 +32,7 @@ class TowerRay extends Tower {
         this.rayThrowAble = true;
         this.rayRepel = 0;  // 该光子弹的击退能力
         this.rayColor = MyColor.GRAY();
-        this.rayWidth = 3;
+        this.width = 3;
     }
 
     /**
@@ -68,7 +68,7 @@ class TowerRay extends Tower {
                 }
             }
             let e = new EffectLine(line.PosStart, line.PosEnd);
-            e.initLineStyle(this.rayColor, this.rayWidth);
+            e.initLineStyle(this.rayColor, this.width);
             e.duration = 50;
             this.world.addEffect(e);
             // new Audio("sound/发射音效/高科技塔发射.mp3").play()
@@ -197,7 +197,7 @@ class TowerRay extends Tower {
         // 渲染子弹
         for (let b of this.rayBullys) {
             b.strokeColor = this.rayColor;
-            b.strokeWidth = this.rayWidth;
+            b.strokeWidth = this.width;
             b.render(ctx);
         }
     }
