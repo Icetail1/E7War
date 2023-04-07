@@ -99,5 +99,6 @@ class TowerBoomerang extends Tower {
         line.strokeWidth = 0.1;
         line.strokeColor = this.bar.strokeColor;
         line.render(ctx)
+        this.bar.strokeWidth = this.width;
     }
 }
