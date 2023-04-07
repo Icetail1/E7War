@@ -59,7 +59,7 @@ class MonsterFinally {
         m.accelerationV = 0.1;
         m.maxSpeedN = 10;
         m.imgIndex = 25;
-        m.comment = "比普通冲锋加速的更快";
+        m.comment = "比普通鼠鼠加速的更快";
         return m;
     }
 
