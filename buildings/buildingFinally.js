@@ -9,10 +9,7 @@ class BuildingFinally {
         res.name = "大本";
         res.r = 20;
         res.hpInit(1000);
-
-        res.bodyStrokeColor = new MyColor(0, 0, 0, 1);
         res.bodyStrokeWidth = 5;
-        res.bodyColor = new MyColor(50, 50, 50, 1);
         return res;
     }
 
