@@ -18,20 +18,20 @@ class TowerBoomerang extends Tower {
         this.atkSpeed = 0.5;  // 棒子自转角速度 弧度/tick
 
         this.barDirect = Vector.randCircle(); // 棒子的方向向量
-        this.bar = this.initBar(this.rayLen,this.width);
+        this.bar = this.initBar();
     }
 
     /**
      * 初始化一个棒子
      */
-    initBar(rayLen,width) {
+    initBar() {
         let barCenterLoc = this.pos.plus(Vector.randCircle().mul(this.barDis));
-        let p1 = barCenterLoc.plus(this.barDirect.mul(rayLen));
-        let p2 = barCenterLoc.sub(this.barDirect.mul(rayLen));
+        let p1 = barCenterLoc.plus(this.barDirect.mul(this.rayLen));
+        let p2 = barCenterLoc.sub(this.barDirect.mul(this.rayLen));
 
         let barLine = new Line(p1, p2);
         barLine.strokeColor = new MyColor(255, 124, 36, 0.8);
-        barLine.strokeWidth = width;
+        barLine.strokeWidth = this.width;
         // console.log(barLine);
         return barLine;
     }
