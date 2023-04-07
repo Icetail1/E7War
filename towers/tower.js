@@ -41,6 +41,23 @@ class Tower extends CircleObject {
         this.level = 1 ;//level
         this.classType = "knight"; //level
         this.threeKnightBuff = false;
+        this.sixKnightBuff = false;
+        
+        this.twoArcherBuff = false;
+        this.fourArcherBuff = false;
+        this.sixArcherBuff = false;
+        
+        this.twoThiefBuff = false;
+        this.fourThiefBuff = false;
+        this.sixThiefBuff = false;
+        
+        this.twoWarriorBuff = false;
+        this.fourWarriorrBuff = false;
+        this.sixWarriorBuff = false;
+        
+        this.twoMageBuff = false;
+        this.fourMageBuff = false;
+        this.sixMageBuff = false;
         this.levelUpArr = [  // 这个炮塔接下来可以升级成什么建筑
         ];
         this.levelDownGetter = null;
