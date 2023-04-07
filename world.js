@@ -533,7 +533,7 @@ class World {
                 let m = choice(MonsterAllArr)(this);
                 if (this.mode === "easy") {
                     m = choice(MonsterEasyArr)(this);
-                    m.hpInit(m.maxHp + Functions.tickMonsterHpAddedEasy(this.monsterFlow.level - 1));
+                    m.hpInit(m.maxHp + Functions.levelMonsterHpAddedEasy(this.monsterFlow.level - 1));
                     m.addPrice += Functions.levelAddPrice(this.monsterFlow.level - 1);
                 } else if (this.mode === "normal") {
                     m.hpInit(m.maxHp + Functions.levelMonsterHpAddedNormal(this.monsterFlow.level - 1));
@@ -544,7 +544,7 @@ class World {
                         m = choice(Monster10BeforeArr)(this);
                     }
 
-                    m.hpInit(m.maxHp + Functions.tickMonsterHpAddedHard(this.monsterFlow.level - 1));
+                    m.hpInit(m.maxHp + Functions.levelMonsterHpAddedHard(this.monsterFlow.level - 1));
                     m.colishDamage += Functions.levelCollideAddedHard(this.time / 500);
                     m.addPrice += Functions.levelAddPriceHard(this.monsterFlow.level - 1);
                 }
