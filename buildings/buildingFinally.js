@@ -10,6 +10,7 @@ class BuildingFinally {
         res.r = 20;
         res.hpInit(1000);
         res.bodyStrokeWidth = 5;
+        res.imgIndex =36;
         return res;
     }
 
