@@ -184,7 +184,7 @@ class TowerRay extends Tower {
                     }
                     // 击退能力
                     if (this.rayRepel !== 0) {
-                        m.pos = m.pos.copy().plus(br.atkSpeed.mul(this.rayRepel));
+                        m.pos = m.pos.copy().plus(br.speed.mul(this.rayRepel));
                     }
                 }
             }
