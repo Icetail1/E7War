@@ -20,7 +20,6 @@ class TowerRay extends Tower {
         this.targetLiveTime = 0;  // 锁定目标的时间
 
         this.attackFunc = this.attack;
-        this.scanningSpeed = 0.01;  // 旋转角速度 倍数
 
         this.speed = 0;  // 射线向前前进的速度
         this.rayNum = 1;  // 射线的数量
@@ -96,7 +95,7 @@ class TowerRay extends Tower {
      */
     scanningAttack() {
         // 旋转自动
-        let theta = this.scanningSpeed * this.liveTime;
+        let theta = this.speed *0.01 *this.liveTime;
         this.dirction = new Vector(Math.sin(theta), Math.cos(theta));
         // 进攻目标
         this.shoot();
