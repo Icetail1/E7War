@@ -67,7 +67,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 30;
         b.price = 300;
-        b.damage = 0.1;
+        b.damage = 10;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -179,6 +179,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 20;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -290,6 +291,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 30;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -321,7 +323,7 @@ class TowerFinally {
         b.hpInit(2000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
-        b.atkSpeed = 1;
+        b.atkSpeed = 3;
         b.price = 800;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
@@ -340,25 +342,24 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
-        b.atkSpeed = 1;
+        b.atkSpeed = 3;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
     static mage_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆";
-        b.hpInit(5000);
-        b.rangeR = 150;
-        b.r += 1;
-        b.atkSpeed = 10;
+        b.hpInit(400);
+        b.rangeR = 130;
+        b.atkSpeed = 4;
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 15;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 15;  // 射线的长度
-        b.width = 2;
+        b.rayLen = 25;  // 射线的长度
+        b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -373,12 +374,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士<br/>☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(3000);
-        res.atkSpeed = 1;
-        res.rayLen=1;
-        res.damage = 100;
-        res.rangeR = 120;
-        res.r += 2;
+        res.hpInit(1000);
+        res.atkSpeed = 0.4;
+        res.rayLen=4;
+        res.width =4;
+        res.damage = 9;
+        res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -391,20 +392,18 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆☆☆☆"
         b.classType = "thief";
-        b.r += 5;
-        b.atkSpeed = 8;
+        b.atkSpeed = 10;
         b.rayClock = 50;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 4;
         b.rayRepel = 0.1;
-        b.hpInit(4000);
-        b.rangeR = 120;
+        b.hpInit(200);
+        b.rangeR = 130;
         b.attackFunc = b.gerAttack;
-        b.levelDownGetter = TowerFinally.TraditionalCannon_Middle;
-        b.levelUpArr = [TowerFinally.AirCannon_2];
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 40;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -412,13 +411,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手<br/>☆☆☆☆";
         res.classType = "archer";
-        res.hpInit(3000);
-        res.damage = 250;
-        res.rangeR = 100;
-        res.width = 10;
-        res.rayLen = 20;
-        res.r += 2;
-        res.atkSpeed = 0.2;
+        res.hpInit(500);
+        res.damage = 5;
+        res.rangeR = 130;
+        res.width = 5;
+        res.rayLen = 8;
+        res.atkSpeed = 0.8;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -430,16 +428,16 @@ class TowerFinally {
         b.name = "骑士<br/>☆☆☆☆"
         b.r += 7;
         b.classType = "knight";
-        b.rangeR = 250;
-        b.rayLen = 300;
+        b.rangeR = 130;
+        b.rayLen = 55;
         b.rayClock = 10;
-        b.width = 5;
-        b.damage = 100;
-        b.hpInit(10000);
+        b.width = 4;
+        b.damage = 5;
+        b.hpInit(3000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
-        b.atkSpeed = 1;
+        b.atkSpeed = 4;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -448,17 +446,16 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈<br/>☆☆☆☆"
         b.classType = "heller";
-        b.r += 8;
-        b.damage = 50;
-        b.rangeR = 0;
-        b.rayLen = 300;
-        b.width = 2;
-        b.hpInit(10000);
+        b.damage = 4;
+        b.rangeR = 130;
+        b.rayLen = 55;
+        b.width = 5;
+        b.hpInit(1800);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
-        b.atkSpeed = 1;
+        b.atkSpeed = 4;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -466,18 +463,17 @@ class TowerFinally {
     static mage_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆☆";
-        b.hpInit(5000);
-        b.rangeR = 150;
-        b.r += 1;
-        b.atkSpeed = 10;
+        b.hpInit(500);
+        b.rangeR = 140;
+        b.atkSpeed = 5;
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 20;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 15;  // 射线的长度
-        b.width = 2;
+        b.rayLen = 30;  // 射线的长度
+        b.width = 5;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -492,12 +488,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士<br/>☆☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(3000);
-        res.atkSpeed = 1;
-        res.rayLen=1;
-        res.damage = 100;
-        res.rangeR = 120;
-        res.r += 2;
+        res.hpInit(1200);
+        res.atkSpeed = 0.5;
+        res.rayLen=5;
+        res.damage = 10;
+        res.rangeR = 140;
+        res.width =5;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -510,20 +506,18 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆☆☆☆☆"
         b.classType = "thief";
-        b.r += 5;
-        b.atkSpeed = 8;
+        b.atkSpeed = 12;
         b.rayClock = 50;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 12;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 5;
         b.rayRepel = 0.1;
-        b.hpInit(4000);
-        b.rangeR = 120;
+        b.hpInit(250);
+        b.rangeR = 130;
         b.attackFunc = b.gerAttack;
-        b.levelDownGetter = TowerFinally.TraditionalCannon_Middle;
-        b.levelUpArr = [TowerFinally.AirCannon_2];
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 50;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -531,13 +525,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手<br/>☆☆☆☆☆";
         res.classType = "archer";
-        res.hpInit(3000);
-        res.damage = 250;
-        res.rangeR = 100;
-        res.width = 10;
-        res.rayLen = 20;
-        res.r += 2;
-        res.atkSpeed = 0.2;
+        res.hpInit(600);
+        res.damage = 6;
+        res.rangeR = 140;
+        res.width = 6;
+        res.rayLen = 10;
+        res.atkSpeed = 1;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -548,17 +541,16 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士<br/>☆☆☆☆☆"
         b.classType = "knight";
-        b.r += 7;
-        b.rangeR = 250;
-        b.rayLen = 300;
+        b.rangeR = 140;
+        b.rayLen = 60;
         b.rayClock = 10;
         b.width = 5;
-        b.damage = 100;
-        b.hpInit(10000);
+        b.damage = 6;
+        b.hpInit(4000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
-        b.atkSpeed = 1;
+        b.atkSpeed = 5;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -567,35 +559,33 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈<br/>☆☆☆☆☆"
         b.classType = "heller";
-        b.r += 8;
-        b.damage = 50;
-        b.rangeR = 0;
-        b.rayLen = 300;
-        b.width = 2;
-        b.hpInit(10000);
+        b.damage = 5;
+        b.rangeR = 140;
+        b.rayLen = 60;
+        b.width = 6;
+        b.hpInit(2000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
-        b.atkSpeed = 1;
+        b.atkSpeed = 5;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
     static mage_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆☆☆☆";
-        b.hpInit(5000);
+        b.hpInit(600);
         b.rangeR = 150;
-        b.r += 1;
-        b.atkSpeed = 10;
+        b.atkSpeed = 6;
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 30;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 15;  // 射线的长度
-        b.width = 2;
+        b.rayLen = 50;  // 射线的长度
+        b.width = 10;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -610,12 +600,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士<br/>☆☆☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(3000);
-        res.atkSpeed = 1;
-        res.rayLen=1;
-        res.damage = 100;
-        res.rangeR = 120;
-        res.r += 2;
+        res.hpInit(1500);
+        res.atkSpeed = 0.8;
+        res.rayLen=8;
+        res.width =8;
+        res.damage = 15;
+        res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -628,20 +618,18 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆☆☆☆☆☆"
         b.classType = "thief";
-        b.r += 5;
-        b.atkSpeed = 8;
+        b.atkSpeed = 15;
         b.rayClock = 50;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 15;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
         b.rayRepel = 0.1;
-        b.hpInit(4000);
-        b.rangeR = 120;
+        b.hpInit(300);
+        b.rangeR = 150;
         b.attackFunc = b.gerAttack;
-        b.levelDownGetter = TowerFinally.TraditionalCannon_Middle;
-        b.levelUpArr = [TowerFinally.AirCannon_2];
         b.imgIndex = 30;
         b.price = 300;
+        b.damage = 60;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -649,13 +637,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手<br/>☆☆☆☆☆☆";
         res.classType = "archer";
-        res.hpInit(3000);
-        res.damage = 250;
-        res.rangeR = 100;
+        res.hpInit(700);
+        res.damage = 10;
+        res.rangeR = 150;
         res.width = 10;
-        res.rayLen = 20;
-        res.r += 2;
-        res.atkSpeed = 0.2;
+        res.rayLen = 15;
+        res.atkSpeed = 1.5;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -665,18 +652,17 @@ class TowerFinally {
     static knight_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士<br/>☆☆☆☆☆☆"
-        b.classType = "knight";
-        b.r += 7;
-        b.rangeR = 250;
-        b.rayLen = 300;
+        b.classType = "knight"; 
+        b.rangeR = 150;
+        b.rayLen = 80;
         b.rayClock = 10;
-        b.width = 5;
-        b.damage = 100;
-        b.hpInit(10000);
+        b.width = 8;
+        b.damage = 8;
+        b.hpInit(5000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.price = 800;
-        b.atkSpeed = 1;
+        b.atkSpeed = 6;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -685,17 +671,16 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈<br/>☆☆☆☆☆☆"
         b.classType = "heller";
-        b.r += 8;
-        b.damage = 50;
-        b.rangeR = 0;
-        b.rayLen = 300;
-        b.width = 2;
-        b.hpInit(10000);
+        b.damage = 8;
+        b.rangeR = 150;
+        b.rayLen = 80;
+        b.width = 8;
+        b.hpInit(3000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
         b.price = 600;
-        b.atkSpeed = 1;
+        b.atkSpeed = 8;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
