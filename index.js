@@ -137,10 +137,6 @@ function helpInterface() {
  */
 function wikiInterface() {
     let thisInterface = document.querySelector(".wiki-interface");
-    thisInterface.querySelector(".cannonList").addEventListener("click", () => {
-        gotoPage("cannon-interface");
-        cannonInterface();
-    });
     thisInterface.querySelector(".monsterList").addEventListener("click", () => {
         gotoPage("monsters-interface");
         monstersInterface();
@@ -150,86 +146,6 @@ function wikiInterface() {
     });
 }
 
-/**
- * 炮塔大全界面逻辑
- */
-function cannonInterface() {
-    let thisInterface = document.querySelector(".cannon-interface");
-    thisInterface.querySelector(".backPage").addEventListener("click", () => {
-        gotoPage("wiki-interface");
-    });
-    let contentEle = thisInterface.querySelector(".content");
-    let worldVoid = new World(100, 100);
-
-
-    if (contentEle.children.length === 0) {
-        let allTowerArr = [];
-        let towerFunc = TowerFinally.BasicCannon;
-        let dfs = (tf) => {
-            let t = tf(worldVoid);
-            allTowerArr.push(t);
-            if (t.levelUpArr === null) {
-                return;
-            }
-            for (let ntf of t.levelUpArr) {
-                dfs(ntf);
-            }
-        };
-        dfs(towerFunc);
-
-        for (let towerObj of allTowerArr) {
-            // 炮塔div
-            let towerEle = document.createElement("div");
-            towerEle.classList.add("tower");
-            // 标题
-            let title = document.createElement("h3");
-            title.innerText = towerObj.name;
-            towerEle.appendChild(title);
-            // 贴图
-            let towerImg = document.createElement("div");
-            towerImg.style.backgroundImage = `url('towers/imgs/towers.png')`;
-            towerImg.style.width = TOWER_IMG_PRE_WIDTH + "px";
-            towerImg.style.height = TOWER_IMG_PRE_HEIGHT + "px";
-            let diffPos = towerObj.getImgStartPosByIndex(towerObj.imgIndex);
-            towerImg.style.backgroundPositionX = -diffPos.x + "px";
-            towerImg.style.backgroundPositionY = -diffPos.y + "px";
-            towerImg.style.margin = "0 auto";
-            towerEle.appendChild(towerImg);
-            // 数据域
-            let data = document.createElement("div");
-            // 射程、子弹速度、血量、攻击间歇时间、一次性发射子弹数量
-            let line = document.createElement("p");
-            line.innerText = `射程：${towerObj.rangeR}px`;
-            data.appendChild(line);
-            line = document.createElement("p");
-            line.innerText = `子弹速度：${towerObj.bullySpeed}`;
-            data.appendChild(line);
-
-            line = document.createElement("p");
-            line.innerText = `血量：${towerObj.rangeR}`;
-            data.appendChild(line);
-
-            line = document.createElement("p");
-            line.innerText = `攻击间歇时间：${towerObj.clock}`;
-            data.appendChild(line);
-            line = document.createElement("p");
-            line.innerText = `价格：${towerObj.price}`;
-            data.appendChild(line);
-
-            line = document.createElement("p");
-            line.innerText = `详细信息：${towerObj.comment}`;
-            data.appendChild(line);
-
-            towerEle.appendChild(data);
-            // 概述
-            let common = document.createElement("div");
-            towerEle.appendChild(common);
-
-            contentEle.appendChild(towerEle);
-        }
-    }
-
-}
 
 /**
  * 怪物大全界面逻辑
