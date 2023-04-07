@@ -41,6 +41,7 @@ class TowerFinally {
         res.damage = 2;
         res.rangeR = 100;
         res.atkSpeed = 0.1;
+        res.width = 1;
         res.rayLen=1;
         res.bar = res.initBar();
         res.imgIndex = 2;
@@ -130,7 +131,7 @@ class TowerFinally {
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 5;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 25;  // 射线的长度
@@ -153,7 +154,8 @@ class TowerFinally {
         res.damage = 5;
         res.rangeR = 110;
         res.atkSpeed = 0.2;
-        res.rayLen=1;
+        res.rayLen=2;
+        res.width = 2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -234,18 +236,17 @@ class TowerFinally {
     static mage_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "法师<br/>☆☆☆";
-        b.hpInit(5000);
-        b.rangeR = 150;
-        b.r += 1;
-        b.atkSpeed = 10;
+        b.hpInit(300);
+        b.rangeR = 120;
+        b.atkSpeed = 3;
         b.rayClock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 10;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 15;  // 射线的长度
-        b.width = 2;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 3;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 800;
@@ -260,12 +261,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "战士<br/>☆☆☆";
         res.classType = "warrior";
-        res.hpInit(3000);
-        res.damage = 100;
-        res.atkSpeed = 1;
-        res.rayLen=1;
+        res.hpInit(700);
+        res.damage = 7;
+        res.atkSpeed = 0.3;
+        res.rayLen= 3;
+        res.width = 3;
         res.rangeR = 120;
-        res.r += 2;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 190;
@@ -278,18 +279,15 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "刺客<br/>☆☆☆"
         b.classType = "thief";
-        b.r += 5;
         b.atkSpeed = 8;
         b.rayClock = 50;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 8;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 3;
         b.rayRepel = 0.1;
-        b.hpInit(4000);
+        b.hpInit(150);
         b.rangeR = 120;
         b.attackFunc = b.gerAttack;
-        b.levelDownGetter = TowerFinally.TraditionalCannon_Middle;
-        b.levelUpArr = [TowerFinally.AirCannon_2];
         b.imgIndex = 30;
         b.price = 300;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
@@ -299,13 +297,12 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "弓手<br/>☆☆☆";
         res.classType = "archer";
-        res.hpInit(3000);
-        res.damage = 250;
-        res.rangeR = 100;
-        res.width = 10;
-        res.rayLen = 20;
-        res.r += 2;
-        res.atkSpeed = 0.2;
+        res.hpInit(400);
+        res.damage = 4;
+        res.rangeR = 120;
+        res.width = 3;
+        res.rayLen = 6;
+        res.atkSpeed = 0.6;
         res.bar = res.initBar();
         res.imgIndex = 2;
         res.price = 300;
@@ -316,13 +313,12 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "骑士<br/>☆☆☆"
         b.classType = "knight";
-        b.r += 7;
-        b.rangeR = 250;
-        b.rayLen = 300;
+        b.rangeR = 120;
+        b.rayLen = 50;
         b.rayClock = 10;
-        b.width = 5;
-        b.damage = 100;
-        b.hpInit(10000);
+        b.width = 3;
+        b.damage = 4;
+        b.hpInit(2000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 57;
         b.atkSpeed = 1;
@@ -335,12 +331,11 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "奶妈<br/>☆☆☆"
         b.classType = "heller";
-        b.r += 8;
-        b.damage = 50;
-        b.rangeR = 0;
-        b.rayLen = 300;
-        b.width = 2;
-        b.hpInit(10000);
+        b.damage = 3;
+        b.rangeR = 120;
+        b.rayLen = 50;
+        b.width = 4;
+        b.hpInit(1500);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 57;
