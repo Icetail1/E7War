@@ -509,16 +509,16 @@ function endlessMode(mode, haveGroup = true) {
             // 刷新按钮
             let refreshB = document.createElement("button");
             refreshB.id = "refreshB";
-            refreshB.innerText = "刷新/100";
+            refreshB.innerText = "刷新/2";
             refreshB.addEventListener("click", () => {
-                 world.user.money -= 100;
+                 world.user.money -= 2;
                  panelEle.style.display = "none";
                  showInitPanel();
                  changed= true;
             });
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
-            let priceB = world.mainLevel * 100;
+            let priceB = world.mainLevel * 10;
             // 升本按钮
             let levelupB = document.createElement("button");
             if (world.user.money < priceB ) {
@@ -812,7 +812,7 @@ let refreshBoxPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
-        if (world.user.money < 100) {
+        if (world.user.money < 2) {
                 refreshBtn.setAttribute("disabled", "disabled");
             }
             else {
