@@ -425,10 +425,10 @@ function endlessMode(mode, haveGroup = true) {
         if (panelEle.innerHTML === "") {
             let thingsFuncArr = [];  // 即将添加的按钮数组
             let pSix=0+Math.floor(world.mainLevel/5)*5;
-            let pFive=0 +Math.floor(world.mainLevel/4)*10;
-            let pFour=0 +Math.floor(world.mainLevel/3)*10;
-            let pThree=5+Math.floor(world.mainLevel/2)*5;
-            let pTwo= 10 +Math.floor(world.mainLevel)*5;
+            let pFive=0 +Math.floor(world.mainLevel/4)*5;
+            let pFour=0 +Math.floor(world.mainLevel/3)*4;
+            let pThree=5+Math.floor(world.mainLevel/2)*3;
+            let pTwo= 10 +Math.floor(world.mainLevel)*2;
             let pOne= 100-pTwo-pThree-pFour-pFive-pSix;
             for(let i=0;i<6;i++){
                 let random= Math.floor(Math.random()*100)+1; 
