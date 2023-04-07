@@ -423,7 +423,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_1);
+                        thingsFuncArr.push(TowerFinally.mage_1);
                         break;
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_1);
@@ -445,7 +445,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_2);
+                        thingsFuncArr.push(TowerFinally.mage_2);
                         break;        
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_2);
@@ -467,7 +467,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_3);
+                        thingsFuncArr.push(TowerFinally.mage_3);
                         break;        
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_3);
@@ -489,7 +489,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_4);
+                        thingsFuncArr.push(TowerFinally.mage_4);
                         break;        
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_4);
@@ -511,7 +511,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_5);
+                        thingsFuncArr.push(TowerFinally.mage_5);
                         break;        
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_5);
@@ -533,7 +533,7 @@ function endlessMode(mode, haveGroup = true) {
                     let select=Math.floor(Math.random()*6);
                     switch(select) {
                     case 0:
-                        thingsFuncArr.push(TowerFinally.witcher_6);
+                        thingsFuncArr.push(TowerFinally.mage_6);
                         break;        
                     case 1:        
                         thingsFuncArr.push(TowerFinally.warrior_6);
