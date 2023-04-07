@@ -8,7 +8,7 @@ class BuildingFinally {
         let res = new Building(Vector.zero(), world);
         res.name = "大本";
         res.r = 20;
-        res.hpInit(10000);
+        res.hpInit(1000);
 
         res.bodyStrokeColor = new MyColor(0, 0, 0, 1);
         res.bodyStrokeWidth = 5;
