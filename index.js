@@ -799,7 +799,7 @@ let refreshBoxPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　  let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
-        let priceB = Math.pow(world.mainLevel,2) * 50;
+        let priceB = Math.pow(world.mainLevel,2) * 20;
         if (world.user.money < priceB ) {
                 levelupBtn.setAttribute("disabled", "disabled");
             }
