@@ -14,7 +14,7 @@ class TowerFinally {
         b.name = "捷娜<br/>☆";
 
         b.hpInit(200);
-        b.rangeR = 100;
+        b.rangeR = 120;
         b.atkSpeed = 1;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -22,7 +22,7 @@ class TowerFinally {
         b.damage = 1;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 20;  // 射线的长度
+        b.rayLen = 30;  // 射线的长度
         b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -62,8 +62,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 1;
         b.rayRepel = 0.1;
-        b.hpInit(50);
-        b.rangeR = 100;
+        b.hpInit(20);
+        b.rangeR = 50;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 2;
         b.price = 2;
@@ -126,7 +126,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "小王子<br/>☆☆";
         b.hpInit(200);
-        b.rangeR = 110;
+        b.rangeR = 140;
         b.atkSpeed = 2;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -134,7 +134,7 @@ class TowerFinally {
         b.damage = 5;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 25;  // 射线的长度
+        b.rayLen = 40;  // 射线的长度
         b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -174,8 +174,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 2;
         b.rayRepel = 0.1;
-        b.hpInit(100);
-        b.rangeR = 110;
+        b.hpInit(40);
+        b.rangeR = 60;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
         b.price = 10;
@@ -238,7 +238,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "火双<br/>☆☆☆";
         b.hpInit(300);
-        b.rangeR = 120;
+        b.rangeR = 160;
         b.atkSpeed = 3;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -246,7 +246,7 @@ class TowerFinally {
         b.damage = 10;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 20;  // 射线的长度
+        b.rayLen = 50;  // 射线的长度
         b.width = 3;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -286,8 +286,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 3;
         b.rayRepel = 0.1;
-        b.hpInit(150);
-        b.rangeR = 120;
+        b.hpInit(60);
+        b.rangeR = 80;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
         b.price = 30;
@@ -350,7 +350,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "艾妲<br/>☆☆☆☆";
         b.hpInit(400);
-        b.rangeR = 130;
+        b.rangeR = 170;
         b.atkSpeed = 4;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -358,7 +358,7 @@ class TowerFinally {
         b.damage = 15;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 25;  // 射线的长度
+        b.rayLen = 55;  // 射线的长度
         b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -398,8 +398,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 4;
         b.rayRepel = 0.1;
-        b.hpInit(200);
-        b.rangeR = 130;
+        b.hpInit(80);
+        b.rangeR = 80;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 20;
         b.price = 40;
@@ -464,7 +464,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "光蜻蜓<br/>☆☆☆☆☆";
         b.hpInit(500);
-        b.rangeR = 140;
+        b.rangeR = 190;
         b.atkSpeed = 5;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -472,7 +472,7 @@ class TowerFinally {
         b.damage = 20;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 30;  // 射线的长度
+        b.rayLen = 60;  // 射线的长度
         b.width = 5;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -512,8 +512,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
         b.rayRepel = 0.1;
-        b.hpInit(250);
-        b.rangeR = 130;
+        b.hpInit(90);
+        b.rangeR = 90;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 26;
         b.price = 60;
@@ -576,7 +576,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "暗露露卡<br/>☆☆☆☆☆☆";
         b.hpInit(600);
-        b.rangeR = 150;
+        b.rangeR = 200;
         b.atkSpeed = 6;
         b.rayClock = 10;
         b.rayNum = 1;
@@ -584,7 +584,7 @@ class TowerFinally {
         b.damage = 30;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 50;  // 射线的长度
+        b.rayLen = 100;  // 射线的长度
         b.width = 10;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
@@ -624,8 +624,8 @@ class TowerFinally {
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
         b.rayRepel = 0.1;
-        b.hpInit(300);
-        b.rangeR = 150;
+        b.hpInit(100);
+        b.rangeR = 100;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 32;
         b.price = 100;
