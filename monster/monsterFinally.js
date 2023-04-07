@@ -81,7 +81,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "炸弹2级";
         m.bodyColor = MyColor.arrTo([90, 90, 30, 1]);
-        m.addPrice += 10;
+        m.addPrice += 1;
         m.speedNumb = 0.55;
         m.bombSelfAble = true;
         m.bombSelfRange = 120;
@@ -96,7 +96,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "炸弹3级";
         m.bodyColor = MyColor.arrTo([150, 150, 50, 1]);
-        m.addPrice += 10;
+        m.addPrice += 1;
         m.speedNumb = 0.6;
         m.bombSelfAble = true;
         m.bombSelfRange = 200;
@@ -114,7 +114,7 @@ class MonsterFinally {
 
         m.bodyColor = MyColor.arrTo([50, 150, 150, 0.5]);
         m.bodyStrokeColor = MyColor.arrTo([5, 15, 15, 1]);
-        m.addPrice += 10;
+        m.addPrice += 1;
         m.speedNumb = 0.4;
         m.r = 30;
 
@@ -128,7 +128,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "黑洞";
         m.throwAble = true;
-        m.addPrice += 10;
+        m.addPrice += 3;
         m.speedNumb = 0.2;
         m.bodyColor = MyColor.arrTo([0, 0, 0, 1]);
         m.bodyStrokeColor = MyColor.arrTo([0, 0, 0, 1]);
@@ -148,7 +148,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "排斥人";
         m.throwAble = true;
-        m.addPrice += 10;
+        m.addPrice += 2;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([50, 30, 50, 1]);
         m.bodyStrokeColor = MyColor.arrTo([0, 0, 0, 1]);
@@ -167,7 +167,7 @@ class MonsterFinally {
     static Glans(world) {
         let m = Monster.randInit(world);
         m.name = "激光防御";
-        m.addPrice += 10;
+        m.addPrice += 6;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 1]);
         m.r = 30;
@@ -189,7 +189,7 @@ class MonsterFinally {
     static Medic(world) {
         let m = Monster.randInit(world);
         m.name = "加血辅助";
-        m.addPrice += 10;
+        m.addPrice += 1;
         m.speedNumb = 0.5;
         m.bodyColor = MyColor.arrTo([105, 117, 60, 1]);
         m.r = 30;
@@ -213,7 +213,7 @@ class MonsterFinally {
     static Medic_S(world) {
         let m = Monster.randInit(world);
         m.name = "加比例血辅助";
-        m.addPrice += 10;
+        m.addPrice += 2;
         m.speedNumb = 0.5;
         m.bodyColor = MyColor.arrTo([92, 117, 79, 1]);
         m.r = 30;
@@ -237,7 +237,7 @@ class MonsterFinally {
     static Medic_M(world) {
         let m = Monster.randInit(world);
         m.name = "加上限血辅助";
-        m.addPrice += 10;
+        m.addPrice += 3;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([120, 188, 85, 1]);
         m.r = 40;
@@ -261,7 +261,7 @@ class MonsterFinally {
     static SpeedAdder(world) {
         let m = Monster.randInit(world);
         m.name = "加速辅助";
-        m.addPrice += 10;
+        m.addPrice += 4;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([68, 230, 249, 1]);
         m.haveGain = true;
@@ -285,7 +285,7 @@ class MonsterFinally {
     static AttackAdder(world) {
         let m = Monster.randInit(world);
         m.name = "加攻击辅助";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 0.55;
         m.bodyColor = MyColor.arrTo([255, 198, 109, 1]);
         m.haveGain = true;
@@ -414,7 +414,7 @@ class MonsterFinally {
     static Slime_L(world) {
         let m = Monster.randInit(world);
         m.name = "大史莱姆";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 0.4;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -431,7 +431,7 @@ class MonsterFinally {
     static Slime_M(world) {
         let m = Monster.randInit(world);
         m.name = "中史莱姆";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 0.6;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -449,7 +449,7 @@ class MonsterFinally {
     static Slime_S(world) {
         let m = Monster.randInit(world);
         m.name = "小史莱姆";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 0.8;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -463,7 +463,7 @@ class MonsterFinally {
     static witch_N(world) {
         let m = Monster.randInit(world);
         m.name = "召唤师";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
@@ -484,7 +484,7 @@ class MonsterFinally {
     static bat(world) {
         let m = Monster.randInit(world);
         m.name = "小怪物";
-        m.addPrice += 10;
+        m.addPrice += 5;
         m.speedNumb = 3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
@@ -555,7 +555,7 @@ class MonsterFinally {
         m.r = 35;
         m.speedNumb = 1;
         m.imgIndex = 24;
-        m.addPrice = 50;
+        m.addPrice = 5;
         m.comment = "像忍者一样，一旦发现了你的建筑，便会迅速对你的建筑进行收割，像忍者一样来回穿过你的建筑，对你的建筑造成伤害";
         return m;
     }
@@ -564,7 +564,7 @@ class MonsterFinally {
         let m = MonsterTerminator.randInit(world);
         m.name = "恐怖机器人";
         m.imgIndex = 25;
-        m.addPrice = 600;
+        m.addPrice = 8;
         m.comment = "一种由金属打造而成的恐怖机器，威力小的子弹几乎对他没有伤害。具有很强的近战能力。";
         return m;
     }
