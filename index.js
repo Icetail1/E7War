@@ -5,6 +5,7 @@
 
 let app = document.querySelector(".gameApp");
 let interfaceArr = app.children;
+let maxMonsterLevel = 0;
 const UP_LEVEL_ICON = new Image();
 UP_LEVEL_ICON.src = "icon/icon_upgrade.png";
 
@@ -99,28 +100,27 @@ function mainInterface() {
  */
 function choiceInterface() {
     let thisInterface = document.querySelector(".modeChoice-interface");
-
+    // 简单
     thisInterface.querySelector(".endlessMode-easy").addEventListener("click", () => {
         gotoPage("war-interface");
         endlessMode("easy");
     });
+    // 普通
     thisInterface.querySelector(".endlessMode-normal").addEventListener("click", () => {
         gotoPage("war-interface");
         endlessMode("normal");
     });
+    // 困难
     thisInterface.querySelector(".endlessMode-hard").addEventListener("click", () => {
         gotoPage("war-interface");
         endlessMode("hard");
     });
-    // 无尽时间模式
-    thisInterface.querySelector(".infiniteTimeMode-easy").addEventListener("click", () => {
-        gotoPage("war-interface");
-        endlessMode("easy", false);
-    });
+    // 无尽
     thisInterface.querySelector(".infiniteTimeMode-hard").addEventListener("click", () => {
         gotoPage("war-interface");
-        endlessMode("hard", false);
+        endlessMode("infinitehard");
     });
+
 
     thisInterface.querySelector(".backPage").addEventListener("click", () => {
         gotoPage("main-interface");
@@ -360,19 +360,37 @@ function endlessMode(mode, haveGroup = true) {
 
     let world = new World(canvasEle.width, canvasEle.height);
     world.resizeCanvas(canvasEle);
-
-    world.mode = mode;
-    if (!haveGroup) {
-        world.haveFlow = false;
-        if (mode === "hard") {
-            world.user.money = 1000;
-        }
+    if(mode != infinitehard){
+        world.mode = mode;
+    }else{
+        world.mode = "hard";
     }
+    if(mode="easy")
+    {
+        maxMonsterLevel=2;
+    }else if(mode="normal")
+    {
+        maxMonsterLevel=4;
+    }else if(mode="hard")
+    {
+        maxMonsterLevel=6;
+    }else{
+        maxMonsterLevel=99999;
+    }
+    
+    
     /**
      * 开启游戏循环迭代
      */
 
     let mainAni = setInterval(() => {
+        if(world.monsterLevel > maxMonsterLevel) {
+            alert("胜利！！！！");
+            location.reload();
+            clearInterval(mainAni);
+        }
+        
+        
         if (!isGamePause) {
             world.goTick();
         }
