@@ -6,7 +6,7 @@ class BuildingFinally {
     // 大本
     static Root(world) {
         let res = new Building(Vector.zero(), world);
-        res.name = "大本";
+        res.name = "Ice";
         res.r = 20;
         res.hpInit(1000);
         res.bodyStrokeWidth = 5;
