@@ -281,13 +281,13 @@ function endlessMode(mode, haveGroup = true) {
     }else{
         world.mode = "hard";
     }
-    if(mode="easy")
+    if(mode==="easy")
     {
-        maxMonsterLevel=20;
-    }else if(mode="normal")
+        maxMonsterLevel=2;
+    }else if(mode==="normal")
     {
-        maxMonsterLevel=40;
-    }else if(mode="hard")
+        maxMonsterLevel=4;
+    }else if(mode==="hard")
     {
         maxMonsterLevel=60;
     }else{
