@@ -47,13 +47,17 @@ function levelUp(val){
      val.hp    *= 2;    
      val.maxHp *= 2;
      val.damage *= 2;
+     val.rangeR *= 1.1;
+     val.atkSpeed *= 1.1; 
      val.r *= 1.1;
   }else
   {
      val.level += 1;
-     val.hp    *= 3;  
-     val.maxHp *= 3;
+     val.hp    *= 2;  
+     val.maxHp *= 2;
      val.damage *= 3;
+     val.rangeR *= 1.2;
+     val.atkSpeed *= 1.2; 
      val.r *= 1.1;
   }
 }
