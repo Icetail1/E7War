@@ -850,7 +850,7 @@ let refreshBoxPanel = setInterval(() => {
               for(let item of world.getAllBuildingArr())
                 {
                    if(item.hp < item.maxHp && item.gameType === "Tower"){
-                        item.hp += 1;
+                        item.hp += 2;
                     }
                 }
 
@@ -863,7 +863,7 @@ let refreshBoxPanel = setInterval(() => {
               for(let item of world.getAllBuildingArr())
                 {
                    if(item.hp < item.maxHp && item.gameType === "Tower"){
-                        item.hp += 3;
+                        item.hp += 1;
                     }
                 }
 
