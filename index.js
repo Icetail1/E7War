@@ -603,6 +603,21 @@ let refreshPanel = setInterval(() => {
                    showBoxPanel();
                    return;
                 }
+                if((getWordCnt(bFunc,world.getAllBuildingArr())+getWordCnt(bFunc,world.box)) === 3 && bFunc.level < 3)
+                    {
+                        for(let item of world.getAllBuildingArr())
+                          {
+                           if (item.name ===addedThing.name && item.level ===addedThing.level )
+                              {
+                                  world.removeTower(item);
+                              }
+                          }
+                        levelUp(bFunc);             
+                        world.box.push(bFunc);
+                        showBoxPanel();
+                        return;
+                    }
+                        
                 let btn = document.createElement('button');
                 btn.classList.add(btnClassName);
                 let b = bFunc;
