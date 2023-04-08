@@ -426,7 +426,6 @@ class TowerFinally {
     static knight_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "水泰<br/>☆☆☆☆"
-        b.r += 7;
         b.classType = "knight";
         b.rangeR = 130;
         b.rayLen = 110;
