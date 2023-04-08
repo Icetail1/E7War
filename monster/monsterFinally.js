@@ -70,7 +70,7 @@ class MonsterFinally {
         m.speedNumb = 0.5;
         m.bombSelfAble = true;
         m.bombSelfRange = 80;
-        m.bombSelfDamage = 200;
+        m.bombSelfDamage = 100;
 
         m.imgIndex = 2;
         m.comment = "死了会爆炸";
@@ -85,7 +85,7 @@ class MonsterFinally {
         m.speedNumb = 0.55;
         m.bombSelfAble = true;
         m.bombSelfRange = 120;
-        m.bombSelfDamage = 800;
+        m.bombSelfDamage = 200;
 
         m.imgIndex = 2;
         m.comment = "爆炸伤害更大";
@@ -99,8 +99,8 @@ class MonsterFinally {
         m.addPrice += 1;
         m.speedNumb = 0.6;
         m.bombSelfAble = true;
-        m.bombSelfRange = 200;
-        m.bombSelfDamage = 5000;
+        m.bombSelfRange = 150;
+        m.bombSelfDamage = 300;
 
         m.imgIndex = 2;
         m.comment = "爆炸伤害更更大";
