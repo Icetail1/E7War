@@ -93,16 +93,19 @@ class TowerFinally {
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.rayLen = 60;
-        b.rayClock = 10;
-        b.width = 1;
         b.damage = 1;
+        b.atkSpeed = 3;
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
+        b.clock = 3;
         b.hpInit(1000);
-        b.atkSpeed = 1;
-        b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 4;
         b.price = 2;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
+        b.audioSrcString = "sound/子弹音效/散弹子弹.mp3";
         return b;
     }
 
