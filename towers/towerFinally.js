@@ -30,7 +30,6 @@ class TowerFinally {
         b.imgIndex = 0;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
-        b.audioSrcString = "sound/发射音效/高科技塔发射.mp3";
         return b;
     }
 
@@ -76,18 +75,17 @@ class TowerFinally {
         b.name = "小光弓<br/>☆";
         b.classType = "archer";
         b.rangeR = 100;
-        b.damage = 0.2;
-        b.atkSpeed = 3;
+        b.damage = 0.5;
+        b.atkSpeed = 1;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
         b.clock = 10;
         b.width = 2;
-        b.rayLen = 10;
+        b.rayLen = 3;
         b.hpInit(100);
         b.imgIndex = 3;
         b.price = 2;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
-        b.audioSrcString = "sound/子弹音效/冰冻.mp3";
         return b;
     }
     static knight_1(world) {
@@ -95,8 +93,8 @@ class TowerFinally {
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.damage = 1;
-        b.atkSpeed = 3;
+        b.damage = 0.5;
+        b.atkSpeed = 1;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
         b.bullyRotate = Math.PI / 10;
@@ -104,12 +102,11 @@ class TowerFinally {
         b.attackBullyNum = 5;
         b.clock = 3;
         b.width = 2;
-        b.rayLen = 10;
+        b.rayLen = 3;
         b.hpInit(1000);
         b.imgIndex = 4;
         b.price = 2;
         b.comment =  `发射频率很快的散弹子弹`;
-        b.audioSrcString = "sound/子弹音效/散弹子弹.mp3";
         return b;
     }
 
@@ -150,7 +147,6 @@ class TowerFinally {
         b.imgIndex = 6;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
-        b.audioSrcString = "sound/发射音效/高科技塔发射.mp3";
         return b;
     }
 
@@ -192,36 +188,42 @@ class TowerFinally {
         return b;
     }
     static archer_2(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "水弓<br/>☆☆";
-        res.classType = "archer";
-        res.hpInit(300);
-        res.damage = 4;
-        res.rangeR = 110;
-        res.width = 8;
-        res.rayLen = 8;
-        res.atkSpeed = 0.4;
-        res.bar = res.initBar();
-        res.imgIndex = 9;
-        res.price = 5;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new TowerBoomerang(0, 0, world);
+        b.name = "水弓<br/>☆☆";
+        b.classType = "archer";
+        b.rangeR = 120;
+        b.damage = 0.7;
+        b.atkSpeed = 3;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.width = 3;
+        b.rayLen = 5;
+        b.hpInit(150);
+        b.imgIndex = 3;
+        b.price = 9;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        return b;
     }
     static knight_2(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "萝季<br/>☆☆"
         b.classType = "knight";
         b.rangeR = 110;
-        b.rayLen = 80;
-        b.rayClock = 10;
-        b.width = 2;
-        b.damage = 2;
-        b.hpInit(1500);
+        b.damage = 0.7;
         b.atkSpeed = 2;
-        b.rayColor = new MyColor(255, 0, 0, 1);
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 6;
+        b.clock = 3;
+        b.width = 2;
+        b.rayLen = 5;
+        b.hpInit(1200);
         b.imgIndex = 10;
         b.price = 5;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
 
@@ -304,36 +306,42 @@ class TowerFinally {
         return b;
     }
     static archer_3(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "木蜻蜓<br/>☆☆☆";
-        res.classType = "archer";
-        res.hpInit(400);
-        res.damage = 6;
-        res.rangeR = 120;
-        res.width = 10;
-        res.rayLen = 10;
-        res.atkSpeed = 0.6;
-        res.bar = res.initBar();
-        res.imgIndex = 15;
-        res.price = 10;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new TowerBoomerang(0, 0, world);
+        b.name = "木蜻蜓<br/>☆☆☆";
+        b.classType = "archer";
+        b.rangeR = 140;
+        b.damage = 1;
+        b.atkSpeed = 4;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.width = 2;
+        b.rayLen = 6;
+        b.hpInit(200);
+        b.imgIndex = 15;
+        b.price = 10;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        return b;
     }
     static knight_3(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "火呆<br/>☆☆☆"
         b.classType = "knight";
-        b.rangeR = 120;
-        b.rayLen = 100;
-        b.rayClock = 10;
-        b.width = 3;
-        b.damage = 4;
-        b.hpInit(2000);
-        b.rayColor = new MyColor(255, 0, 0, 1);
-        b.imgIndex = 16;
+        b.rangeR = 140;
+        b.damage = 1;
         b.atkSpeed = 3;
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
+        b.clock = 3;
+        b.width = 2;
+        b.rayLen = 7;
+        b.hpInit(1400);
+        b.imgIndex = 16;
         b.price = 10;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
 
@@ -416,36 +424,42 @@ class TowerFinally {
         return b;
     }
     static archer_4(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "光水琴<br/>☆☆☆☆";
-        res.classType = "archer";
-        res.hpInit(500);
-        res.damage = 8;
-        res.rangeR = 130;
-        res.width = 15;
-        res.rayLen = 15;
-        res.atkSpeed = 0.8;
-        res.bar = res.initBar();
-        res.imgIndex = 21;
-        res.price = 20;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new TowerBoomerang(0, 0, world);
+        b.name = "光水琴<br/>☆☆☆☆";
+        b.classType = "archer";
+        b.rangeR = 160;
+        b.damage = 1.5;
+        b.atkSpeed = 5;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.width = 5;
+        b.rayLen = 7;
+        b.hpInit(250);
+        b.imgIndex = 21;
+        b.price = 20;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        return b;
     }
     static knight_4(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "水泰<br/>☆☆☆☆"
         b.classType = "knight";
-        b.rangeR = 130;
-        b.rayLen = 110;
-        b.rayClock = 10;
-        b.width = 4;
-        b.damage = 5;
-        b.hpInit(3000);
-        b.rayColor = new MyColor(255, 0, 0, 1);
+        b.rangeR = 160;
+        b.damage = 2;
+        b.atkSpeed = 5;
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
+        b.clock = 3;
+        b.width = 3;
+        b.rayLen = 7;
+        b.hpInit(1600);
         b.imgIndex = 22;
         b.price = 20;
-        b.atkSpeed = 4;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
 
@@ -529,36 +543,43 @@ class TowerFinally {
         return b;
     }
     static archer_5(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "暗飞<br/>☆☆☆☆☆";
-        res.classType = "archer";
-        res.hpInit(600);
-        res.damage = 10;
-        res.rangeR = 140;
-        res.width = 20;
-        res.rayLen = 20;
-        res.atkSpeed = 1;
-        res.bar = res.initBar();
-        res.imgIndex = 27;
-        res.price = 30;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new TowerBoomerang(0, 0, world);
+        b.name = "暗飞<br/>☆☆☆☆☆";
+        b.classType = "archer";
+        b.rangeR = 180;
+        b.damage = 3;
+        b.atkSpeed = 8;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.width = 2;
+        b.rayLen = 8;
+        b.hpInit(300);
+        b.imgIndex = 27;
+        b.price = 30;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        return b;
+
     }
     static knight_5(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "火莉莉<br/>☆☆☆☆☆"
         b.classType = "knight";
-        b.rangeR = 140;
-        b.rayLen = 120;
-        b.rayClock = 10;
-        b.width = 5;
-        b.damage = 6;
-        b.hpInit(4000);
-        b.rayColor = new MyColor(255, 0, 0, 1);
+        b.rangeR = 170;
+        b.damage = 5;
+        b.atkSpeed = 3;
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
+        b.clock = 3;
+        b.width = 2;
+        b.rayLen = 8;
+        b.hpInit(1800);
         b.imgIndex = 28;
         b.price = 30;
-        b.atkSpeed = 5;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
 
@@ -641,36 +662,42 @@ class TowerFinally {
         return b;
     }
     static archer_6(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "芙兰<br/>☆☆☆☆☆☆";
-        res.classType = "archer";
-        res.hpInit(700);
-        res.damage = 15;
-        res.rangeR = 150;
-        res.width = 25;
-        res.rayLen = 25;
-        res.atkSpeed = 1.5;
-        res.bar = res.initBar();
-        res.imgIndex = 33;
-        res.price = 50;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new TowerBoomerang(0, 0, world);
+        b.name = "芙兰<br/>☆☆☆☆☆☆";
+        b.classType = "archer";
+        b.rangeR = 200;
+        b.damage = 6;
+        b.atkSpeed = 10;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.width = 5;
+        b.rayLen = 10;
+        b.hpInit(400);
+        b.imgIndex = 33;
+        b.price = 50;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        return b;
     }
     static knight_6(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "水呆<br/>☆☆☆☆☆☆"
-        b.classType = "knight"; 
-        b.rangeR = 150;
-        b.rayLen = 150;
-        b.rayClock = 10;
-        b.width = 8;
-        b.damage = 8;
-        b.hpInit(5000);
-        b.rayColor = new MyColor(255, 0, 0, 1);
+        b.classType = "knight";
+        b.rangeR = 180;
+        b.damage = 10;
+        b.atkSpeed = 5;
+        b.bullySpeedAddMax = 0.5;
+        b.getmMainBullyFunc = BullyFinally.Bully_M;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
+        b.clock = 3;
+        b.width = 2;
+        b.rayLen = 7;
+        b.hpInit(2000);
         b.imgIndex = 34;
         b.price = 50;
-        b.atkSpeed = 6;
-        b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
+        b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
 
