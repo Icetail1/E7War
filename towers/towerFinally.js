@@ -38,7 +38,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "卡米拉<br/>☆";
         res.hpInit(300);
-        res.damage = 5;
+        res.damage = 3;
         res.rangeR = 100;
         res.atkSpeed = 0.2;
         res.width = 1;
@@ -76,7 +76,7 @@ class TowerFinally {
         res.name = "小光弓<br/>☆";
         res.classType = "archer";
         res.hpInit(100);
-        res.damage = 3;
+        res.damage = 2;
         res.rangeR = 100;
         res.width = 5;
         res.rayLen = 5;
@@ -151,7 +151,7 @@ class TowerFinally {
         res.name = "水龙<br/>☆☆";
         res.classType = "warrior";
         res.hpInit(500);
-        res.damage = 10;
+        res.damage = 6;
         res.rangeR = 110;
         res.atkSpeed = 0.2;
         res.rayLen=2;
@@ -188,7 +188,7 @@ class TowerFinally {
         res.name = "水弓<br/>☆☆";
         res.classType = "archer";
         res.hpInit(300);
-        res.damage = 6;
+        res.damage = 4;
         res.rangeR = 110;
         res.width = 8;
         res.rayLen = 8;
@@ -263,7 +263,7 @@ class TowerFinally {
         res.name = "Jacko<br/>☆☆☆";
         res.classType = "warrior";
         res.hpInit(700);
-        res.damage = 15;
+        res.damage = 8;
         res.atkSpeed = 0.3;
         res.rayLen= 3;
         res.width = 3;
@@ -300,7 +300,7 @@ class TowerFinally {
         res.name = "木蜻蜓<br/>☆☆☆";
         res.classType = "archer";
         res.hpInit(400);
-        res.damage = 8;
+        res.damage = 6;
         res.rangeR = 120;
         res.width = 10;
         res.rayLen = 10;
@@ -378,7 +378,7 @@ class TowerFinally {
         res.atkSpeed = 0.4;
         res.rayLen=4;
         res.width =4;
-        res.damage = 20;
+        res.damage = 10;
         res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 19;
@@ -412,7 +412,7 @@ class TowerFinally {
         res.name = "光水琴<br/>☆☆☆☆";
         res.classType = "archer";
         res.hpInit(500);
-        res.damage = 12;
+        res.damage = 8;
         res.rangeR = 130;
         res.width = 15;
         res.rayLen = 15;
@@ -490,7 +490,7 @@ class TowerFinally {
         res.hpInit(1200);
         res.atkSpeed = 0.5;
         res.rayLen=5;
-        res.damage = 20;
+        res.damage = 15;
         res.rangeR = 140;
         res.width =5;
         res.bar = res.initBar();
@@ -525,7 +525,7 @@ class TowerFinally {
         res.name = "暗飞<br/>☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(600);
-        res.damage = 15;
+        res.damage = 10;
         res.rangeR = 140;
         res.width = 20;
         res.rayLen = 20;
@@ -603,7 +603,7 @@ class TowerFinally {
         res.atkSpeed = 0.8;
         res.rayLen=8;
         res.width =8;
-        res.damage = 30;
+        res.damage = 20;
         res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 31;
@@ -637,7 +637,7 @@ class TowerFinally {
         res.name = "芙兰<br/>☆☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(700);
-        res.damage = 20;
+        res.damage = 15;
         res.rangeR = 150;
         res.width = 25;
         res.rayLen = 25;
