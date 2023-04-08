@@ -81,6 +81,8 @@ class TowerFinally {
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
         b.clock = 10;
+        b.width = 2;
+        b.rayLen = 2;
         b.hpInit(100);
         b.imgIndex = 3;
         b.price = 2;
@@ -101,6 +103,8 @@ class TowerFinally {
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
         b.clock = 3;
+        b.width = 2;
+        b.rayLen = 2;
         b.hpInit(1000);
         b.imgIndex = 4;
         b.price = 2;
