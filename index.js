@@ -283,10 +283,10 @@ function endlessMode(mode, haveGroup = true) {
     }
     if(mode==="easy")
     {
-        maxMonsterLevel=2;
+        maxMonsterLevel=20;
     }else if(mode==="normal")
     {
-        maxMonsterLevel=4;
+        maxMonsterLevel=40;
     }else if(mode==="hard")
     {
         maxMonsterLevel=60;
