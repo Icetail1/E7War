@@ -82,7 +82,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
         b.clock = 10;
         b.width = 2;
-        b.rayLen = 2;
+        b.rayLen = 10;
         b.hpInit(100);
         b.imgIndex = 3;
         b.price = 2;
@@ -104,7 +104,7 @@ class TowerFinally {
         b.attackBullyNum = 5;
         b.clock = 3;
         b.width = 2;
-        b.rayLen = 2;
+        b.rayLen = 10;
         b.hpInit(1000);
         b.imgIndex = 4;
         b.price = 2;
