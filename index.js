@@ -549,6 +549,12 @@ function endlessMode(mode, haveGroup = true) {
             test.innerText = "测试";
             test.addEventListener("click", () => {
                 world.user.money += 10000;
+                for(let item of world.getAllBuildingArr())
+                {
+                   if(item.gameType === "Tower"){
+                        item.MaxHp += 10000;
+                    }
+                }
             });
 
             panelEle.appendChild(test);
@@ -859,7 +865,7 @@ let refreshBoxPanel = setInterval(() => {
     
 
  let hellForThree = setInterval(() => {
-         if (world.hellForSix) {
+         if (world.hellForThree) {
               for(let item of world.getAllBuildingArr())
                 {
                    if(item.hp < item.maxHp && item.gameType === "Tower"){
