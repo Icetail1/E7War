@@ -552,7 +552,7 @@ function endlessMode(mode, haveGroup = true) {
                 for(let item of world.getAllBuildingArr())
                 {
                    if(item.gameType === "Tower"){
-                        item.MaxHp += 10000;
+                        item.maxHp += 10000;
                     }
                 }
             });
@@ -861,7 +861,7 @@ let refreshBoxPanel = setInterval(() => {
                 }
 
          } 
-     }, 100);   
+     }, 300);   
     
 
  let hellForThree = setInterval(() => {
@@ -874,6 +874,6 @@ let refreshBoxPanel = setInterval(() => {
                 }
 
          } 
-     }, 100);  
+     }, 300);  
 
 }
