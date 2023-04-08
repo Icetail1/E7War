@@ -26,7 +26,7 @@ class TowerRay extends Tower {
         this.rayDeviationRotate = 0;  // 子弹平面随机偏移 方向方面的
         this.rayDeviation = 0;  // 子弹平面随机偏移
         this.rayMaxRange = this.rangeR;  // 射线中心点最远的移动范围，超过范围会消失
-        this.rayClock = 1;  // 发射线的频率
+        this.clock = 1;  // 发射线的频率
         this.rayBullys = new Set();  // 发射线段
         this.rayThrowAble = true;
         this.rayRepel = 0;  // 该光子弹的击退能力
@@ -58,7 +58,7 @@ class TowerRay extends Tower {
      * 朝着目标方向发射一个激光
      */
     shoot() {
-        if (this.liveTime % this.rayClock === 0) {
+        if (this.liveTime % this.clock === 0) {
             let line = new Line(this.pos, this.pos.plus(this.dirction.mul(this.rayLen)));
             for (let m of this.world.monsters) {
                 if (line.intersectWithCircle(m.getBodyCircle())) {
@@ -114,7 +114,7 @@ class TowerRay extends Tower {
                 // console.log("发现怪物")
                 this.dirction = this.target.pos.sub(this.pos).to1();
 
-                if (this.liveTime % this.rayClock === 0) {
+                if (this.liveTime % this.clock === 0) {
                     // console.log("进攻！")
                     for (let i = 0; i < this.rayNum; i++) {
                         // 随机化后了的方向
@@ -144,7 +144,7 @@ class TowerRay extends Tower {
         for (let m of this.world.monsters) {
             if (this.getViewCircle().impact(m.getBodyCircle())) {
                 this.dirction = this.target.pos.sub(this.pos).to1();
-                if (this.liveTime % this.rayClock === 0) {
+                if (this.liveTime % this.clock === 0) {
                     for (let i = 0; i < this.rayNum; i++) {
                         // 随机化后了的方向
                         let bDir = this.dirction.copy().deviation(this.rayDeviationRotate).to1();
