@@ -37,7 +37,7 @@ class TowerFinally {
     static  warrior_1(world) {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "卡米拉<br/>☆";
-        res.hpInit(300);
+        res.hpInit(500);
         res.damage = 3;
         res.rangeR = 100;
         res.atkSpeed = 0.2;
@@ -63,7 +63,7 @@ class TowerFinally {
         b.width = 1;
         b.rayRepel = 0.1;
         b.hpInit(20);
-        b.rangeR = 50;
+        b.rangeR = 120;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 2;
         b.price = 2;
@@ -76,12 +76,12 @@ class TowerFinally {
         b.name = "小光弓<br/>☆";
         b.classType = "archer";
         b.rangeR = 100;
-        b.damage = 1;
+        b.damage = 0.2;
         b.atkSpeed = 3;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
         b.clock = 10;
-        b.hpInit(2000);
+        b.hpInit(100);
         b.imgIndex = 3;
         b.price = 2;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
@@ -154,7 +154,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "水龙<br/>☆☆";
         res.classType = "warrior";
-        res.hpInit(500);
+        res.hpInit(700);
         res.damage = 6;
         res.rangeR = 110;
         res.atkSpeed = 0.2;
@@ -179,7 +179,7 @@ class TowerFinally {
         b.width = 2;
         b.rayRepel = 0.1;
         b.hpInit(40);
-        b.rangeR = 60;
+        b.rangeR = 140;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
         b.price = 5;
@@ -266,7 +266,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "Jacko<br/>☆☆☆";
         res.classType = "warrior";
-        res.hpInit(700);
+        res.hpInit(1000);
         res.damage = 8;
         res.atkSpeed = 0.3;
         res.rayLen= 3;
@@ -291,7 +291,7 @@ class TowerFinally {
         b.width = 3;
         b.rayRepel = 0.1;
         b.hpInit(60);
-        b.rangeR = 80;
+        b.rangeR = 160;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
         b.price = 10;
@@ -378,7 +378,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "扎哈克<br/>☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(1000);
+        res.hpInit(1300);
         res.atkSpeed = 0.4;
         res.rayLen=4;
         res.width =4;
@@ -403,7 +403,7 @@ class TowerFinally {
         b.width = 4;
         b.rayRepel = 0.1;
         b.hpInit(80);
-        b.rangeR = 80;
+        b.rangeR = 180;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 20;
         b.price = 20;
@@ -491,7 +491,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "光莉莉<br/>☆☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(1200);
+        res.hpInit(1500);
         res.atkSpeed = 0.5;
         res.rayLen=5;
         res.damage = 15;
@@ -516,7 +516,7 @@ class TowerFinally {
         b.width = 5;
         b.rayRepel = 0.1;
         b.hpInit(90);
-        b.rangeR = 90;
+        b.rangeR = 200;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 26;
         b.price = 30;
@@ -603,7 +603,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "史瑞杰思<br/>☆☆☆☆☆☆";
         res.classType = "warrior";
-        res.hpInit(1500);
+        res.hpInit(2000);
         res.atkSpeed = 0.8;
         res.rayLen=8;
         res.width =8;
@@ -628,7 +628,7 @@ class TowerFinally {
         b.width = 10;
         b.rayRepel = 0.1;
         b.hpInit(100);
-        b.rangeR = 100;
+        b.rangeR = 250;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 32;
         b.price = 50;
