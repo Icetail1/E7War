@@ -861,7 +861,7 @@ let refreshBoxPanel = setInterval(() => {
                 }
 
          } 
-     }, 200);   
+     }, 100);   
     
 
  let hellForThree = setInterval(() => {
@@ -874,6 +874,6 @@ let refreshBoxPanel = setInterval(() => {
                 }
 
          } 
-     }, 200);  
+     }, 100);  
 
 }
