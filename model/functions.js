@@ -153,11 +153,11 @@ class Functions {
     }
 
     static levelAddPriceNormal(level) {
-        return Math.floor((level / 20))+ 1;
+        return Math.floor((level / 10))+ 1;
     }
 
     static levelAddPriceHard(level) {
-        return Math.floor((level / 40))+ 1;
+        return Math.floor((level / 20))+ 1;
     }
 
     /**
