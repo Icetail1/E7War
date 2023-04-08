@@ -16,7 +16,7 @@ class TowerFinally {
         b.hpInit(200);
         b.rangeR = 120;
         b.atkSpeed = 1;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 1;
@@ -56,7 +56,7 @@ class TowerFinally {
         b.name = "小光刺<br/>☆"
         b.atkSpeed = 3;
         b.classType = "thief";
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 1;
@@ -133,7 +133,7 @@ class TowerFinally {
         b.hpInit(200);
         b.rangeR = 140;
         b.atkSpeed = 2;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 5;
@@ -173,7 +173,7 @@ class TowerFinally {
         b.name = "岚<br/>☆☆"
         b.atkSpeed = 6;
         b.classType = "thief";
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 2;
@@ -250,7 +250,7 @@ class TowerFinally {
         b.hpInit(300);
         b.rangeR = 160;
         b.atkSpeed = 3;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 10;
@@ -291,7 +291,7 @@ class TowerFinally {
         b.name = "木席德<br/>☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 8;
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 8;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 3;
@@ -368,7 +368,7 @@ class TowerFinally {
         b.hpInit(400);
         b.rangeR = 170;
         b.atkSpeed = 4;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 15;
@@ -409,7 +409,7 @@ class TowerFinally {
         b.name = "木25<br/>☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 10;
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 4;
@@ -487,7 +487,7 @@ class TowerFinally {
         b.hpInit(500);
         b.rangeR = 190;
         b.atkSpeed = 5;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 20;
@@ -528,7 +528,7 @@ class TowerFinally {
         b.name = "水镰刀<br/>☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 12;
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 12;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
@@ -606,7 +606,7 @@ class TowerFinally {
         b.hpInit(600);
         b.rangeR = 200;
         b.atkSpeed = 6;
-        b.rayClock = 10;
+        b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 30;
@@ -647,7 +647,7 @@ class TowerFinally {
         b.name = "血卡<br/>☆☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 15;
-        b.rayClock = 50;
+        b.clock = 50;
         b.rayLen = 15;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
