@@ -75,7 +75,7 @@ class TowerFinally {
         b.name = "小光弓<br/>☆";
         b.classType = "archer";
         b.rangeR = 100;
-        b.damage = 0.5;
+        b.damage = 1;
         b.atkSpeed = 1;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -93,7 +93,7 @@ class TowerFinally {
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.damage = 0.5;
+        b.damage = 1;
         b.atkSpeed = 1;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -193,7 +193,7 @@ class TowerFinally {
         b.name = "水弓<br/>☆☆";
         b.classType = "archer";
         b.rangeR = 120;
-        b.damage = 0.7;
+        b.damage = 2;
         b.atkSpeed = 3;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -211,7 +211,7 @@ class TowerFinally {
         b.name = "萝季<br/>☆☆"
         b.classType = "knight";
         b.rangeR = 110;
-        b.damage = 0.7;
+        b.damage = 3;
         b.atkSpeed = 2;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -312,7 +312,7 @@ class TowerFinally {
         b.name = "木蜻蜓<br/>☆☆☆";
         b.classType = "archer";
         b.rangeR = 140;
-        b.damage = 1;
+        b.damage = 3;
         b.atkSpeed = 4;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -330,7 +330,7 @@ class TowerFinally {
         b.name = "火呆<br/>☆☆☆"
         b.classType = "knight";
         b.rangeR = 140;
-        b.damage = 1;
+        b.damage = 5;
         b.atkSpeed = 3;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -356,7 +356,7 @@ class TowerFinally {
         b.rangeR = 120;
         b.rayLen = 50;
         b.width = 4;
-        b.hpInit(1500);
+        b.hpInit(1200);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 17;
@@ -431,7 +431,7 @@ class TowerFinally {
         b.name = "光水琴<br/>☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 160;
-        b.damage = 1.5;
+        b.damage = 4;
         b.atkSpeed = 5;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -449,7 +449,7 @@ class TowerFinally {
         b.name = "水泰<br/>☆☆☆☆"
         b.classType = "knight";
         b.rangeR = 160;
-        b.damage = 2;
+        b.damage = 7;
         b.atkSpeed = 5;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -475,7 +475,7 @@ class TowerFinally {
         b.rangeR = 130;
         b.rayLen = 55;
         b.width = 5;
-        b.hpInit(1800);
+        b.hpInit(1400);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 23;
@@ -551,7 +551,7 @@ class TowerFinally {
         b.name = "暗飞<br/>☆☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 180;
-        b.damage = 3;
+        b.damage = 5;
         b.atkSpeed = 8;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -570,7 +570,7 @@ class TowerFinally {
         b.name = "火莉莉<br/>☆☆☆☆☆"
         b.classType = "knight";
         b.rangeR = 170;
-        b.damage = 5;
+        b.damage = 9;
         b.atkSpeed = 3;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -596,7 +596,7 @@ class TowerFinally {
         b.rangeR = 140;
         b.rayLen = 60;
         b.width = 6;
-        b.hpInit(2000);
+        b.hpInit(1600);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 29;
@@ -671,7 +671,7 @@ class TowerFinally {
         b.name = "芙兰<br/>☆☆☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 200;
-        b.damage = 6;
+        b.damage = 9;
         b.atkSpeed = 10;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
@@ -689,7 +689,7 @@ class TowerFinally {
         b.name = "水呆<br/>☆☆☆☆☆☆"
         b.classType = "knight";
         b.rangeR = 180;
-        b.damage = 10;
+        b.damage = 15;
         b.atkSpeed = 5;
         b.bullySpeedAddMax = 0.5;
         b.getmMainBullyFunc = BullyFinally.Bully_M;
@@ -715,7 +715,7 @@ class TowerFinally {
         b.rangeR = 150;
         b.rayLen = 80;
         b.width = 8;
-        b.hpInit(3000);
+        b.hpInit(1800);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 35;
