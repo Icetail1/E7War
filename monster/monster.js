@@ -22,14 +22,14 @@ class Monster extends CircleObject {
         this.changedSpeed = Vector.zero();  // 叠加一个被外力改变了的速度
         this.changeSpeedFunc = () => {
         };
-        this.maxSpeedN = 5;  // 怪物的最大速度通常不能超过这个值
+        this.maxSpeedN = 3;  // 怪物的最大速度通常不能超过这个值
         this.burnMaxSpeedN = 2;  // 怪物通过点燃获得的最大急躁速度倍率，若1则不会获得点燃加速
         this.burnRate = 0;  // 当前燃烧率 [0, 1]，怪物每一个tick会掉落总体血量的这么多倍数
         this.maxBurnRate = 0.005;  // 通常怪物的最大燃烧速率是 %，如果设置为0则表示免疫燃烧。
 
         this.hpInit(10);
         this.colishDamage = 10;
-        this.r = 8;  // 身体半径
+        this.r = 10;  // 身体半径
         this.addPrice = 1;  // 奖金
         this.destination = new Vector(this.world.width / 2, this.world.height / 2);  // 默认的目的地是中心点
         this.bodyColor = MyColor.arrTo([25, 25, 25, 0.8]);
