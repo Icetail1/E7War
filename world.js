@@ -284,6 +284,7 @@ class World {
             {
                 if(!item.twoThiefBuff   ){
                     item.atkSpeed*=2;
+                    item.clock= Math.floor(item.clock/ 1.2);
                     item.twoThiefBuff  = true;
                 }
             }
@@ -292,6 +293,7 @@ class World {
             {
                 if(item.twoThiefBuff  ){
                     item.atkSpeed/=2;
+                    item.clock= Math.floor(item.clock * 1.2);
                     item.twoThiefBuff = false;
                 }
             } 
@@ -303,6 +305,7 @@ class World {
             {
                 if(!item.fourThiefBuff    ){
                     item.atkSpeed*=2;
+                    item.clock= Math.floor(item.clock / 1.2);
                     item.fourThiefBuff    = true;
                 }
             }
@@ -311,6 +314,7 @@ class World {
             {
                 if(item.fourThiefBuff    ){
                     item.atkSpeed/=2;
+                    item.clock= Math.floor(item.clock * 1.2);
                     item.fourThiefBuff    = false;
                 }
             } 
@@ -322,6 +326,7 @@ class World {
             {
                 if(!item.sixThiefBuff    ){
                     item.atkSpeed*=2;
+                    item.clock= Math.floor(item.clock/ 1.5) ;
                     item.sixThiefBuff    = true;
                 }
             }
@@ -330,6 +335,7 @@ class World {
             {
                 if(item.sixThiefBuff    ){
                     item.atkSpeed/=2;
+                    item.clock= Math.floor(item.clock * 1.5);
                     item.sixThiefBuff    = false;
                 }
             } 
