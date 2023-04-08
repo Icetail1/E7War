@@ -612,6 +612,7 @@ let refreshPanel = setInterval(() => {
                                   world.removeTower(item);
                               }
                           }
+                        deleteUnique(bFunc,world.box);
                         levelUp(bFunc);             
                         world.box.push(bFunc);
                         showBoxPanel();
