@@ -544,20 +544,20 @@ function endlessMode(mode, haveGroup = true) {
             panelEle.appendChild(levelupB);
             
             // 测试按钮
-            //let test = document.createElement("button");
-            //test.id = "test";
-            //test.innerText = "测试";
-            //test.addEventListener("click", () => {
-            //    world.user.money += 10000;
-            //    for(let item of world.getAllBuildingArr())
-            //    {
-            //       if(item.gameType === "Tower"){
-            //            item.maxHp += 10000;
-            //        }
-            //    }
-            //});
+            let test = document.createElement("button");
+            test.id = "test";
+            test.innerText = "测试";
+            test.addEventListener("click", () => {
+                world.user.money += 10000;
+                for(let item of world.getAllBuildingArr())
+                {
+                   if(item.gameType === "Tower"){
+                        item.maxHp += 10000;
+                    }
+                }
+            });
 
-            //panelEle.appendChild(test);
+            panelEle.appendChild(test);
             
         }
     }
