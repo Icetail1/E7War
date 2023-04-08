@@ -460,7 +460,7 @@ class MonsterFinally {
     static witch_N(world) {
         let m = Monster.randInit(world);
         m.name = "冷冻龟";
-        m.addPrice += 5;
+        m.addPrice += 2;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
@@ -481,7 +481,6 @@ class MonsterFinally {
     static bat(world) {
         let m = Monster.randInit(world);
         m.name = "僵尸龟";
-        m.addPrice += 5;
         m.speedNumb = 3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
