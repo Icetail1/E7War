@@ -566,7 +566,7 @@ class MonsterFinally {
         m.imgIndex = 23;
         m.r = 50;
         m.addPrice = 8;
-        m.comment = "一种由金属打造而成的恐怖机器，威力小的子弹几乎对他没有伤害。具有很强的近战能力。";
+        m.comment = "一种由金属打造而成的恐怖机器，威力小的攻击几乎对他没有伤害。具有很强的近战能力。";
         return m;
     }
 }
