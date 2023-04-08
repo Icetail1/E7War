@@ -188,7 +188,7 @@ class TowerFinally {
         return b;
     }
     static archer_2(world) {
-        let b = new TowerBoomerang(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "水弓<br/>☆☆";
         b.classType = "archer";
         b.rangeR = 120;
@@ -306,7 +306,7 @@ class TowerFinally {
         return b;
     }
     static archer_3(world) {
-        let b = new TowerBoomerang(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "木蜻蜓<br/>☆☆☆";
         b.classType = "archer";
         b.rangeR = 140;
@@ -424,7 +424,7 @@ class TowerFinally {
         return b;
     }
     static archer_4(world) {
-        let b = new TowerBoomerang(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "光水琴<br/>☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 160;
@@ -543,7 +543,7 @@ class TowerFinally {
         return b;
     }
     static archer_5(world) {
-        let b = new TowerBoomerang(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "暗飞<br/>☆☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 180;
@@ -662,7 +662,7 @@ class TowerFinally {
         return b;
     }
     static archer_6(world) {
-        let b = new TowerBoomerang(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "芙兰<br/>☆☆☆☆☆☆";
         b.classType = "archer";
         b.rangeR = 200;
