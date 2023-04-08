@@ -69,7 +69,7 @@ class Tower extends CircleObject {
         this.hpBarHeight = 5;
         this.damage=1;
         this.width=1;
-        this.len=1;
+        this.rayLen=1;
         // 贴图编号
         this.imgIndex = 0;
         // 发射子弹的音效
