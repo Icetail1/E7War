@@ -37,7 +37,7 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "卡米拉<br/>☆";
         res.hpInit(500);
-        res.damage = 3;
+        res.damage = 6;
         res.rangeR = 100;
         res.atkSpeed = 0.2;
         res.width = 1;
@@ -156,7 +156,7 @@ class TowerFinally {
         res.name = "水龙<br/>☆☆";
         res.classType = "warrior";
         res.hpInit(700);
-        res.damage = 6;
+        res.damage = 12;
         res.rangeR = 110;
         res.atkSpeed = 0.2;
         res.rayLen=2;
@@ -275,7 +275,7 @@ class TowerFinally {
         res.name = "Jacko<br/>☆☆☆";
         res.classType = "warrior";
         res.hpInit(1000);
-        res.damage = 8;
+        res.damage = 16;
         res.atkSpeed = 0.3;
         res.rayLen= 3;
         res.width = 3;
@@ -397,7 +397,7 @@ class TowerFinally {
         res.atkSpeed = 0.4;
         res.rayLen=4;
         res.width =4;
-        res.damage = 10;
+        res.damage = 20;
         res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 19;
@@ -516,7 +516,7 @@ class TowerFinally {
         res.hpInit(1500);
         res.atkSpeed = 0.5;
         res.rayLen=5;
-        res.damage = 15;
+        res.damage = 25;
         res.rangeR = 140;
         res.width =5;
         res.bar = res.initBar();
@@ -637,7 +637,7 @@ class TowerFinally {
         res.atkSpeed = 0.8;
         res.rayLen=8;
         res.width =8;
-        res.damage = 20;
+        res.damage = 30;
         res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 31;
