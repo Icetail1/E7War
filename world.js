@@ -126,7 +126,7 @@ class World {
             {
                 if(!item.threeKnightBuff){
                     item.maxHp*=2;
-                    item.Hp*=2;
+                    item.hp*=2;
                     item.threeKnightBuff = true;
                 }
             }
@@ -135,7 +135,7 @@ class World {
             {
                 if(item.threeKnightBuff){
                     item.maxHp/=2;
-                    item.Hp*=2;
+                    item.hp*=2;
                     item.threeKnightBuff = false;
                 }
             } 
@@ -147,7 +147,7 @@ class World {
             {
                 if(!item.sixKnightBuff){
                     item.maxHp*=2;
-                    item.Hp*=2;
+                    item.hp*=2;
                     item.sixKnightBuff = true;
                 }
             }
@@ -156,7 +156,7 @@ class World {
             {
                 if(item.sixKnightBuff){
                     item.maxHp/=2;
-                    item.Hp/=2;
+                    item.hp/=2;
                     item.sixKnightBuff = false;
                 }
             } 
