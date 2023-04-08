@@ -68,7 +68,8 @@ class Tower extends CircleObject {
         this.bodyStrokeColor = MyColor.Transparent();
         this.hpBarHeight = 5;
         this.damage=1;
-
+        this.width=1;
+        this.len=1;
         // 贴图编号
         this.imgIndex = 0;
         // 发射子弹的音效
@@ -183,6 +184,8 @@ class Tower extends CircleObject {
         res.speed = bDir;
         res.slideRate = this.bullySlideRate;
         res.damage=this.damage;
+        res.r=this.len;
+        res.bodyStrokeWidth=this.width;
         return res;
     }
 
