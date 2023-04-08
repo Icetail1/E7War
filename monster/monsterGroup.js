@@ -68,7 +68,7 @@ class MonsterGroup {
         };
         // todo 对mode进行分情况
         let monsterArr;
-        if (level < 10) {
+        if (level < 20) {
             monsterArr = Monster10BeforeArr;
 
         } else {
@@ -222,9 +222,7 @@ let Monster10BeforeArr = [
     MonsterFinally.Normal,
     MonsterFinally.Runner,
     MonsterFinally.Ox1,
-    MonsterFinally.Ox2,
     MonsterFinally.Bomber1,
-    MonsterFinally.Thrower1,
     MonsterFinally.Bulldozer,
     MonsterFinally.Medic,
     MonsterFinally.Medic_M,
@@ -232,8 +230,6 @@ let Monster10BeforeArr = [
     MonsterFinally.AttackAdder,
     MonsterFinally.SpeedAdder,
     MonsterFinally.Shouter,
-
-    MonsterFinally.Shouter_Spike,
 ];
 let MonsterAllArr = [
     MonsterFinally.Ox1,
