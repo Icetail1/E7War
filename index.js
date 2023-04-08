@@ -607,7 +607,7 @@ let refreshPanel = setInterval(() => {
                     {
                         for(let item of world.getAllBuildingArr())
                           {
-                           if (item.name ===addedThing.name && item.level ===addedThing.level )
+                           if (item.name ===bFunc.name && item.level ===bFunc.level )
                               {
                                   world.removeTower(item);
                               }
