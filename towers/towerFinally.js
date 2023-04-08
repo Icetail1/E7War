@@ -232,7 +232,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "暗水奶<br/>☆☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 30;
         b.rangeR = 110;
         b.rayLen = 40;
@@ -351,7 +351,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "EMT<br/>☆☆☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 40;
         b.rangeR = 120;
         b.rayLen = 50;
@@ -470,7 +470,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "圣女<br/>☆☆☆☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 50;
         b.rangeR = 130;
         b.rayLen = 55;
@@ -591,7 +591,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "光兔<br/>☆☆☆☆☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 60;
         b.rangeR = 140;
         b.rayLen = 60;
@@ -710,7 +710,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "YMD<br/>☆☆☆☆☆☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 70;
         b.rangeR = 150;
         b.rayLen = 80;
