@@ -38,9 +38,9 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "卡米拉<br/>☆";
         res.hpInit(300);
-        res.damage = 2;
+        res.damage = 5;
         res.rangeR = 100;
-        res.atkSpeed = 0.1;
+        res.atkSpeed = 0.2;
         res.width = 1;
         res.rayLen=1;
         res.bar = res.initBar();
@@ -75,13 +75,13 @@ class TowerFinally {
         let res = new TowerBoomerang(0, 0, world);
         res.name = "小光弓<br/>☆";
         res.classType = "archer";
-        res.hpInit(200);
-        res.damage = 1;
+        res.hpInit(100);
+        res.damage = 3;
         res.rangeR = 100;
-        res.width = 3;
-        res.rayLen = 2;
+        res.width = 5;
+        res.rayLen = 5;
         res.bar = res.initBar();
-        res.atkSpeed = 0.2;
+        res.atkSpeed = 0.3;
         res.imgIndex = 3;
         res.price = 2;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
@@ -92,7 +92,7 @@ class TowerFinally {
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.rayLen = 30;
+        b.rayLen = 60;
         b.rayClock = 10;
         b.width = 1;
         b.damage = 1;
@@ -109,7 +109,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "偶像<br/>☆"
         b.classType = "heller";
-        b.damage = 2;
+        b.damage = 20;
         b.rangeR = 100;
         b.rayLen = 30;
         b.width = 1;
@@ -151,11 +151,11 @@ class TowerFinally {
         res.name = "水龙<br/>☆☆";
         res.classType = "warrior";
         res.hpInit(500);
-        res.damage = 5;
+        res.damage = 10;
         res.rangeR = 110;
         res.atkSpeed = 0.2;
         res.rayLen=2;
-        res.width = 2;
+        res.width =2;
         res.bar = res.initBar();
         res.imgIndex = 7;
         res.price = 10;
@@ -188,10 +188,10 @@ class TowerFinally {
         res.name = "水弓<br/>☆☆";
         res.classType = "archer";
         res.hpInit(300);
-        res.damage = 3;
+        res.damage = 6;
         res.rangeR = 110;
-        res.width = 5;
-        res.rayLen = 4;
+        res.width = 8;
+        res.rayLen = 8;
         res.atkSpeed = 0.4;
         res.bar = res.initBar();
         res.imgIndex = 9;
@@ -204,7 +204,7 @@ class TowerFinally {
         b.name = "萝季<br/>☆☆"
         b.classType = "knight";
         b.rangeR = 110;
-        b.rayLen = 40;
+        b.rayLen = 80;
         b.rayClock = 10;
         b.width = 2;
         b.damage = 2;
@@ -221,7 +221,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "暗水奶<br/>☆☆"
         b.classType = "heller";
-        b.damage = 4;
+        b.damage = 30;
         b.rangeR = 110;
         b.rayLen = 40;
         b.width = 3;
@@ -263,7 +263,7 @@ class TowerFinally {
         res.name = "Jacko<br/>☆☆☆";
         res.classType = "warrior";
         res.hpInit(700);
-        res.damage = 7;
+        res.damage = 15;
         res.atkSpeed = 0.3;
         res.rayLen= 3;
         res.width = 3;
@@ -300,10 +300,10 @@ class TowerFinally {
         res.name = "木蜻蜓<br/>☆☆☆";
         res.classType = "archer";
         res.hpInit(400);
-        res.damage = 4;
+        res.damage = 8;
         res.rangeR = 120;
-        res.width = 7;
-        res.rayLen = 6;
+        res.width = 10;
+        res.rayLen = 10;
         res.atkSpeed = 0.6;
         res.bar = res.initBar();
         res.imgIndex = 15;
@@ -316,7 +316,7 @@ class TowerFinally {
         b.name = "火呆<br/>☆☆☆"
         b.classType = "knight";
         b.rangeR = 120;
-        b.rayLen = 50;
+        b.rayLen = 100;
         b.rayClock = 10;
         b.width = 3;
         b.damage = 4;
@@ -333,7 +333,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "EMT<br/>☆☆☆"
         b.classType = "heller";
-        b.damage = 6;
+        b.damage = 40;
         b.rangeR = 120;
         b.rayLen = 50;
         b.width = 4;
@@ -378,7 +378,7 @@ class TowerFinally {
         res.atkSpeed = 0.4;
         res.rayLen=4;
         res.width =4;
-        res.damage = 9;
+        res.damage = 20;
         res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 19;
@@ -412,10 +412,10 @@ class TowerFinally {
         res.name = "光水琴<br/>☆☆☆☆";
         res.classType = "archer";
         res.hpInit(500);
-        res.damage = 5;
+        res.damage = 12;
         res.rangeR = 130;
-        res.width = 7;
-        res.rayLen = 8;
+        res.width = 15;
+        res.rayLen = 15;
         res.atkSpeed = 0.8;
         res.bar = res.initBar();
         res.imgIndex = 21;
@@ -429,7 +429,7 @@ class TowerFinally {
         b.r += 7;
         b.classType = "knight";
         b.rangeR = 130;
-        b.rayLen = 55;
+        b.rayLen = 110;
         b.rayClock = 10;
         b.width = 4;
         b.damage = 5;
@@ -446,7 +446,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "圣女<br/>☆☆☆☆"
         b.classType = "heller";
-        b.damage = 8;
+        b.damage = 50;
         b.rangeR = 130;
         b.rayLen = 55;
         b.width = 5;
@@ -491,7 +491,7 @@ class TowerFinally {
         res.hpInit(1200);
         res.atkSpeed = 0.5;
         res.rayLen=5;
-        res.damage = 10;
+        res.damage = 20;
         res.rangeR = 140;
         res.width =5;
         res.bar = res.initBar();
@@ -526,10 +526,10 @@ class TowerFinally {
         res.name = "暗飞<br/>☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(600);
-        res.damage = 6;
+        res.damage = 15;
         res.rangeR = 140;
-        res.width = 9;
-        res.rayLen = 10;
+        res.width = 20;
+        res.rayLen = 20;
         res.atkSpeed = 1;
         res.bar = res.initBar();
         res.imgIndex = 27;
@@ -542,7 +542,7 @@ class TowerFinally {
         b.name = "火莉莉<br/>☆☆☆☆☆"
         b.classType = "knight";
         b.rangeR = 140;
-        b.rayLen = 60;
+        b.rayLen = 120;
         b.rayClock = 10;
         b.width = 5;
         b.damage = 6;
@@ -559,7 +559,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "光兔<br/>☆☆☆☆☆"
         b.classType = "heller";
-        b.damage = 10;
+        b.damage = 60;
         b.rangeR = 140;
         b.rayLen = 60;
         b.width = 6;
@@ -604,7 +604,7 @@ class TowerFinally {
         res.atkSpeed = 0.8;
         res.rayLen=8;
         res.width =8;
-        res.damage = 15;
+        res.damage = 30;
         res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 31;
@@ -638,10 +638,10 @@ class TowerFinally {
         res.name = "芙兰<br/>☆☆☆☆☆☆";
         res.classType = "archer";
         res.hpInit(700);
-        res.damage = 10;
+        res.damage = 20;
         res.rangeR = 150;
-        res.width = 12;
-        res.rayLen = 15;
+        res.width = 25;
+        res.rayLen = 25;
         res.atkSpeed = 1.5;
         res.bar = res.initBar();
         res.imgIndex = 33;
@@ -654,7 +654,7 @@ class TowerFinally {
         b.name = "水呆<br/>☆☆☆☆☆☆"
         b.classType = "knight"; 
         b.rangeR = 150;
-        b.rayLen = 80;
+        b.rayLen = 150;
         b.rayClock = 10;
         b.width = 8;
         b.damage = 8;
@@ -671,7 +671,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "YMD<br/>☆☆☆☆☆☆"
         b.classType = "heller";
-        b.damage = 12;
+        b.damage = 70;
         b.rangeR = 150;
         b.rayLen = 80;
         b.width = 8;
