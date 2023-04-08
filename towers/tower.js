@@ -177,7 +177,7 @@ class Tower extends CircleObject {
         // 获取发射点位置
         res.pos = new Vector(this.pos.x, this.pos.y).deviation(this.bullyDeviation);
         // 获取发射方向，有方向偏移的情况
-        let bDir = this.dirction.mul(Math.random() * this.bullySpeedAddMax + this.bullySpeed);
+        let bDir = this.dirction.mul(Math.random() * this.bullySpeedAddMax + this.atkSpeed);
         bDir = bDir.deviation(this.bullyDeviationRotate);
         res.speed = bDir;
         res.slideRate = this.bullySlideRate;
