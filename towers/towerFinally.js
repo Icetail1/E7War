@@ -74,6 +74,7 @@ class TowerFinally {
     static archer_1(world) {
         let b = new Tower(0, 0, world);
         b.name = "小光弓<br/>☆";
+        b.classType = "archer";
         b.rangeR = 100;
         b.damage = 1;
         b.atkSpeed = 3;
