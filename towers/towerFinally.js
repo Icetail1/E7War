@@ -74,7 +74,7 @@ class TowerFinally {
         let b = new Tower(0, 0, world);
         b.name = "小光弓<br/>☆";
         b.classType = "archer";
-        b.rangeR = 100;
+        b.rangeR = 80;
         b.damage = 1;
         b.atkSpeed = 1;
         b.bullySlideRate = 1;
@@ -192,7 +192,7 @@ class TowerFinally {
         let b = new Tower(0, 0, world);
         b.name = "水弓<br/>☆☆";
         b.classType = "archer";
-        b.rangeR = 120;
+        b.rangeR = 100;
         b.damage = 2;
         b.atkSpeed = 3;
         b.bullySlideRate = 1;
@@ -311,7 +311,7 @@ class TowerFinally {
         let b = new Tower(0, 0, world);
         b.name = "木蜻蜓<br/>☆☆☆";
         b.classType = "archer";
-        b.rangeR = 140;
+        b.rangeR = 120;
         b.damage = 3;
         b.atkSpeed = 4;
         b.bullySlideRate = 1;
@@ -430,7 +430,7 @@ class TowerFinally {
         let b = new Tower(0, 0, world);
         b.name = "光水琴<br/>☆☆☆☆";
         b.classType = "archer";
-        b.rangeR = 160;
+        b.rangeR = 140;
         b.damage = 4;
         b.atkSpeed = 5;
         b.bullySlideRate = 1;
@@ -489,7 +489,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "光蜻蜓<br/>☆☆☆☆☆";
         b.hpInit(500);
-        b.rangeR = 190;
+        b.rangeR = 150;
         b.atkSpeed = 5;
         b.clock = 10;
         b.rayNum = 1;
@@ -670,7 +670,7 @@ class TowerFinally {
         let b = new Tower(0, 0, world);
         b.name = "芙兰<br/>☆☆☆☆☆☆";
         b.classType = "archer";
-        b.rangeR = 200;
+        b.rangeR = 180;
         b.damage = 9;
         b.atkSpeed = 10;
         b.bullySlideRate = 1;
