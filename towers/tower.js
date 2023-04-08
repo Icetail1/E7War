@@ -188,8 +188,8 @@ class Tower extends CircleObject {
         res.speed = bDir;
         res.slideRate = this.bullySlideRate;
         res.damage=this.damage;
-        res.bombDamage=this.damage;
-        res.bombRange=this.rangeR;
+        res.bombDamage=this.damage/2;
+        res.bombRange=this.rangeR/2;
         res.r=this.rayLen;
         res.bodyStrokeWidth=this.width;
         return res;
