@@ -308,7 +308,6 @@ class MonsterFinally {
     static BulletWearer(world) {
         let m = Monster.randInit(world);
         m.name = "摆烂龟";
-        m.addPrice += 1;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([62, 134, 160, 1]);
 
@@ -325,7 +324,6 @@ class MonsterFinally {
     static BulletRepellent(world) {
         let m = Monster.randInit(world);
         m.name = "云龟";
-        m.addPrice += 1;
         m.speedNumb = 0.25;
         m.bodyColor = MyColor.arrTo([186, 166, 128, 1]);
 
@@ -460,7 +458,7 @@ class MonsterFinally {
     static witch_N(world) {
         let m = Monster.randInit(world);
         m.name = "冷冻龟";
-        m.addPrice += 2;
+        m.addPrice += 1;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
