@@ -67,6 +67,7 @@ class Tower extends CircleObject {
         this.bodyStrokeWidth = 1;
         this.bodyStrokeColor = MyColor.Transparent();
         this.hpBarHeight = 5;
+        this.damage=1;
 
         // 贴图编号
         this.imgIndex = 0;
@@ -181,6 +182,7 @@ class Tower extends CircleObject {
         bDir = bDir.deviation(this.bullyDeviationRotate);
         res.speed = bDir;
         res.slideRate = this.bullySlideRate;
+        res.damage=this.damage;
         return res;
     }
 
