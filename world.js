@@ -396,19 +396,19 @@ class World {
                     item.sixArcherBuff = false;
                 }
             } 
-         }         
-        
-        
+         }            
          if(this.countClassType("heller") >= 3){
-            jibanR+="三奶";
+            jibanR+="六奶";
             this.hellForThree=true;
            }else{
             this.hellForThree=false;
          }        
-        
-        
-        
-        
+         if(this.countClassType("heller") >= 6){
+            jibanR+="六奶";
+            this.hellForSix=true;
+           }else{
+            this.hellForSix=false;
+         }  
          
          if(jibanR===""){
             jibanR="无羁绊"  ;
