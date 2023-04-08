@@ -128,7 +128,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "恶魔龟";
         m.throwAble = true;
-        m.addPrice += 3;
+        m.addPrice += 5;
         m.speedNumb = 0.2;
         m.bodyColor = MyColor.arrTo([0, 0, 0, 1]);
         m.bodyStrokeColor = MyColor.arrTo([0, 0, 0, 1]);
@@ -148,7 +148,7 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "天使龟";
         m.throwAble = true;
-        m.addPrice += 2;
+        m.addPrice += 1;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([50, 30, 50, 1]);
         m.bodyStrokeColor = MyColor.arrTo([0, 0, 0, 1]);
@@ -167,7 +167,7 @@ class MonsterFinally {
     static Glans(world) {
         let m = Monster.randInit(world);
         m.name = "南瓜龟";
-        m.addPrice += 6;
+        m.addPrice += 20;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 1]);
         m.r = 30;
@@ -213,7 +213,7 @@ class MonsterFinally {
     static Medic_S(world) {
         let m = Monster.randInit(world);
         m.name = "烧龟";
-        m.addPrice += 2;
+        m.addPrice += 1;
         m.speedNumb = 0.5;
         m.bodyColor = MyColor.arrTo([92, 117, 79, 1]);
         m.r = 30;
@@ -237,7 +237,7 @@ class MonsterFinally {
     static Medic_M(world) {
         let m = Monster.randInit(world);
         m.name = "克苏龟";
-        m.addPrice += 3;
+        m.addPrice += 2;
         m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([120, 188, 85, 1]);
         m.r = 40;
@@ -261,7 +261,7 @@ class MonsterFinally {
     static SpeedAdder(world) {
         let m = Monster.randInit(world);
         m.name = "虎皮龟";
-        m.addPrice += 4;
+        m.addPrice += 2;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([68, 230, 249, 1]);
         m.haveGain = true;
@@ -285,7 +285,7 @@ class MonsterFinally {
     static AttackAdder(world) {
         let m = Monster.randInit(world);
         m.name = "瞪眼龟";
-        m.addPrice += 5;
+        m.addPrice += 3;
         m.speedNumb = 0.55;
         m.bodyColor = MyColor.arrTo([255, 198, 109, 1]);
         m.haveGain = true;
@@ -308,7 +308,7 @@ class MonsterFinally {
     static BulletWearer(world) {
         let m = Monster.randInit(world);
         m.name = "摆烂龟";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([62, 134, 160, 1]);
 
@@ -325,7 +325,7 @@ class MonsterFinally {
     static BulletRepellent(world) {
         let m = Monster.randInit(world);
         m.name = "云龟";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.25;
         m.bodyColor = MyColor.arrTo([186, 166, 128, 1]);
 
@@ -341,7 +341,7 @@ class MonsterFinally {
     static DamageReducers(world) {
         let m = Monster.randInit(world);
         m.name = "冷龟";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([190, 145, 23, 1]);
 
@@ -357,7 +357,7 @@ class MonsterFinally {
     static Shouter(world) {
         let m = MonsterShooter.randInit(world);
         m.name = "西瓜龟1号";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([190, 145, 23, 1]);
         m.r = 20;
@@ -369,7 +369,7 @@ class MonsterFinally {
     static Shouter_Stone(world) {
         let m = MonsterShooter.randInit(world);
         m.name = "西瓜龟2号";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.30;
         m.bodyColor = MyColor.arrTo([190, 145, 23, 1]);
         m.r = 20;
@@ -384,7 +384,7 @@ class MonsterFinally {
     static Shouter_Bomber(world) {
         let m = MonsterShooter.randInit(world);
         m.name = "西瓜龟3号";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.30;
         m.bodyColor = MyColor.arrTo([190, 145, 23, 1]);
         m.r = 20;
@@ -399,7 +399,7 @@ class MonsterFinally {
     static Shouter_Spike(world) {
         let m = MonsterShooter.randInit(world);
         m.name = "西瓜龟4号";
-        m.addPrice += 5;
+        m.addPrice += 1;
         m.speedNumb = 0.30;
         m.bodyColor = MyColor.arrTo([190, 145, 23, 1]);
         m.r = 20;
@@ -414,7 +414,6 @@ class MonsterFinally {
     static Slime_L(world) {
         let m = Monster.randInit(world);
         m.name = "大猪猪龟";
-        m.addPrice += 5;
         m.speedNumb = 0.4;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -431,7 +430,6 @@ class MonsterFinally {
     static Slime_M(world) {
         let m = Monster.randInit(world);
         m.name = "中猪猪龟";
-        m.addPrice += 5;
         m.speedNumb = 0.6;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -449,7 +447,6 @@ class MonsterFinally {
     static Slime_S(world) {
         let m = Monster.randInit(world);
         m.name = "小猪猪龟";
-        m.addPrice += 5;
         m.speedNumb = 0.8;
         m.bodyColor = MyColor.arrTo([171, 236, 97, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([47, 113, 56, 1]);
@@ -555,7 +552,7 @@ class MonsterFinally {
         m.r = 35;
         m.speedNumb = 1;
         m.imgIndex = 24;
-        m.addPrice = 5;
+        m.addPrice = 50;
         m.comment = "像骷髅一样，一旦发现了你的英雄，便会迅速对你的英雄进行收割对你的英雄造成伤害";
         return m;
     }
@@ -565,7 +562,7 @@ class MonsterFinally {
         m.name = "恐怖机器龟";
         m.imgIndex = 23;
         m.r = 50;
-        m.addPrice = 8;
+        m.addPrice = 200;
         m.comment = "一种由金属打造而成的恐怖机器，威力小的攻击几乎对他没有伤害。具有很强的近战能力。";
         return m;
     }
