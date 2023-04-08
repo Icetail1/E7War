@@ -855,25 +855,25 @@ let refreshBoxPanel = setInterval(() => {
          if (world.hellForSix) {
               for(let item of world.getAllBuildingArr())
                 {
-                   if(item.hp < item.maxHp && item.gameType === "Tower"){
+                   if(item.hp < item.maxHp && item.gameType === "Tower" && !isGamePause){
                         item.hp += 2;
                     }
                 }
 
          } 
-     }, 300);   
+     }, 200);   
     
 
  let hellForThree = setInterval(() => {
          if (world.hellForThree) {
               for(let item of world.getAllBuildingArr())
                 {
-                   if(item.hp < item.maxHp && item.gameType === "Tower"){
+                   if(item.hp < item.maxHp && item.gameType === "Tower" && !isGamePause){
                         item.hp += 1;
                     }
                 }
 
          } 
-     }, 300);  
+     }, 200);  
 
 }
