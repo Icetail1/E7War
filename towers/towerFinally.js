@@ -89,7 +89,7 @@ class TowerFinally {
         return b;
     }
     static knight_1(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
