@@ -282,10 +282,13 @@ class World {
             jibanR+="二盗贼";
             for(let item of this.batterys)
             {
-                if(!item.twoThiefBuff   ){
+                if(!item.twoThiefBuff){
                     item.atkSpeed*=2;
-                    item.clock= Math.ceil(item.clock/ 1.3);
                     item.twoThiefBuff  = true;
+                    if(!item.twoClockBuff && item.clock > 3){
+                        item.clock -= 3;
+                        item.twoClockBuff  = true;
+                    }
                 }
             }
            }else{
@@ -293,8 +296,11 @@ class World {
             {
                 if(item.twoThiefBuff  ){
                     item.atkSpeed/=2;
-                    item.clock= Math.ceil(item.clock * 1.3);
                     item.twoThiefBuff = false;
+                    if(item.twoClockBuff){
+                        item.clock += 3;
+                        item.twoClockBuff  = false;
+                    }
                 }
             } 
          }
@@ -303,43 +309,55 @@ class World {
             jibanR+="四盗贼";
             for(let item of this.batterys)
             {
-                if(!item.fourThiefBuff    ){
+                if(!item.fourThiefBuff){
                     item.atkSpeed*=2;
-                    item.clock= Math.ceil(item.clock / 1.3);
-                    item.fourThiefBuff    = true;
+                    item.fourThiefBuff  = true;
+                    if(!item.fourClockBuff && item.clock > 3){
+                        item.clock -= 3;
+                        item.fourClockBuff  = true;
+                    }
                 }
             }
            }else{
               for(let item of this.batterys)
             {
-                if(item.fourThiefBuff    ){
+                if(item.fourThiefBuff  ){
                     item.atkSpeed/=2;
-                    item.clock= Math.ceil(item.clock * 1.3);
-                    item.fourThiefBuff    = false;
+                    item.fourThiefBuff = false;
+                    if(item.fourClockBuff){
+                        item.clock += 3;
+                        item.fourClockBuff  = false;
+                    }
                 }
             } 
-         }      
+         }    
         
          if(this.countClassType("thief") >= 6){
             jibanR+="六盗贼";
             for(let item of this.batterys)
             {
-                if(!item.sixThiefBuff    ){
+                if(!item.sixThiefBuff){
                     item.atkSpeed*=2;
-                    item.clock= Math.ceil(item.clock/ 1.5) ;
-                    item.sixThiefBuff    = true;
+                    item.sixThiefBuff  = true;
+                    if(!item.sixClockBuff && item.clock > 5){
+                        item.clock -= 5;
+                        item.sixClockBuff  = true;
+                    }
                 }
             }
            }else{
               for(let item of this.batterys)
             {
-                if(item.sixThiefBuff    ){
+                if(item.sixThiefBuff  ){
                     item.atkSpeed/=2;
-                    item.clock= Math.ceil(item.clock * 1.5);
-                    item.sixThiefBuff    = false;
+                    item.sixThiefBuff = false;
+                    if(item.sixClockBuff){
+                        item.clock += 5;
+                        item.sixClockBuff  = false;
+                    }
                 }
             } 
-         } 
+         }    
         
          if(this.countClassType("archer") >= 2){
             jibanR+="二弓";
