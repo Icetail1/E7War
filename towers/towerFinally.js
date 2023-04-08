@@ -72,20 +72,20 @@ class TowerFinally {
         return b;
     }
     static archer_1(world) {
-        let res = new TowerBoomerang(0, 0, world);
-        res.name = "小光弓<br/>☆";
-        res.classType = "archer";
-        res.hpInit(100);
-        res.damage = 2;
-        res.rangeR = 100;
-        res.width = 5;
-        res.rayLen = 5;
-        res.bar = res.initBar();
-        res.atkSpeed = 0.3;
-        res.imgIndex = 3;
-        res.price = 2;
-        res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
-        return res;
+        let b = new Tower(0, 0, world);
+        b.name = "小光弓<br/>☆";
+        b.rangeR = 100;
+        b.damage = 1;
+        b.atkSpeed = 3;
+        b.bullySlideRate = 1;
+        b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.clock = 10;
+        b.hpInit(2000);
+        b.imgIndex = 3;
+        b.price = 2;
+        b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
+        b.audioSrcString = "sound/子弹音效/冰冻.mp3";
+        return b;
     }
     static knight_1(world) {
         let b = new TowerRay(0, 0, world);
