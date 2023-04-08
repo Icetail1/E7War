@@ -513,9 +513,9 @@ function endlessMode(mode, haveGroup = true) {
             // 刷新按钮
             let refreshB = document.createElement("button");
             refreshB.id = "refreshB";
-            refreshB.innerText = "刷新/10";
+            refreshB.innerText = "刷新/5";
             refreshB.addEventListener("click", () => {
-                 world.user.money -= 10;
+                 world.user.money -= 5;
                  panelEle.style.display = "none";
                  showInitPanel();
                  changed= true;
@@ -817,7 +817,7 @@ let refreshBoxPanel = setInterval(() => {
                 levelupBtn.removeAttribute("disabled");
             }
 
-        if (world.user.money < 10) {
+        if (world.user.money < 5) {
                 refreshBtn.setAttribute("disabled", "disabled");
             }
             else {
