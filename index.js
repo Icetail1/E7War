@@ -46,7 +46,7 @@ function levelUp(val){
      val.level += 1;
      val.hp    *= 2;    
      val.maxHp *= 2;
-     val.damage *= 2;
+     val.damage *= 3;
      val.rangeR *= 1.1;
      val.atkSpeed *= 1.1; 
      val.r *= 1.1;
@@ -55,7 +55,7 @@ function levelUp(val){
      val.level += 1;
      val.hp    *= 2;  
      val.maxHp *= 2;
-     val.damage *= 3;
+     val.damage *= 5;
      val.rangeR *= 1.2;
      val.atkSpeed *= 1.2; 
      val.r *= 1.2;
