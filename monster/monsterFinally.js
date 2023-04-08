@@ -33,7 +33,7 @@ class MonsterFinally {
         m.bodyColor = MyColor.arrTo([80, 20, 20, 1]);
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
-        m.maxSpeedN = 5;
+        m.maxSpeedN = 2;
         m.imgIndex = 25;
         m.comment = "速度会越来越快";
         return m;
@@ -45,7 +45,7 @@ class MonsterFinally {
         m.bodyColor = MyColor.arrTo([120, 20, 20, 1]);
         m.speedNumb = 0.01;
         m.accelerationV = 0.05;
-        m.maxSpeedN = 7;
+        m.maxSpeedN = 3;
         m.imgIndex = 25;
         m.comment = "加速度，速度越来越快";
         return m;
@@ -57,7 +57,7 @@ class MonsterFinally {
         m.bodyColor = MyColor.arrTo([150, 20, 20, 1]);
         m.speedNumb = 0.01;
         m.accelerationV = 0.1;
-        m.maxSpeedN = 10;
+        m.maxSpeedN = 5;
         m.imgIndex = 25;
         m.comment = "比普通鼠鼠加速的更快";
         return m;
@@ -484,7 +484,7 @@ class MonsterFinally {
         m.bodyStrokeWidth = 5;
 
         m.accelerationV = 0.01;
-        m.maxSpeedN = 5;
+        m.maxSpeedN = 3;
         m.r = 5;
         m.imgIndex = 18;
         m.comment = "快速飞向Ice，对Ice造成撞击伤害";
