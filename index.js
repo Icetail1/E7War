@@ -58,7 +58,7 @@ function levelUp(val){
      val.damage *= 3;
      val.rangeR *= 1.2;
      val.atkSpeed *= 1.2; 
-     val.r *= 1.1;
+     val.r *= 1.2;
   }
 }
 
