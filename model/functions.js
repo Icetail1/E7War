@@ -84,11 +84,11 @@ class Functions {
      * @returns {number}
      */
     static levelMonsterHpAddedHard(level) {
-        return Math.floor(Math.pow(level, 2.5) + Math.pow(level, 1) * 100);
+        return Math.floor(Math.pow(level, 1.7) + Math.pow(level, 0.5) * 80);
     }
 
     static levelMonsterHpAddedNormal(level) {
-        let res = Math.floor(Math.pow(level, 2.0) + Math.pow(level, 0.7) * 80);
+        let res = Math.floor(Math.pow(level, 1.6) + Math.pow(level, 0.5) * 60);
         if (res > 10000) {
             res = 10000;
         }
@@ -96,7 +96,7 @@ class Functions {
     }
 
     static levelMonsterHpAddedEasy(level) {
-        let res = Math.floor(Math.pow(level, 1.5) + Math.pow(level, 0.5) * 30);
+        let res = Math.floor(Math.pow(level, 1.5) + Math.pow(level, 0.5) * 50);
         if (res > 500) {
             res = 500;
         }
