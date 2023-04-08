@@ -114,7 +114,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "偶像<br/>☆"
         b.classType = "heller";
-        b.clock = 10;
+        b.clock = 1;
         b.damage = 20;
         b.rangeR = 100;
         b.rayLen = 30;
