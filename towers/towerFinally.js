@@ -138,7 +138,7 @@ class TowerFinally {
         b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 10;
+        b.price = 5;
         b.imgIndex = 6;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -158,7 +158,7 @@ class TowerFinally {
         res.width =2;
         res.bar = res.initBar();
         res.imgIndex = 7;
-        res.price = 10;
+        res.price = 5;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -178,7 +178,7 @@ class TowerFinally {
         b.rangeR = 60;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
-        b.price = 10;
+        b.price = 5;
         b.damage = 20;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -195,7 +195,7 @@ class TowerFinally {
         res.atkSpeed = 0.4;
         res.bar = res.initBar();
         res.imgIndex = 9;
-        res.price = 10;
+        res.price = 5;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
         return res;
     }
@@ -212,7 +212,7 @@ class TowerFinally {
         b.atkSpeed = 2;
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 10;
-        b.price = 10;
+        b.price = 5;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -230,7 +230,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 11;
-        b.price = 10;
+        b.price = 5;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -250,7 +250,7 @@ class TowerFinally {
         b.width = 3;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 30;
+        b.price = 10;
         b.imgIndex = 12;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -270,7 +270,7 @@ class TowerFinally {
         res.rangeR = 120;
         res.bar = res.initBar();
         res.imgIndex = 13;
-        res.price = 30;
+        res.price = 10;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -290,7 +290,7 @@ class TowerFinally {
         b.rangeR = 80;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
-        b.price = 30;
+        b.price = 10;
         b.damage = 30;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -307,7 +307,7 @@ class TowerFinally {
         res.atkSpeed = 0.6;
         res.bar = res.initBar();
         res.imgIndex = 15;
-        res.price = 30;
+        res.price = 10;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
         return res;
     }
@@ -324,7 +324,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 16;
         b.atkSpeed = 3;
-        b.price = 30;
+        b.price = 10;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
     }
@@ -341,7 +341,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 17;
-        b.price = 30;
+        b.price = 10;
         b.atkSpeed = 3;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -362,7 +362,7 @@ class TowerFinally {
         b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 40;
+        b.price = 20;
         b.imgIndex = 18;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -382,7 +382,7 @@ class TowerFinally {
         res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 19;
-        res.price = 40;
+        res.price = 20;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -402,7 +402,7 @@ class TowerFinally {
         b.rangeR = 80;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 20;
-        b.price = 40;
+        b.price = 20;
         b.damage = 40;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -419,7 +419,7 @@ class TowerFinally {
         res.atkSpeed = 0.8;
         res.bar = res.initBar();
         res.imgIndex = 21;
-        res.price = 40;
+        res.price = 20;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
         return res;
     }
@@ -435,7 +435,7 @@ class TowerFinally {
         b.hpInit(3000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 22;
-        b.price = 40;
+        b.price = 20;
         b.atkSpeed = 4;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
@@ -453,7 +453,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 23;
-        b.price = 40;
+        b.price = 20;
         b.atkSpeed = 4;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -475,7 +475,7 @@ class TowerFinally {
         b.width = 5;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 60;
+        b.price = 30;
         b.imgIndex = 24;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -495,7 +495,7 @@ class TowerFinally {
         res.width =5;
         res.bar = res.initBar();
         res.imgIndex = 25;
-        res.price = 60;
+        res.price = 30;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -515,7 +515,7 @@ class TowerFinally {
         b.rangeR = 90;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 26;
-        b.price = 60;
+        b.price = 30;
         b.damage = 50;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -532,7 +532,7 @@ class TowerFinally {
         res.atkSpeed = 1;
         res.bar = res.initBar();
         res.imgIndex = 27;
-        res.price = 60;
+        res.price = 30;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
         return res;
     }
@@ -548,7 +548,7 @@ class TowerFinally {
         b.hpInit(4000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 28;
-        b.price = 60;
+        b.price = 30;
         b.atkSpeed = 5;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
@@ -566,7 +566,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 29;
-        b.price = 60;
+        b.price = 30;
         b.atkSpeed = 5;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -587,7 +587,7 @@ class TowerFinally {
         b.width = 10;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 100;
+        b.price = 50;
         b.imgIndex = 30;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -607,7 +607,7 @@ class TowerFinally {
         res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 31;
-        res.price = 100;
+        res.price = 50;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -627,7 +627,7 @@ class TowerFinally {
         b.rangeR = 100;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 32;
-        b.price = 100;
+        b.price = 50;
         b.damage = 60;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -644,7 +644,7 @@ class TowerFinally {
         res.atkSpeed = 1.5;
         res.bar = res.initBar();
         res.imgIndex = 33;
-        res.price = 100;
+        res.price = 50;
         res.comment = "相对于普通的回旋镖，距离虽然没那么远了，但是伤害更大了，回旋镖也更大更强了";
         return res;
     }
@@ -660,7 +660,7 @@ class TowerFinally {
         b.hpInit(5000);
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.imgIndex = 34;
-        b.price = 100;
+        b.price = 50;
         b.atkSpeed = 6;
         b.comment = `绿色激光是一种高频激光，蓝色激光是一种低频高伤害激光，而红色激光是一种大范围群体伤害激光，能够穿射`
         return b;
@@ -678,7 +678,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 35;
-        b.price = 100;
+        b.price = 50;
         b.atkSpeed = 8;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
