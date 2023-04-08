@@ -135,7 +135,7 @@ class World {
             {
                 if(item.threeKnightBuff){
                     item.maxHp/=2;
-                    item.hp*=2;
+                    item.hp/=2;
                     item.threeKnightBuff = false;
                 }
             } 
