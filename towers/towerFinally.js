@@ -129,7 +129,7 @@ class TowerFinally {
     }
     static mage_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "小王子<br/>☆☆";
+        b.name = "光王子<br/>☆☆";
         b.hpInit(200);
         b.rangeR = 140;
         b.atkSpeed = 2;
