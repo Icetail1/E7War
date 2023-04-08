@@ -743,7 +743,7 @@ let refreshBoxPanel = setInterval(() => {
             for (let item of world.getAllBuildingArr()) {
                 if (addedThing.getBodyCircle().impact(item.getBodyCircle())) {
                     // 这里不可以放建筑
-                    let et = new EffectText("这里不能放建筑，换一个地方点一下");
+                    let et = new EffectText("这里不能放英雄，换一个地方点一下");
                     et.pos = addedThing.pos.copy();
                     world.addEffect(et);
                     return;
