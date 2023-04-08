@@ -56,7 +56,7 @@ class TowerFinally {
         b.name = "小光刺<br/>☆"
         b.atkSpeed = 3;
         b.classType = "thief";
-        b.clock = 50;
+        b.clock = 20;
         b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 1;
@@ -100,7 +100,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
-        b.clock = 3;
+        b.clock = 30;
         b.width = 2;
         b.rayLen = 3;
         b.hpInit(1000);
@@ -173,7 +173,7 @@ class TowerFinally {
         b.name = "岚<br/>☆☆"
         b.atkSpeed = 6;
         b.classType = "thief";
-        b.clock = 50;
+        b.clock = 25;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 2;
@@ -217,7 +217,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 6;
-        b.clock = 3;
+        b.clock = 25;
         b.width = 2;
         b.rayLen = 5;
         b.hpInit(1200);
@@ -291,7 +291,7 @@ class TowerFinally {
         b.name = "木席德<br/>☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 8;
-        b.clock = 50;
+        b.clock = 20;
         b.rayLen = 8;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 3;
@@ -335,7 +335,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
-        b.clock = 3;
+        b.clock = 20;
         b.width = 2;
         b.rayLen = 7;
         b.hpInit(1400);
@@ -409,7 +409,7 @@ class TowerFinally {
         b.name = "木25<br/>☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 10;
-        b.clock = 50;
+        b.clock = 18;
         b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 4;
@@ -453,7 +453,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
-        b.clock = 3;
+        b.clock = 20;
         b.width = 3;
         b.rayLen = 7;
         b.hpInit(1600);
@@ -528,7 +528,7 @@ class TowerFinally {
         b.name = "水镰刀<br/>☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 12;
-        b.clock = 50;
+        b.clock = 16;
         b.rayLen = 12;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
@@ -573,7 +573,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
-        b.clock = 3;
+        b.clock = 20;
         b.width = 2;
         b.rayLen = 8;
         b.hpInit(1800);
@@ -647,7 +647,7 @@ class TowerFinally {
         b.name = "血卡<br/>☆☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 15;
-        b.clock = 50;
+        b.clock = 15;
         b.rayLen = 15;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
@@ -691,7 +691,7 @@ class TowerFinally {
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
-        b.clock = 3;
+        b.clock = 18;
         b.width = 2;
         b.rayLen = 7;
         b.hpInit(2000);
