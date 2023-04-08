@@ -398,7 +398,7 @@ class World {
             } 
          }            
          if(this.countClassType("heller") >= 3){
-            jibanR+="六奶";
+            jibanR+="三奶";
             this.hellForThree=true;
            }else{
             this.hellForThree=false;
