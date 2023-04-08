@@ -321,8 +321,10 @@ class Monster extends CircleObject {
         if (this.haveGArea) {
             for (let b of this.world.getAllBuildingArr()) {
                 if (this.pos.dis(b.pos) < this.gAreaR) {
-                    let gSpeed = this.pos.sub(b.pos).to1().mul(this.gAreaNum);
-                    b.pos.add(gSpeed);
+                    if(b.gameType==="Tower") {
+                        let gSpeed = this.pos.sub(b.pos).to1().mul(this.gAreaNum);
+                        b.pos.add(gSpeed);
+                        }
                 }
             }
         }
