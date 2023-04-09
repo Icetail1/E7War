@@ -478,7 +478,7 @@ class MonsterFinally {
     static bat(world) {
         let m = Monster.randInit(world);
         m.name = "僵尸龟";
-        m.speedNumb = 3;
+        m.speedNumb = 0.3;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
         m.bodyStrokeWidth = 5;
