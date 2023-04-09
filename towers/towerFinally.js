@@ -22,8 +22,8 @@ class TowerFinally {
         b.damage = 5;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 30;  // 射线的长度
-        b.width = 2;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 2;
@@ -140,8 +140,8 @@ class TowerFinally {
         b.damage = 10;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 40;  // 射线的长度
-        b.width = 4;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 10;
@@ -258,8 +258,8 @@ class TowerFinally {
         b.damage = 15;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 50;  // 射线的长度
-        b.width = 3;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 30;
@@ -377,8 +377,8 @@ class TowerFinally {
         b.damage = 20;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 55;  // 射线的长度
-        b.width = 4;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 50;
@@ -497,8 +497,8 @@ class TowerFinally {
         b.damage = 30;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 60;  // 射线的长度
-        b.width = 5;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 80;
@@ -617,8 +617,8 @@ class TowerFinally {
         b.damage = 50;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 300;  // 射线的长度
-        b.width = 100;
+        b.rayLen = 20;  // 射线的长度
+        b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 100;
@@ -675,6 +675,7 @@ class TowerFinally {
         b.atkSpeed = 10;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
         b.attackBullyNum = 5;
         b.clock = 10;
