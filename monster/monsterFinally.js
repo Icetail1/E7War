@@ -33,7 +33,7 @@ class MonsterFinally {
         m.bodyColor = MyColor.arrTo([80, 20, 20, 1]);
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
-        m.maxSpeedN = 2;
+        m.maxSpeedN = 1;
         m.imgIndex = 25;
         m.comment = "速度会越来越快";
         return m;
@@ -44,8 +44,8 @@ class MonsterFinally {
         m.name = "2级鼠鼠龟";
         m.bodyColor = MyColor.arrTo([120, 20, 20, 1]);
         m.speedNumb = 0.01;
-        m.accelerationV = 0.05;
-        m.maxSpeedN = 3;
+        m.accelerationV = 0.01;
+        m.maxSpeedN = 2;
         m.imgIndex = 25;
         m.comment = "加速度，速度越来越快";
         return m;
@@ -56,8 +56,8 @@ class MonsterFinally {
         m.name = "3级鼠鼠龟";
         m.bodyColor = MyColor.arrTo([150, 20, 20, 1]);
         m.speedNumb = 0.01;
-        m.accelerationV = 0.1;
-        m.maxSpeedN = 5;
+        m.accelerationV = 0.01;
+        m.maxSpeedN = 3;
         m.imgIndex = 25;
         m.comment = "比普通鼠鼠加速的更快";
         return m;
