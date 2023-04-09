@@ -328,7 +328,7 @@ function endlessMode(mode, haveGroup = true) {
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
     let changed= false;
-    let priceB = Math.pow(world.mainLevel,3) * 4;
+    let priceB = Math.pow(world.mainLevel,3) * 5;
     
     /**
      * 显示初始化面板
@@ -522,7 +522,7 @@ function endlessMode(mode, haveGroup = true) {
             });
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
-            let priceB =  Math.pow(world.mainLevel,3) * 4;
+            let priceB =  Math.pow(world.mainLevel,3) * 5;
             // 升本按钮
             let levelupB = document.createElement("button");
            
@@ -825,7 +825,7 @@ let refreshBoxPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　  let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
-        let priceB =  Math.pow(world.mainLevel,3) * 4;
+        let priceB =  Math.pow(world.mainLevel,3) * 5;
         if (world.user.money < priceB ) {
                 levelupBtn.setAttribute("disabled", "disabled");
             }
