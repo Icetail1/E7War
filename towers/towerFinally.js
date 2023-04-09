@@ -536,7 +536,7 @@ class TowerFinally {
         b.rayLen = 12;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
-        b.rayRepel = 0.005;
+        b.rayRepel = 0;
         b.hpInit(90);
         b.rangeR = 200;
         b.attackFunc = b.gerAttack;
@@ -656,7 +656,7 @@ class TowerFinally {
         b.rayLen = 15;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
-        b.rayRepel = 0.05;
+        b.rayRepel = 0.1;
         b.hpInit(100);
         b.rangeR = 250;
         b.attackFunc = b.gerAttack;
