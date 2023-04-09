@@ -31,6 +31,8 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "1级鼠鼠龟";
         m.bodyColor = MyColor.arrTo([80, 20, 20, 1]);
+        m.hp * = 0.1;
+        m.maxHp * = 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
         m.maxSpeedN = 1;
@@ -43,6 +45,8 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "2级鼠鼠龟";
         m.bodyColor = MyColor.arrTo([120, 20, 20, 1]);
+        m.hp * = 0.1;
+        m.maxHp * = 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
         m.maxSpeedN = 2;
@@ -55,6 +59,8 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "3级鼠鼠龟";
         m.bodyColor = MyColor.arrTo([150, 20, 20, 1]);
+        m.hp * = 0.1;
+        m.maxHp * = 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
         m.maxSpeedN = 3;
@@ -252,6 +258,8 @@ class MonsterFinally {
     static SpeedAdder(world) {
         let m = Monster.randInit(world);
         m.name = "虎皮龟";
+        m.hp * = 0.1;
+        m.maxHp * = 0.1;
         m.speedNumb = 0.35;
         m.bodyColor = MyColor.arrTo([68, 230, 249, 1]);
         m.haveGain = true;
@@ -463,6 +471,8 @@ class MonsterFinally {
         let m = Monster.randInit(world);
         m.name = "僵尸龟";
         m.speedNumb = 0.3;
+        m.hp * = 0.1;
+        m.maxHp * = 0.1;
         m.bodyColor = MyColor.arrTo([152, 118, 170, 0.8]);
         m.bodyStrokeColor = MyColor.arrTo([152, 118, 170, 1]);
         m.bodyStrokeWidth = 5;
