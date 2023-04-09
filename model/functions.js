@@ -84,7 +84,7 @@ class Functions {
      * @returns {number}
      */
     static levelMonsterHpAddedHard(level) {
-        return Math.floor(Math.pow(level, 2) + Math.pow(level, 1) * 40 + Math.floor((level / 5))* 400);
+        return Math.floor(Math.pow(level, 2) + Math.pow(level, 1) * 60 + Math.floor((level / 5))* 400);
     }
 
     static levelMonsterHpAddedNormal(level) {
@@ -157,7 +157,7 @@ class Functions {
     }
 
     static levelAddPriceHard(level) {
-        return Math.floor((level / 20))+ 1;
+        return Math.floor((level / 20));
     }
 
     /**
