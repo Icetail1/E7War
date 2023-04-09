@@ -361,60 +361,28 @@ class World {
         
          if(this.countClassType("archer") >= 2){
             jibanR+="二弓";
-            for(let item of this.batterys)
-            {
-                if(!item.twoArcherBuff    ){
-                    item.width*=2;
-                    item.twoArcherBuff   = true;
-                }
-            }
+            this.twoArcherBuff   = true;
+
            }else{
-              for(let item of this.batterys)
-            {
-                if(item.twoArcherBuff ){
-                    item.width/=2;
-                    item.twoArcherBuff = false;
-                }
-            } 
-         }
+                this.twoArcherBuff = false;
+           }
         
          if(this.countClassType("archer") >= 4){
             jibanR+="四弓";
-            for(let item of this.batterys)
-            {
-                if(!item.fourArcherBuff ){
-                    item.width*=2;
-                    item.fourArcherBuff  = true;
-                }
-            }
+            this.fourArcherBuff   = true;
+
            }else{
-              for(let item of this.batterys)
-            {
-                if(item.fourArcherBuff ){
-                    item.width/=2;
-                    item.fourArcherBuff  = false;
-                }
-            } 
-         }      
+                this.fourArcherBuff = false;
+           } 
         
          if(this.countClassType("archer") >= 6){
             jibanR+="六弓";
-            for(let item of this.batterys)
-            {
-                if(!item.sixArcherBuff){
-                    item.width*=2;
-                    item.sixArcherBuff  = true;
-                }
-            }
+            this.sixArcherBuff   = true;
+
            }else{
-              for(let item of this.batterys)
-            {
-                if(item.sixArcherBuff){
-                    item.width/=2;
-                    item.sixArcherBuff = false;
-                }
-            } 
-         }            
+                this.sixArcherBuff = false;
+           } 
+        
          if(this.countClassType("heller") >= 3){
             jibanR+="三奶";
             this.hellForThree=true;
