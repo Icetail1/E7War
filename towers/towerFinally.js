@@ -201,8 +201,8 @@ class TowerFinally {
         b.width = 3;
         b.rayLen = 5;
         b.hpInit(150);
-        b.imgIndex = 3;
-        b.price = 9;
+        b.imgIndex = 9;
+        b.price = 5;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
