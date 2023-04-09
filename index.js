@@ -897,20 +897,20 @@ let refreshBoxPanel = setInterval(() => {
              world.user.money += 1;
 
          } 
-     }, 1000);   
+     }, 5000);   
     
 let archerForfour = setInterval(() => {
          if (world.fourArcherBuff && !isGamePause) {
              world.user.money += 1;
 
          } 
-     }, 1000);   
+     }, 5000);   
     
 let archerForSix = setInterval(() => {
          if (world.sixArcherBuff && !isGamePause) {
              world.user.money += 3;
 
          } 
-     }, 1000);   
+     }, 5000);   
 
 }
