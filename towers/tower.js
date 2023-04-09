@@ -43,9 +43,7 @@ class Tower extends CircleObject {
         this.threeKnightBuff = false;
         this.sixKnightBuff = false;
         
-        this.twoArcherBuff = false;
-        this.fourArcherBuff = false;
-        this.sixArcherBuff = false;
+
         
         this.twoThiefBuff = false;
         this.fourThiefBuff = false;
