@@ -891,5 +891,26 @@ let refreshBoxPanel = setInterval(() => {
 
          } 
      }, 100);  
+    
+ let archerForTwo = setInterval(() => {
+         if (world.twoArcherBuff) {
+             world.user.money += 1;
+
+         } 
+     }, 500);   
+    
+let archerForfour = setInterval(() => {
+         if (world.fourArcherBuff) {
+             world.user.money += 1;
+
+         } 
+     }, 500);   
+    
+let archerForSix = setInterval(() => {
+         if (world.sixArcherBuff) {
+             world.user.money += 1;
+
+         } 
+     }, 500);   
 
 }
