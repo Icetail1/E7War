@@ -84,11 +84,11 @@ class Functions {
      * @returns {number}
      */
     static levelMonsterHpAddedHard(level) {
-        return Math.floor(Math.pow(level, 2) + Math.pow(level, 0.7) * 50);
+        return Math.floor(Math.pow(level, 2) + Math.pow(level, 0.7) * 50 + Math.floor((level / 10))* 400);
     }
 
     static levelMonsterHpAddedNormal(level) {
-        let res = Math.floor(Math.pow(level, 1.7) + Math.pow(level, 0.5) * 50);
+        let res = Math.floor(Math.pow(level, 1.7) + Math.pow(level, 0.5) * 50 + Math.floor((level / 10))* 200);
         if (res > 10000) {
             res = 10000;
         }
@@ -96,7 +96,7 @@ class Functions {
     }
 
     static levelMonsterHpAddedEasy(level) {
-        let res = Math.floor(Math.pow(level, 1.5) + Math.pow(level, 0.5) * 50);
+        let res = Math.floor(Math.pow(level, 1.5) + Math.pow(level, 0.5) * 50+ Math.floor((level / 10))* 10);
         if (res > 500) {
             res = 500;
         }
@@ -153,11 +153,11 @@ class Functions {
     }
 
     static levelAddPriceNormal(level) {
-        return Math.floor((level / 10))+ 1;
+        return Math.floor((level / 5))+ 1;
     }
 
     static levelAddPriceHard(level) {
-        return Math.floor((level / 20))+ 1;
+        return Math.floor((level / 10))+ 1;
     }
 
     /**
