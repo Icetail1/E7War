@@ -23,6 +23,9 @@ class World {
         this.mode = "normal";
         this.hellForThree = false;
         this.hellForSix = false;
+        this.twoArcherBuff = false;
+        this.fourArcherBuff = false;
+        this.sixArcherBuff = false;
         // 安置大本
         let RootBuilding = BuildingFinally.Root(this);
         RootBuilding.pos = new Vector(this.width / 2, this.height / 2);
