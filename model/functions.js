@@ -157,7 +157,7 @@ class Functions {
     }
 
     static levelAddPriceHard(level) {
-        return Math.floor((level / 10))+ 1;
+        return Math.floor((level / 20))+ 1;
     }
 
     /**
