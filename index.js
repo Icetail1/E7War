@@ -872,7 +872,7 @@ let refreshBoxPanel = setInterval(() => {
               for(let item of world.getAllBuildingArr())
                 {
                    if(item.hp < item.maxHp && item.gameType === "Tower" && !isGamePause){
-                        item.hp += 2;
+                        item.hp += 3;
                     }
                 }
 
