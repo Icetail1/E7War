@@ -19,7 +19,7 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 1;
+        b.damage = 5;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 30;  // 射线的长度
@@ -137,7 +137,7 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 5;
+        b.damage = 10;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 40;  // 射线的长度
@@ -255,7 +255,7 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 10;
+        b.damage = 15;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 50;  // 射线的长度
@@ -374,7 +374,7 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 15;
+        b.damage = 20;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 55;  // 射线的长度
@@ -494,7 +494,7 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 20;
+        b.damage = 30;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 60;  // 射线的长度
@@ -614,11 +614,11 @@ class TowerFinally {
         b.clock = 10;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
-        b.damage = 30;
+        b.damage = 50;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
-        b.rayLen = 100;  // 射线的长度
-        b.width = 10;
+        b.rayLen = 300;  // 射线的长度
+        b.width = 100;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 100;
@@ -635,8 +635,8 @@ class TowerFinally {
         res.classType = "warrior";
         res.hpInit(2000);
         res.atkSpeed = 0.8;
-        res.rayLen=8;
-        res.width =8;
+        res.rayLen=30;
+        res.width =30;
         res.damage = 30;
         res.rangeR = 150;
         res.bar = res.initBar();
@@ -675,6 +675,8 @@ class TowerFinally {
         b.atkSpeed = 10;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
         b.clock = 10;
         b.width = 5;
         b.rayLen = 10;
@@ -695,7 +697,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.Bully_M;
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.attackBullyNum = 20;
         b.clock = 18;
         b.width = 2;
         b.rayLen = 7;
@@ -711,7 +713,7 @@ class TowerFinally {
         b.name = "YMD<br/>☆☆☆☆☆☆"
         b.classType = "heller";
         b.clock = 1;
-        b.damage = 70;
+        b.damage = 100;
         b.rangeR = 150;
         b.rayLen = 80;
         b.width = 8;
@@ -720,7 +722,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 35;
         b.price = 100;
-        b.atkSpeed = 8;
+        b.atkSpeed = 20;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
