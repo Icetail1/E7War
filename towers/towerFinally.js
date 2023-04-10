@@ -129,7 +129,7 @@ class TowerFinally {
         b.name = "光王子<br/>☆☆";
         b.hpInit(200);
         b.rangeR = 140;
-        b.atkSpeed = 10;
+        b.atkSpeed = 15;
         b.clock = 45;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -246,7 +246,7 @@ class TowerFinally {
         b.name = "火双<br/>☆☆☆";
         b.hpInit(300);
         b.rangeR = 160;
-        b.atkSpeed = 10;
+        b.atkSpeed = 20;
         b.clock = 40;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -364,7 +364,7 @@ class TowerFinally {
         b.name = "艾妲<br/>☆☆☆☆";
         b.hpInit(400);
         b.rangeR = 170;
-        b.atkSpeed = 10;
+        b.atkSpeed = 25;
         b.clock = 35;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -483,7 +483,7 @@ class TowerFinally {
         b.name = "光蜻蜓<br/>☆☆☆☆☆";
         b.hpInit(500);
         b.rangeR = 150;
-        b.atkSpeed = 10;
+        b.atkSpeed = 30;
         b.clock = 30;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -602,7 +602,7 @@ class TowerFinally {
         b.name = "暗露露卡<br/>☆☆☆☆☆☆";
         b.hpInit(600);
         b.rangeR = 200;
-        b.atkSpeed = 10;
+        b.atkSpeed = 35;
         b.clock = 25;
         b.rayNum = 2;
         b.rayDeviationRotate = 0;
