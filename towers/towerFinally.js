@@ -26,7 +26,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 2;
+        b.price = 1;
         b.imgIndex = 0;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -44,7 +44,7 @@ class TowerFinally {
         res.rayLen=1;
         res.bar = res.initBar();
         res.imgIndex = 1;
-        res.price = 2;
+        res.price = 1;
         res.classType = "warrior";
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
@@ -65,7 +65,7 @@ class TowerFinally {
         b.rangeR = 120;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 2;
-        b.price = 2;
+        b.price = 1;
         b.damage = 10;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -84,7 +84,7 @@ class TowerFinally {
         b.rayLen = 3;
         b.hpInit(100);
         b.imgIndex = 3;
-        b.price = 2;
+        b.price = 1;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
@@ -105,7 +105,7 @@ class TowerFinally {
         b.rayLen = 3;
         b.hpInit(1000);
         b.imgIndex = 4;
-        b.price = 2;
+        b.price = 1;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -124,7 +124,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 5;
-        b.price = 2;
+        b.price = 1;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -144,7 +144,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 10;
+        b.price = 2;
         b.imgIndex = 6;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -163,7 +163,7 @@ class TowerFinally {
         res.width =2;
         res.bar = res.initBar();
         res.imgIndex = 7;
-        res.price = 10;
+        res.price = 2;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -183,7 +183,7 @@ class TowerFinally {
         b.rangeR = 140;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
-        b.price = 10;
+        b.price = 2;
         b.damage = 20;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -202,7 +202,7 @@ class TowerFinally {
         b.rayLen = 5;
         b.hpInit(150);
         b.imgIndex = 9;
-        b.price = 10;
+        b.price = 2;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
@@ -223,7 +223,7 @@ class TowerFinally {
         b.rayLen = 5;
         b.hpInit(1200);
         b.imgIndex = 10;
-        b.price = 10;
+        b.price = 2;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -242,7 +242,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 11;
-        b.price = 10;
+        b.price = 2;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
@@ -262,7 +262,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 30;
+        b.price = 3;
         b.imgIndex = 12;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -282,7 +282,7 @@ class TowerFinally {
         res.rangeR = 120;
         res.bar = res.initBar();
         res.imgIndex = 13;
-        res.price = 30;
+        res.price = 3;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -302,7 +302,7 @@ class TowerFinally {
         b.rangeR = 160;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
-        b.price = 30;
+        b.price = 3;
         b.damage = 30;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -321,7 +321,7 @@ class TowerFinally {
         b.rayLen = 6;
         b.hpInit(200);
         b.imgIndex = 15;
-        b.price = 30;
+        b.price = 3;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
@@ -342,7 +342,7 @@ class TowerFinally {
         b.rayLen = 7;
         b.hpInit(1400);
         b.imgIndex = 16;
-        b.price = 30;
+        b.price = 3;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -360,7 +360,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 17;
-        b.price = 30;
+        b.price = 3;
         b.atkSpeed = 3;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -381,7 +381,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 50;
+        b.price = 4;
         b.imgIndex = 18;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -401,7 +401,7 @@ class TowerFinally {
         res.rangeR = 130;
         res.bar = res.initBar();
         res.imgIndex = 19;
-        res.price = 50;
+        res.price = 4;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -421,7 +421,7 @@ class TowerFinally {
         b.rangeR = 180;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 20;
-        b.price = 50;
+        b.price = 4;
         b.damage = 40;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -440,7 +440,7 @@ class TowerFinally {
         b.rayLen = 7;
         b.hpInit(250);
         b.imgIndex = 21;
-        b.price = 50;
+        b.price = 4;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
@@ -461,7 +461,7 @@ class TowerFinally {
         b.rayLen = 7;
         b.hpInit(1600);
         b.imgIndex = 22;
-        b.price = 50;
+        b.price = 4;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -479,7 +479,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 23;
-        b.price = 50;
+        b.price = 4;
         b.atkSpeed = 4;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -501,7 +501,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 80;
+        b.price = 5;
         b.imgIndex = 24;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -521,7 +521,7 @@ class TowerFinally {
         res.width =5;
         res.bar = res.initBar();
         res.imgIndex = 25;
-        res.price = 80;
+        res.price = 5;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -541,7 +541,7 @@ class TowerFinally {
         b.rangeR = 200;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 26;
-        b.price = 80;
+        b.price = 5;
         b.damage = 50;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -560,7 +560,7 @@ class TowerFinally {
         b.rayLen = 8;
         b.hpInit(300);
         b.imgIndex = 27;
-        b.price = 80;
+        b.price = 5;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
 
@@ -582,7 +582,7 @@ class TowerFinally {
         b.rayLen = 8;
         b.hpInit(1800);
         b.imgIndex = 28;
-        b.price = 80;
+        b.price = 5;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -600,7 +600,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 29;
-        b.price = 80;
+        b.price = 5;
         b.atkSpeed = 5;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
@@ -621,7 +621,7 @@ class TowerFinally {
         b.width = 20;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
-        b.price = 100;
+        b.price = 6;
         b.imgIndex = 30;
         b.level = 1;
         b.comment = "想要获取更强大的激光、闪电等等的高科技武器，就要从此处升级开始，该高科技炮塔会发射激光粒子子弹";
@@ -641,7 +641,7 @@ class TowerFinally {
         res.rangeR = 150;
         res.bar = res.initBar();
         res.imgIndex = 31;
-        res.price = 100;
+        res.price = 6;
         res.comment = "一种威力不小的攻击东西，回旋镖能够穿过敌人，对所有穿过的敌人造成伤害";
         return res;
     }
@@ -661,7 +661,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 32;
-        b.price = 100;
+        b.price = 6;
         b.damage = 60;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
@@ -683,7 +683,7 @@ class TowerFinally {
         b.rayLen = 10;
         b.hpInit(400);
         b.imgIndex = 33;
-        b.price = 100;
+        b.price = 6;
         b.comment =  `击中之后的冰冻蛋子会发生小爆炸，爆炸范围内的敌人会减速，这个减速效果可以累加，直到达到一个上限。但是冰冻和烧伤是互斥的，二者不能同时存在`;
         return b;
     }
@@ -704,7 +704,7 @@ class TowerFinally {
         b.rayLen = 7;
         b.hpInit(2000);
         b.imgIndex = 34;
-        b.price = 100;
+        b.price = 6;
         b.comment =  `发射频率很快的散弹子弹`;
         return b;
     }
@@ -722,7 +722,7 @@ class TowerFinally {
         b.rayColor = new MyColor(255, 0, 0, 1);
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 35;
-        b.price = 100;
+        b.price = 6;
         b.atkSpeed = 20;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
