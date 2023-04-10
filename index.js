@@ -561,6 +561,7 @@ function endlessMode(mode, haveGroup = true) {
                         item.damage += 1000;
                         item.atkSpeed += 50;
                         item.rangeR += 200;
+                        item.fireOn=true;
                     }
                  }
                  world.fireB= true;
