@@ -215,7 +215,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.SS_S;
         b.clock = 25;
         b.width = 2;
-        b.rayLen = 5;
+        b.rayLen = 3;
         b.hpInit(1200);
         b.imgIndex = 10;
         b.price = 2;
@@ -333,7 +333,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.SS_M;
         b.clock = 20;
         b.width = 2;
-        b.rayLen = 7;
+        b.rayLen = 6;
         b.hpInit(1400);
         b.imgIndex = 16;
         b.price = 3;
@@ -451,7 +451,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.SS_L;
         b.clock = 20;
         b.width = 3;
-        b.rayLen = 7;
+        b.rayLen = 8;
         b.hpInit(1600);
         b.imgIndex = 22;
         b.price = 4;
@@ -571,7 +571,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.SS_Second;
         b.clock = 20;
         b.width = 2;
-        b.rayLen = 8;
+        b.rayLen = 15;
         b.hpInit(1800);
         b.imgIndex = 28;
         b.price = 5;
@@ -689,7 +689,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.SS_Third;
         b.clock = 6;
         b.width = 2;
-        b.rayLen = 7;
+        b.rayLen = 20;
         b.hpInit(2000);
         b.imgIndex = 34;
         b.price = 6;
