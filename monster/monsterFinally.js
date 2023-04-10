@@ -35,7 +35,8 @@ class MonsterFinally {
         m.maxHp *= 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
-        m.maxSpeedN = 1;
+        m.maxSpeedN = 0.5;
+        m.r += 5;
         m.imgIndex = 25;
         m.comment = "速度会越来越快";
         return m;
@@ -49,7 +50,8 @@ class MonsterFinally {
         m.maxHp *= 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
-        m.maxSpeedN = 2;
+        m.r += 10;
+        m.maxSpeedN = 1;
         m.imgIndex = 25;
         m.comment = "加速度，速度越来越快";
         return m;
@@ -63,7 +65,8 @@ class MonsterFinally {
         m.maxHp *= 0.1;
         m.speedNumb = 0.01;
         m.accelerationV = 0.01;
-        m.maxSpeedN = 3;
+        m.maxSpeedN = 1.5;
+        m.r += 15;
         m.imgIndex = 25;
         m.comment = "比普通鼠鼠加速的更快";
         return m;
@@ -478,8 +481,8 @@ class MonsterFinally {
         m.bodyStrokeWidth = 5;
 
         m.accelerationV = 0.01;
-        m.maxSpeedN = 3;
-        m.r = 5;
+        m.maxSpeedN = 1.5;
+        m.r = 10;
         m.imgIndex = 18;
         m.comment = "快速飞向Ice，对Ice造成撞击伤害";
         return m;
