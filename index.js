@@ -552,12 +552,12 @@ function endlessMode(mode, haveGroup = true) {
             // 烧魂按钮
             let fireB = document.createElement("button");
             fireB.id = "fireB";
-            fireB.innerText = "烧魂/20";
+            fireB.innerText = "烧魂/25";
             fireB.addEventListener("click", () => {
-                 world.user.money -= 20;
+                 world.user.money -= 25;
                  for(let item of world.getAllBuildingArr())
                  {
-                   if(item.gameType === "Tower"){
+                   if(item.gameType === "Tower"&& !item.fireOn){
                         item.damage += 1000;
                         item.atkSpeed += 50;
                         item.rangeR += 200;
@@ -853,6 +853,7 @@ let refreshBoxPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　  let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
+        let fireBtn = document.getElementById("fireB");
         let priceB =  world.mainLevel * 2;
         if (world.user.money < priceB ) {
                 levelupBtn.setAttribute("disabled", "disabled");
@@ -866,6 +867,12 @@ let refreshBoxPanel = setInterval(() => {
             }
             else {
                 refreshBtn.removeAttribute("disabled");
+           }
+        if (world.user.money < 25) {
+                fireBtn.setAttribute("disabled", "disabled");
+            }
+            else {
+                fireBtn.removeAttribute("disabled");
            }
        
                 
