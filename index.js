@@ -585,7 +585,7 @@ function endlessMode(mode, haveGroup = true) {
                 }
             });
 
-            panelEle.appendChild(test);
+           // panelEle.appendChild(test);
             
         }
     }
