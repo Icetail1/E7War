@@ -16,7 +16,7 @@ class TowerFinally {
         b.hpInit(200);
         b.rangeR = 120;
         b.atkSpeed = 10;
-        b.clock = 50;
+        b.clock = 20;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 5;
@@ -130,7 +130,7 @@ class TowerFinally {
         b.hpInit(200);
         b.rangeR = 140;
         b.atkSpeed = 15;
-        b.clock = 45;
+        b.clock = 18;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 10;
@@ -247,7 +247,7 @@ class TowerFinally {
         b.hpInit(300);
         b.rangeR = 160;
         b.atkSpeed = 20;
-        b.clock = 40;
+        b.clock = 16;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 15;
@@ -365,7 +365,7 @@ class TowerFinally {
         b.hpInit(400);
         b.rangeR = 170;
         b.atkSpeed = 25;
-        b.clock = 35;
+        b.clock = 14;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 20;
@@ -484,7 +484,7 @@ class TowerFinally {
         b.hpInit(500);
         b.rangeR = 150;
         b.atkSpeed = 30;
-        b.clock = 30;
+        b.clock = 12;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
         b.damage = 30;
@@ -603,7 +603,7 @@ class TowerFinally {
         b.hpInit(600);
         b.rangeR = 200;
         b.atkSpeed = 35;
-        b.clock = 25;
+        b.clock = 10;
         b.rayNum = 2;
         b.rayDeviationRotate = 0;
         b.damage = 50;
