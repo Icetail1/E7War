@@ -23,7 +23,7 @@ class TowerFinally {
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 2;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 1;
@@ -59,14 +59,14 @@ class TowerFinally {
         b.clock = 20;
         b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 1;
+        b.width = 10;
         b.rayRepel = 0;
         b.hpInit(20);
         b.rangeR = 120;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 2;
         b.price = 1;
-        b.damage = 10;
+        b.damage = 5;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -93,13 +93,9 @@ class TowerFinally {
         b.name = "拉斯<br/>☆"
         b.classType = "knight";
         b.rangeR = 100;
-        b.damage = 1;
+        b.damage = 2;
         b.atkSpeed = 1;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
         b.clock = 30;
         b.width = 2;
         b.rayLen = 3;
@@ -116,8 +112,8 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 20;
-        b.rangeR = 100;
-        b.rayLen = 30;
+        b.rangeR = 50;
+        b.rayLen = 50;
         b.width = 1;
         b.atkSpeed = 1;
         b.hpInit(500);
@@ -135,13 +131,13 @@ class TowerFinally {
         b.rangeR = 140;
         b.atkSpeed = 2;
         b.clock = 10;
-        b.rayNum = 1;
+        b.rayNum = 2;
         b.rayDeviationRotate = 0;
         b.damage = 10;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 4;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 2;
@@ -177,14 +173,14 @@ class TowerFinally {
         b.clock = 25;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 2;
+        b.width = 10;
         b.rayRepel = 0;
         b.hpInit(40);
         b.rangeR = 140;
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
         b.price = 2;
-        b.damage = 20;
+        b.damage = 10;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -197,6 +193,9 @@ class TowerFinally {
         b.atkSpeed = 3;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 2;
         b.clock = 10;
         b.width = 3;
         b.rayLen = 5;
@@ -211,13 +210,9 @@ class TowerFinally {
         b.name = "萝季<br/>☆☆"
         b.classType = "knight";
         b.rangeR = 110;
-        b.damage = 3;
+        b.damage = 5;
         b.atkSpeed = 2;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 6;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
         b.clock = 25;
         b.width = 2;
         b.rayLen = 5;
@@ -234,8 +229,8 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 30;
-        b.rangeR = 110;
-        b.rayLen = 40;
+        b.rangeR = 70;
+        b.rayLen = 70;
         b.width = 3;
         b.hpInit(1000);
         b.atkSpeed = 2;
@@ -253,13 +248,13 @@ class TowerFinally {
         b.rangeR = 160;
         b.atkSpeed = 3;
         b.clock = 10;
-        b.rayNum = 1;
+        b.rayNum = 3;
         b.rayDeviationRotate = 0;
         b.damage = 15;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 6;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 3;
@@ -294,7 +289,7 @@ class TowerFinally {
         b.classType = "thief";
         b.atkSpeed = 8;
         b.clock = 20;
-        b.rayLen = 8;  // 射线的长度
+        b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 3;
         b.rayRepel = 0;
@@ -303,7 +298,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
         b.price = 3;
-        b.damage = 30;
+        b.damage = 15;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -316,6 +311,9 @@ class TowerFinally {
         b.atkSpeed = 4;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 3;
         b.clock = 10;
         b.width = 2;
         b.rayLen = 6;
@@ -330,13 +328,9 @@ class TowerFinally {
         b.name = "火呆<br/>☆☆☆"
         b.classType = "knight";
         b.rangeR = 140;
-        b.damage = 5;
+        b.damage = 8;
         b.atkSpeed = 3;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
         b.clock = 20;
         b.width = 2;
         b.rayLen = 7;
@@ -353,7 +347,7 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 40;
-        b.rangeR = 120;
+        b.rangeR = 90;
         b.rayLen = 50;
         b.width = 4;
         b.hpInit(1200);
@@ -372,13 +366,13 @@ class TowerFinally {
         b.rangeR = 170;
         b.atkSpeed = 4;
         b.clock = 10;
-        b.rayNum = 1;
+        b.rayNum = 4;
         b.rayDeviationRotate = 0;
         b.damage = 20;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 8;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 4;
@@ -435,6 +429,9 @@ class TowerFinally {
         b.atkSpeed = 5;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 4;
         b.clock = 10;
         b.width = 5;
         b.rayLen = 7;
@@ -451,11 +448,7 @@ class TowerFinally {
         b.rangeR = 160;
         b.damage = 7;
         b.atkSpeed = 5;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
         b.clock = 20;
         b.width = 3;
         b.rayLen = 7;
@@ -472,7 +465,7 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 50;
-        b.rangeR = 130;
+        b.rangeR = 110;
         b.rayLen = 55;
         b.width = 5;
         b.hpInit(1400);
@@ -492,13 +485,13 @@ class TowerFinally {
         b.rangeR = 150;
         b.atkSpeed = 5;
         b.clock = 10;
-        b.rayNum = 1;
+        b.rayNum = 5;
         b.rayDeviationRotate = 0;
         b.damage = 30;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 10;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 5;
@@ -555,6 +548,9 @@ class TowerFinally {
         b.atkSpeed = 8;
         b.bullySlideRate = 1;
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
+        b.bullyRotate = Math.PI / 10;
+        b.attackFunc = b.shrapnelAttack;
+        b.attackBullyNum = 5;
         b.clock = 10;
         b.width = 2;
         b.rayLen = 8;
@@ -572,11 +568,7 @@ class TowerFinally {
         b.rangeR = 170;
         b.damage = 9;
         b.atkSpeed = 3;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
         b.clock = 20;
         b.width = 2;
         b.rayLen = 8;
@@ -593,7 +585,7 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 60;
-        b.rangeR = 140;
+        b.rangeR = 130;
         b.rayLen = 60;
         b.width = 6;
         b.hpInit(1600);
@@ -612,13 +604,13 @@ class TowerFinally {
         b.rangeR = 200;
         b.atkSpeed = 6;
         b.clock = 10;
-        b.rayNum = 1;
+        b.rayNum = 10;
         b.rayDeviationRotate = 0;
         b.damage = 50;
         b.rayThrowAble = false;
         b.attackFunc = b.shootingAttack;
         b.rayLen = 20;  // 射线的长度
-        b.width = 20;
+        b.width = 12;
         b.rayColor = new MyColor(69, 214, 165, 1);
         b.classType = "mage";
         b.price = 6;
@@ -634,11 +626,11 @@ class TowerFinally {
         res.name = "史瑞杰思<br/>☆☆☆☆☆☆";
         res.classType = "warrior";
         res.hpInit(2000);
-        res.atkSpeed = 0.8;
+        res.atkSpeed = 2;
         res.rayLen=30;
         res.width =30;
         res.damage = 30;
-        res.rangeR = 150;
+        res.rangeR = 200;
         res.bar = res.initBar();
         res.imgIndex = 31;
         res.price = 6;
@@ -677,7 +669,7 @@ class TowerFinally {
         b.getmMainBullyFunc = BullyFinally.Frozen_L;
         b.bullyRotate = Math.PI / 10;
         b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 5;
+        b.attackBullyNum = 10;
         b.clock = 10;
         b.width = 5;
         b.rayLen = 10;
@@ -691,15 +683,11 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "水呆<br/>☆☆☆☆☆☆"
         b.classType = "knight";
-        b.rangeR = 180;
+        b.rangeR = 250;
         b.damage = 15;
         b.atkSpeed = 5;
-        b.bullySpeedAddMax = 0.5;
-        b.getmMainBullyFunc = BullyFinally.Bully_M;
-        b.bullyRotate = Math.PI / 10;
-        b.attackFunc = b.shrapnelAttack;
-        b.attackBullyNum = 20;
-        b.clock = 18;
+        b.getmMainBullyFunc = BullyFinally.ThunderBall();
+        b.clock = 6;
         b.width = 2;
         b.rayLen = 7;
         b.hpInit(2000);
@@ -715,7 +703,7 @@ class TowerFinally {
         b.classType = "heller";
         b.clock = 1;
         b.damage = 100;
-        b.rangeR = 150;
+        b.rangeR = 200;
         b.rayLen = 80;
         b.width = 8;
         b.hpInit(1800);
@@ -723,7 +711,7 @@ class TowerFinally {
         b.attackFunc = b.scanningAttack;
         b.imgIndex = 35;
         b.price = 6;
-        b.atkSpeed = 20;
+        b.atkSpeed = 50;
         b.comment = `激光不再有固定的目标，开始直接旋转扫射，只要被激光扫到，就会受到伤害`
         return b;
     }
