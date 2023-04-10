@@ -497,12 +497,12 @@ class World {
                 if(this.fireB){
                      for(let item of this.batterys)
                          {  
-                           if(fireon)
+                           if(fireOn)
                            {
                             item.damage -= 1000;
                             item.atkSpeed -= 50；
                             item.rangeR -= 200;
-                            item.fireon = false;
+                            item.fireOn = false;
                            }
                         }
                     this.fireB=false;
