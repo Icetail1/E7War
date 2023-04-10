@@ -269,6 +269,7 @@ function endlessMode(mode, haveGroup = true) {
     })
     let world = new World(canvasEle.width, canvasEle.height);
     restartBtn.addEventListener("click", () => {
+            console.log("!!!!");
             location.reload();
             clearInterval(mainAni);
     })
