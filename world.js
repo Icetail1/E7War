@@ -500,7 +500,7 @@ class World {
                            if(fireOn)
                            {
                             item.damage -= 1000;
-                            item.atkSpeed -= 50；
+                            item.atkSpeed -= 50;
                             item.rangeR -= 200;
                             item.fireOn = false;
                            }
