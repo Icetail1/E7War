@@ -328,7 +328,7 @@ function endlessMode(mode, haveGroup = true) {
     let boxListClassName = "boxPanel";  // 选择界面的选择对象面板 div类名
     let smallLevelUpPanelEle = document.querySelector("#smallLevelUpPanel");  // 升级窗口的元素
     let changed= false;
-    let priceB = Math.pow(world.mainLevel,3) * 5;
+    let priceB = world.mainLevel * 2;
     
     /**
      * 显示初始化面板
@@ -513,16 +513,16 @@ function endlessMode(mode, haveGroup = true) {
             // 刷新按钮
             let refreshB = document.createElement("button");
             refreshB.id = "refreshB";
-            refreshB.innerText = "刷新/5";
+            refreshB.innerText = "刷新/1";
             refreshB.addEventListener("click", () => {
-                 world.user.money -= 5;
+                 world.user.money -= 1;
                  panelEle.style.display = "none";
                  showInitPanel();
                  changed= true;
             });
             initPanelSelect = false;
             panelEle.appendChild(refreshB);
-            let priceB =  Math.pow(world.mainLevel,3) * 5;
+            let priceB =  world.mainLevel * 2;
             // 升本按钮
             let levelupB = document.createElement("button");
            
@@ -825,7 +825,7 @@ let refreshBoxPanel = setInterval(() => {
         let towerBtnArr = document.getElementsByClassName(btnClassName);
 　　　　  let refreshBtn = document.getElementById("refreshB");
         let levelupBtn = document.getElementById("levelupB");
-        let priceB =  Math.pow(world.mainLevel,3) * 5;
+        let priceB =  world.mainLevel * 2;
         if (world.user.money < priceB ) {
                 levelupBtn.setAttribute("disabled", "disabled");
             }
@@ -833,7 +833,7 @@ let refreshBoxPanel = setInterval(() => {
                 levelupBtn.removeAttribute("disabled");
             }
 
-        if (world.user.money < 5) {
+        if (world.user.money < 1) {
                 refreshBtn.setAttribute("disabled", "disabled");
             }
             else {
@@ -897,20 +897,20 @@ let refreshBoxPanel = setInterval(() => {
              world.user.money += 1;
 
          } 
-     }, 5000);   
+     }, 10000);   
     
 let archerForfour = setInterval(() => {
          if (world.fourArcherBuff && !isGamePause) {
              world.user.money += 1;
 
          } 
-     }, 5000);   
+     }, 10000);   
     
 let archerForSix = setInterval(() => {
          if (world.sixArcherBuff && !isGamePause) {
              world.user.money += 3;
 
          } 
-     }, 5000);   
+     }, 10000);   
 
 }
