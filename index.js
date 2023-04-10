@@ -255,7 +255,7 @@ function endlessMode(mode, haveGroup = true) {
      * @type {Element}
      */
     let pauseBtn = document.querySelector(".pause");
-    let restartBtn = document.querySelector(".backPage");
+    let restartBtn = thisInterface.querySelector(".backPage");
     let isGamePause = false;
     let maxMonsterLevel = 0;
     let gameEnd = false;  // 游戏是否被迫结束
