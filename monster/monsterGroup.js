@@ -68,7 +68,7 @@ class MonsterGroup {
         };
         // todo 对mode进行分情况
         let monsterArr;
-        if (level < 20) {
+        if (level < 10) {
             monsterArr = Monster10BeforeArr;
 
         } else {
