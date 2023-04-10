@@ -542,7 +542,6 @@ class MonsterFinally {
         m.r = 35;
         m.speedNumb = 1;
         m.imgIndex = 24;
-        m.addPrice = 10;
         m.comment = "像骷髅一样，一旦发现了你的英雄，便会迅速对你的英雄进行收割对你的英雄造成伤害";
         return m;
     }
@@ -552,7 +551,7 @@ class MonsterFinally {
         m.name = "恐怖机器龟";
         m.imgIndex = 23;
         m.r = 50;
-        m.addPrice = 50;
+        m.addPrice = 10;
         m.comment = "一种由金属打造而成的恐怖机器，威力小的攻击几乎对他没有伤害。具有很强的近战能力。";
         return m;
     }
