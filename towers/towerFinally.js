@@ -56,7 +56,7 @@ class TowerFinally {
         b.name = "小光刺<br/>☆"
         b.atkSpeed = 3;
         b.classType = "thief";
-        b.clock = 20;
+        b.clock = 60;
         b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
@@ -66,7 +66,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 2;
         b.price = 1;
-        b.damage = 5;
+        b.damage = 10;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -170,7 +170,7 @@ class TowerFinally {
         b.name = "岚<br/>☆☆"
         b.atkSpeed = 6;
         b.classType = "thief";
-        b.clock = 25;
+        b.clock = 55;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
@@ -180,7 +180,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 8;
         b.price = 2;
-        b.damage = 10;
+        b.damage = 20;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -288,7 +288,7 @@ class TowerFinally {
         b.name = "木席德<br/>☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 8;
-        b.clock = 20;
+        b.clock = 50;
         b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 3;
@@ -298,7 +298,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 14;
         b.price = 3;
-        b.damage = 15;
+        b.damage = 30;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
@@ -406,7 +406,7 @@ class TowerFinally {
         b.name = "木25<br/>☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 10;
-        b.clock = 18;
+        b.clock = 45;
         b.rayLen = 10;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 4;
@@ -525,7 +525,7 @@ class TowerFinally {
         b.name = "水镰刀<br/>☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 12;
-        b.clock = 16;
+        b.clock = 40;
         b.rayLen = 12;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
@@ -644,7 +644,7 @@ class TowerFinally {
         b.name = "血卡<br/>☆☆☆☆☆☆"
         b.classType = "thief";
         b.atkSpeed = 15;
-        b.clock = 15;
+        b.clock = 30;
         b.rayLen = 15;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 10;
@@ -654,7 +654,7 @@ class TowerFinally {
         b.attackFunc = b.gerAttack;
         b.imgIndex = 32;
         b.price = 6;
-        b.damage = 60;
+        b.damage = 80;
         b.comment =  `发射出一个空气波，这个空气波对怪物具有击退作用`;
         return b;
     }
