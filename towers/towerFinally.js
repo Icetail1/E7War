@@ -54,12 +54,12 @@ class TowerFinally {
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "小光刺<br/>☆";
-        b.atkSpeed = 3;
+        b.atkSpeed = 2;
         b.classType = "thief";
         b.clock = 60;
         b.rayLen = 2;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 2;
         b.rayRepel = 0;
         b.hpInit(20);
         b.rangeR = 120;
@@ -173,7 +173,7 @@ class TowerFinally {
         b.clock = 55;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 5;
         b.rayRepel = 0;
         b.hpInit(40);
         b.rangeR = 140;
@@ -287,11 +287,11 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "木席德<br/>☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 8;
+        b.atkSpeed = 5;
         b.clock = 50;
-        b.rayLen = 10;  // 射线的长度
+        b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 3;
+        b.width = 5;
         b.rayRepel = 0;
         b.hpInit(60);
         b.rangeR = 160;
@@ -405,11 +405,11 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "木25<br/>☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 10;
+        b.atkSpeed = 5;
         b.clock = 45;
-        b.rayLen = 10;  // 射线的长度
+        b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 4;
+        b.width = 5;
         b.rayRepel = 0;
         b.hpInit(80);
         b.rangeR = 180;
@@ -524,9 +524,9 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "水镰刀<br/>☆☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 12;
+        b.atkSpeed = 5;
         b.clock = 40;
-        b.rayLen = 12;  // 射线的长度
+        b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
         b.rayRepel = 0;
@@ -643,11 +643,11 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "血卡<br/>☆☆☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 15;
+        b.atkSpeed = 5;
         b.clock = 30;
-        b.rayLen = 15;  // 射线的长度
+        b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
-        b.width = 10;
+        b.width = 5;
         b.rayRepel = 0.1;
         b.hpInit(100);
         b.rangeR = 250;
