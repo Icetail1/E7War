@@ -603,7 +603,7 @@ class TowerFinally {
         b.hpInit(600);
         b.rangeR = 200;
         b.atkSpeed = 6;
-        b.clock = 10;
+        b.clock = 4;
         b.rayNum = 10;
         b.rayDeviationRotate = 0;
         b.damage = 50;
