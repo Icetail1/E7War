@@ -529,12 +529,10 @@ class World {
                     m = choice(MonsterEasyArr)(this);
                     m.hpInit(m.maxHp + Functions.levelMonsterHpAddedEasy(this.monsterFlow.level - 1));
               //     m.addPrice += Functions.levelAddPrice(this.monsterFlow.level - 1);
-                    m.addPrice=0;
                 } else if (this.mode === "normal") {
                     m.hpInit(m.maxHp + Functions.levelMonsterHpAddedNormal(this.monsterFlow.level - 1));
                     m.colishDamage += Functions.levelCollideAdded(this.time / 500);
             //        m.addPrice += Functions.levelAddPriceNormal(this.monsterFlow.level - 1);
-                    m.addPrice=0;
                 } else if (this.mode === "hard") {
                     if (this.time < 5000) {
                         m = choice(Monster10BeforeArr)(this);
@@ -542,7 +540,6 @@ class World {
                     m.hpInit(m.maxHp + Functions.levelMonsterHpAddedHard(this.monsterFlow.level - 1));
                     m.colishDamage += Functions.levelCollideAddedHard(this.time / 500);
            //         m.addPrice += Functions.levelAddPriceHard(this.monsterFlow.level - 1);
-                    m.addPrice=0;
                 }
                 this.monsters.add(m);
             }
