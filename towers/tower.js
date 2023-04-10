@@ -40,6 +40,7 @@ class Tower extends CircleObject {
         this.price = 10 ;// 这个炮塔需要花多少钱来买
         this.level = 1 ;//level
         this.classType = "knight"; //level
+        this.fireOn=false;
         this.threeKnightBuff = false;
         this.sixKnightBuff = false;
         
