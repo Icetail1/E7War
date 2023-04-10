@@ -268,7 +268,7 @@ function endlessMode(mode, haveGroup = true) {
         }
     })
     restartBtn.addEventListener("click", () => {
-        gameEnd = true;
+        world.rootBuilding.isDead = true;
     })
 
     /**
