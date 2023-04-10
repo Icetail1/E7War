@@ -15,7 +15,7 @@ class TowerFinally {
 
         b.hpInit(200);
         b.rangeR = 120;
-        b.atkSpeed = 10;
+        b.atkSpeed = 1;
         b.clock = 20;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -54,7 +54,7 @@ class TowerFinally {
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "小光刺<br/>☆";
-        b.atkSpeed = 2;
+        b.atkSpeed = 1;
         b.classType = "thief";
         b.clock = 60;
         b.rayLen = 2;  // 射线的长度
@@ -93,10 +93,10 @@ class TowerFinally {
         b.name = "拉斯<br/>☆";
         b.classType = "knight";
         b.rangeR = 100;
-        b.damage = 2;
+        b.damage = 1;
         b.atkSpeed = 1;
         b.getmMainBullyFunc = BullyFinally.SS_S;
-        b.clock = 30;
+        b.clock = 80;
         b.width = 2;
         b.rayLen = 3;
         b.hpInit(1000);
@@ -113,7 +113,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 20;
         b.rangeR = 50;
-        b.rayLen = 50;
+        b.rayLen = 100;
         b.width = 1;
         b.atkSpeed = 1;
         b.hpInit(500);
@@ -129,7 +129,7 @@ class TowerFinally {
         b.name = "光王子<br/>☆☆";
         b.hpInit(200);
         b.rangeR = 140;
-        b.atkSpeed = 15;
+        b.atkSpeed = 1;
         b.clock = 18;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -168,7 +168,7 @@ class TowerFinally {
     static thief_2(world) {
         let b = new TowerRay(0, 0, world);
         b.name = "岚<br/>☆☆";
-        b.atkSpeed = 6;
+        b.atkSpeed = 1;
         b.classType = "thief";
         b.clock = 55;
         b.rayLen = 5;  // 射线的长度
@@ -210,10 +210,10 @@ class TowerFinally {
         b.name = "萝季<br/>☆☆";
         b.classType = "knight";
         b.rangeR = 110;
-        b.damage = 5;
+        b.damage = 1;
         b.atkSpeed = 2;
         b.getmMainBullyFunc = BullyFinally.SS_S;
-        b.clock = 25;
+        b.clock = 80;
         b.width = 2;
         b.rayLen = 3;
         b.hpInit(1200);
@@ -230,7 +230,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 30;
         b.rangeR = 70;
-        b.rayLen = 70;
+        b.rayLen = 140;
         b.width = 3;
         b.hpInit(1000);
         b.atkSpeed = 2;
@@ -246,7 +246,7 @@ class TowerFinally {
         b.name = "火双<br/>☆☆☆";
         b.hpInit(300);
         b.rangeR = 160;
-        b.atkSpeed = 20;
+        b.atkSpeed = 1;
         b.clock = 16;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -287,7 +287,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "木席德<br/>☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 5;
+        b.atkSpeed = 1;
         b.clock = 50;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -328,10 +328,10 @@ class TowerFinally {
         b.name = "火呆<br/>☆☆☆";
         b.classType = "knight";
         b.rangeR = 140;
-        b.damage = 8;
+        b.damage = 1;
         b.atkSpeed = 3;
         b.getmMainBullyFunc = BullyFinally.SS_M;
-        b.clock = 20;
+        b.clock = 80;
         b.width = 2;
         b.rayLen = 6;
         b.hpInit(1400);
@@ -348,7 +348,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 40;
         b.rangeR = 90;
-        b.rayLen = 50;
+        b.rayLen = 180;
         b.width = 4;
         b.hpInit(1200);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -364,7 +364,7 @@ class TowerFinally {
         b.name = "艾妲<br/>☆☆☆☆";
         b.hpInit(400);
         b.rangeR = 170;
-        b.atkSpeed = 25;
+        b.atkSpeed = 1;
         b.clock = 14;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -405,7 +405,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "木25<br/>☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 5;
+        b.atkSpeed = 1;
         b.clock = 45;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -446,10 +446,10 @@ class TowerFinally {
         b.name = "水泰<br/>☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 160;
-        b.damage = 7;
+        b.damage = 1;
         b.atkSpeed = 5;
         b.getmMainBullyFunc = BullyFinally.SS_L;
-        b.clock = 20;
+        b.clock = 80;
         b.width = 3;
         b.rayLen = 8;
         b.hpInit(1600);
@@ -466,7 +466,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 50;
         b.rangeR = 110;
-        b.rayLen = 55;
+        b.rayLen = 220;
         b.width = 5;
         b.hpInit(1400);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -483,7 +483,7 @@ class TowerFinally {
         b.name = "光蜻蜓<br/>☆☆☆☆☆";
         b.hpInit(500);
         b.rangeR = 150;
-        b.atkSpeed = 30;
+        b.atkSpeed = 1;
         b.clock = 12;
         b.rayNum = 1;
         b.rayDeviationRotate = 0;
@@ -524,7 +524,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "水镰刀<br/>☆☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 5;
+        b.atkSpeed = 1;
         b.clock = 40;
         b.rayLen = 5;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -566,10 +566,10 @@ class TowerFinally {
         b.name = "火莉莉<br/>☆☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 170;
-        b.damage = 9;
+        b.damage = 1;
         b.atkSpeed = 3;
         b.getmMainBullyFunc = BullyFinally.SS_Second;
-        b.clock = 20;
+        b.clock = 80;
         b.width = 2;
         b.rayLen = 15;
         b.hpInit(1800);
@@ -586,7 +586,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 60;
         b.rangeR = 130;
-        b.rayLen = 60;
+        b.rayLen = 260;
         b.width = 6;
         b.hpInit(1600);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -602,7 +602,7 @@ class TowerFinally {
         b.name = "暗露露卡<br/>☆☆☆☆☆☆";
         b.hpInit(600);
         b.rangeR = 200;
-        b.atkSpeed = 35;
+        b.atkSpeed = 1;
         b.clock = 10;
         b.rayNum = 2;
         b.rayDeviationRotate = 0;
@@ -643,7 +643,7 @@ class TowerFinally {
         let b = new TowerRay(0, 0, world);
         b.name = "血卡<br/>☆☆☆☆☆☆";
         b.classType = "thief";
-        b.atkSpeed = 5;
+        b.atkSpeed = 1;
         b.clock = 30;
         b.rayLen = 20;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
@@ -684,10 +684,10 @@ class TowerFinally {
         b.name = "水呆<br/>☆☆☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 250;
-        b.damage = 15;
+        b.damage = 1;
         b.atkSpeed = 5;
         b.getmMainBullyFunc = BullyFinally.SS_Third;
-        b.clock = 6;
+        b.clock = 60;
         b.width = 2;
         b.rayLen = 20;
         b.hpInit(2000);
@@ -704,7 +704,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 100;
         b.rangeR = 200;
-        b.rayLen = 80;
+        b.rayLen = 400;
         b.width = 8;
         b.hpInit(1800);
         b.rayColor = new MyColor(255, 0, 0, 1);
