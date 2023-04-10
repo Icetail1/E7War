@@ -30,7 +30,7 @@ class Monster extends CircleObject {
         this.hpInit(10);
         this.colishDamage = 10;
         this.r = 10;  // 身体半径
-        this.addPrice = 1;  // 奖金
+        this.addPrice = 0;  // 奖金
         this.destination = new Vector(this.world.width / 2, this.world.height / 2);  // 默认的目的地是中心点
         this.bodyColor = MyColor.arrTo([25, 25, 25, 0.8]);
         this.hpColor = MyColor.arrTo([200, 20, 20, 0.5]);
@@ -112,8 +112,7 @@ class Monster extends CircleObject {
      */
     dataInit(flowNum) {
         this.hpInit(this.maxHp + Functions.levelMonsterHpAddedHard(flowNum));
-        this.colishDamage += Functions.levelCollideAddedHard(flowNum);
-        this.addPrice += Functions.levelAddPrice(flowNum);
+        this.addPrice = 0;
     }
 
     /**
