@@ -53,7 +53,7 @@ class TowerFinally {
 
     static thief_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "小光刺<br/>☆"
+        b.name = "小光刺<br/>☆";
         b.atkSpeed = 3;
         b.classType = "thief";
         b.clock = 60;
@@ -90,7 +90,7 @@ class TowerFinally {
     }
     static knight_1(world) {
         let b = new Tower(0, 0, world);
-        b.name = "拉斯<br/>☆"
+        b.name = "拉斯<br/>☆";
         b.classType = "knight";
         b.rangeR = 100;
         b.damage = 2;
@@ -108,7 +108,7 @@ class TowerFinally {
 
     static heller_1(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "偶像<br/>☆"
+        b.name = "偶像<br/>☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 20;
@@ -167,7 +167,7 @@ class TowerFinally {
 
     static thief_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "岚<br/>☆☆"
+        b.name = "岚<br/>☆☆";
         b.atkSpeed = 6;
         b.classType = "thief";
         b.clock = 55;
@@ -225,7 +225,7 @@ class TowerFinally {
 
     static heller_2(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "暗水奶<br/>☆☆"
+        b.name = "暗水奶<br/>☆☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 30;
@@ -285,7 +285,7 @@ class TowerFinally {
 
     static thief_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "木席德<br/>☆☆☆"
+        b.name = "木席德<br/>☆☆☆";
         b.classType = "thief";
         b.atkSpeed = 8;
         b.clock = 50;
@@ -343,7 +343,7 @@ class TowerFinally {
 
     static heller_3(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "EMT<br/>☆☆☆"
+        b.name = "EMT<br/>☆☆☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 40;
@@ -403,7 +403,7 @@ class TowerFinally {
 
     static thief_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "木25<br/>☆☆☆☆"
+        b.name = "木25<br/>☆☆☆☆";
         b.classType = "thief";
         b.atkSpeed = 10;
         b.clock = 45;
@@ -461,7 +461,7 @@ class TowerFinally {
 
     static heller_4(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "圣女<br/>☆☆☆☆"
+        b.name = "圣女<br/>☆☆☆☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 50;
@@ -522,7 +522,7 @@ class TowerFinally {
 
     static thief_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "水镰刀<br/>☆☆☆☆☆"
+        b.name = "水镰刀<br/>☆☆☆☆☆";
         b.classType = "thief";
         b.atkSpeed = 12;
         b.clock = 40;
@@ -581,7 +581,7 @@ class TowerFinally {
 
     static heller_5(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "光兔<br/>☆☆☆☆☆"
+        b.name = "光兔<br/>☆☆☆☆☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 60;
@@ -641,7 +641,7 @@ class TowerFinally {
 
     static thief_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "血卡<br/>☆☆☆☆☆☆"
+        b.name = "血卡<br/>☆☆☆☆☆☆";
         b.classType = "thief";
         b.atkSpeed = 15;
         b.clock = 30;
@@ -699,7 +699,7 @@ class TowerFinally {
 
     static heller_6(world) {
         let b = new TowerRay(0, 0, world);
-        b.name = "YMD<br/>☆☆☆☆☆☆"
+        b.name = "YMD<br/>☆☆☆☆☆☆";
         b.classType = "heller";
         b.clock = 1;
         b.damage = 100;
