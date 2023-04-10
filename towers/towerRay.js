@@ -14,7 +14,7 @@ class TowerRay extends Tower {
         this.hpInit(5000);
         this.price = 1000 // 这个炮塔需要花多少钱来买
 
-        this.rayLen = 1000;  // 射线的长度
+        this.rayLen = this.rangeR;  // 射线的长度
         this.damage = 1;  // 打击一次的伤害
 
         this.targetLiveTime = 0;  // 锁定目标的时间
@@ -59,7 +59,7 @@ class TowerRay extends Tower {
      */
     shoot() {
         if (this.liveTime % this.clock === 0) {
-            let line = new Line(this.pos, this.pos.plus(this.dirction.mul(this.rangeR)));
+            let line = new Line(this.pos, this.pos.plus(this.dirction.mul(this.rayLen)));
             for (let m of this.world.monsters) {
                 if (line.intersectWithCircle(m.getBodyCircle())) {
                     m.hpChange(-this.damage);
@@ -121,7 +121,7 @@ class TowerRay extends Tower {
                         let bDir = this.dirction.copy().deviation(this.rayDeviationRotate).to1();
                         // let bDir = this.dirction.copy().mul(this.atkSpeed);
                         // console.log("发射子弹")
-                        let line = new Line(this.pos.copy(), this.pos.plus(bDir.mul(this.rangeR)));
+                        let line = new Line(this.pos.copy(), this.pos.plus(bDir.mul(this.rayLen)));
                         let rayBully = new LineObject(line, this.world);
                         rayBully.speed = bDir.mul(this.atkSpeed);
                         this.rayBullys.add(rayBully);
@@ -148,7 +148,7 @@ class TowerRay extends Tower {
                     for (let i = 0; i < this.rayNum; i++) {
                         // 随机化后了的方向
                         let bDir = this.dirction.copy().deviation(this.rayDeviationRotate).to1();
-                        let x1 = bDir.rotate90().mul(this.rangeR / 2);
+                        let x1 = bDir.rotate90().mul(this.rayLen / 2);
                         let x2 = x1.copy().rotate90().rotate90();
                         let line = new Line(this.pos.plus(x1), this.pos.plus(x2));
                         let rayBully = new LineObject(line, this.world);
@@ -201,4 +201,3 @@ class TowerRay extends Tower {
         }
     }
 }
-
