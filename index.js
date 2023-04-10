@@ -551,10 +551,10 @@ function endlessMode(mode, haveGroup = true) {
             panelEle.appendChild(levelupB);
             // 烧魂按钮
             let fireB = document.createElement("button");
-            fireB.id = "refreshB";
-            fireB.innerText = "烧魂/30";
+            fireB.id = "fireB";
+            fireB.innerText = "烧魂/20";
             fireB.addEventListener("click", () => {
-                 world.user.money -= 30;
+                 world.user.money -= 20;
                  for(let item of world.getAllBuildingArr())
                  {
                    if(item.gameType === "Tower"){
@@ -566,13 +566,10 @@ function endlessMode(mode, haveGroup = true) {
                  }
                  world.fireB= true;
             });
-            initPanelSelect = false;
-            panelEle.appendChild(refreshB);
-            let priceB =  world.mainLevel * 2;   
+            panelEle.appendChild(fireB);
+
             
-            
-            
-            
+                    
             
             // 测试按钮
             let test = document.createElement("button");
