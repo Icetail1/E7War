@@ -20,6 +20,7 @@ class World {
         this.othersBullys = [];  // 多余的子弹，比如子弹分裂后的子弹
         this.time = 0;
         this.mainLevel = 1;
+        this.fireB= false;
         this.mode = "normal";
         this.hellForThree = false;
         this.hellForSix = false;
@@ -493,6 +494,21 @@ class World {
                 }else{
                     this.user.money += 10;
                 }
+                if(this.fireB){
+                     for(let item of this.batterys)
+                         {  
+                           if(fireon)
+                           {
+                            item.damage -= 1000;
+                            item.atkSpeed -= 50；
+                            item.rangeR -= 200;
+                            item.fireon = false;
+                           }
+                        }
+                    this.fireB=false;
+                
+                }
+                
                 let et = new EffectText(`第 ${this.monsterFlow.level} 波即将到来！`);
                 et.textSize = 40;
                 et.duration = 100;
