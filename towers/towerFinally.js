@@ -113,7 +113,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 20;
         b.rangeR = 50;
-        b.rayLen = 100;
+        b.rayLen = 50;
         b.width = 1;
         b.atkSpeed = 1;
         b.hpInit(500);
@@ -230,7 +230,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 30;
         b.rangeR = 70;
-        b.rayLen = 140;
+        b.rayLen = 70;
         b.width = 3;
         b.hpInit(1000);
         b.atkSpeed = 2;
@@ -348,7 +348,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 40;
         b.rangeR = 90;
-        b.rayLen = 180;
+        b.rayLen = 90;
         b.width = 4;
         b.hpInit(1200);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -466,7 +466,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 50;
         b.rangeR = 110;
-        b.rayLen = 220;
+        b.rayLen = 110;
         b.width = 5;
         b.hpInit(1400);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -586,7 +586,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 60;
         b.rangeR = 130;
-        b.rayLen = 260;
+        b.rayLen = 130;
         b.width = 6;
         b.hpInit(1600);
         b.rayColor = new MyColor(255, 0, 0, 1);
@@ -704,7 +704,7 @@ class TowerFinally {
         b.clock = 1;
         b.damage = 100;
         b.rangeR = 200;
-        b.rayLen = 400;
+        b.rayLen = 200;
         b.width = 8;
         b.hpInit(1800);
         b.rayColor = new MyColor(255, 0, 0, 1);
