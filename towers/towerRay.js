@@ -14,7 +14,7 @@ class TowerRay extends Tower {
         this.hpInit(5000);
         this.price = 1000 // 这个炮塔需要花多少钱来买
 
-        this.rayLen = this.rangeR-20;  // 射线的长度
+        this.rayLen = this.rangeR - 20;  // 射线的长度
         this.damage = 1;  // 打击一次的伤害
 
         this.targetLiveTime = 0;  // 锁定目标的时间
