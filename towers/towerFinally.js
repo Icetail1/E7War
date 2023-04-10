@@ -95,7 +95,7 @@ class TowerFinally {
         b.rangeR = 100;
         b.damage = 2;
         b.atkSpeed = 1;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_S;
         b.clock = 30;
         b.width = 2;
         b.rayLen = 3;
@@ -212,7 +212,7 @@ class TowerFinally {
         b.rangeR = 110;
         b.damage = 5;
         b.atkSpeed = 2;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_S;
         b.clock = 25;
         b.width = 2;
         b.rayLen = 5;
@@ -330,7 +330,7 @@ class TowerFinally {
         b.rangeR = 140;
         b.damage = 8;
         b.atkSpeed = 3;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_M;
         b.clock = 20;
         b.width = 2;
         b.rayLen = 7;
@@ -448,7 +448,7 @@ class TowerFinally {
         b.rangeR = 160;
         b.damage = 7;
         b.atkSpeed = 5;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_L;
         b.clock = 20;
         b.width = 3;
         b.rayLen = 7;
@@ -568,7 +568,7 @@ class TowerFinally {
         b.rangeR = 170;
         b.damage = 9;
         b.atkSpeed = 3;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_Second;
         b.clock = 20;
         b.width = 2;
         b.rayLen = 8;
@@ -686,7 +686,7 @@ class TowerFinally {
         b.rangeR = 250;
         b.damage = 15;
         b.atkSpeed = 5;
-        b.getmMainBullyFunc = BullyFinally.ThunderBall;
+        b.getmMainBullyFunc = BullyFinally.SS_Third;
         b.clock = 6;
         b.width = 2;
         b.rayLen = 7;
