@@ -255,8 +255,10 @@ function endlessMode(mode, haveGroup = true) {
      * @type {Element}
      */
     let pauseBtn = document.querySelector(".pause");
+    let restartBtn = document.querySelector(".backPage");
     let isGamePause = false;
     let maxMonsterLevel = 0;
+    let gameEnd = false;  // 游戏是否被迫结束
     pauseBtn.addEventListener("click", () => {
         isGamePause = !isGamePause;
         if (isGamePause) {
@@ -265,8 +267,10 @@ function endlessMode(mode, haveGroup = true) {
             pauseBtn.innerHTML = "暂停";
         }
     })
+    restartBtn.addEventListener("click", () => {
+        gameEnd = true;
+    })
 
-    let gameEnd = false;  // 游戏是否被迫结束
     /**
      * 返回按钮点击事件
      */
