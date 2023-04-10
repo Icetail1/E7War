@@ -559,7 +559,7 @@ function endlessMode(mode, haveGroup = true) {
                  {
                    if(item.gameType === "Tower"&& !item.fireOn){
                         item.damage += 1000;
-                        item.atkSpeed += 50;
+            
                         item.rangeR += 200;
                         item.fireOn=true;
                     }
