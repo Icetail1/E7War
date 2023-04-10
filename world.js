@@ -488,6 +488,11 @@ class World {
             }
             if (this.monsterFlow.delayTick === 200 - 1) {
                 // 添加文字提醒
+                if((this.monsterFlow.level - 1) < 10){
+                    this.user.money += (this.monsterFlow.level - 1);
+                }else{
+                    this.user.money += 10;
+                }
                 let et = new EffectText(`第 ${this.monsterFlow.level} 波即将到来！`);
                 et.textSize = 40;
                 et.duration = 100;
