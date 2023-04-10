@@ -112,7 +112,6 @@ class Monster extends CircleObject {
      */
     dataInit(flowNum) {
         this.hpInit(this.maxHp + Functions.levelMonsterHpAddedHard(flowNum));
-        this.addPrice = 0;
     }
 
     /**
