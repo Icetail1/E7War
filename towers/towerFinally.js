@@ -206,7 +206,7 @@ class TowerFinally {
         return b;
     }
     static knight_2(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "萝季<br/>☆☆";
         b.classType = "knight";
         b.rangeR = 110;
@@ -324,7 +324,7 @@ class TowerFinally {
         return b;
     }
     static knight_3(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "火呆<br/>☆☆☆";
         b.classType = "knight";
         b.rangeR = 140;
@@ -442,7 +442,7 @@ class TowerFinally {
         return b;
     }
     static knight_4(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "水泰<br/>☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 160;
@@ -562,7 +562,7 @@ class TowerFinally {
 
     }
     static knight_5(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "火莉莉<br/>☆☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 170;
@@ -680,7 +680,7 @@ class TowerFinally {
         return b;
     }
     static knight_6(world) {
-        let b = new TowerRay(0, 0, world);
+        let b = new Tower(0, 0, world);
         b.name = "水呆<br/>☆☆☆☆☆☆";
         b.classType = "knight";
         b.rangeR = 250;
