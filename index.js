@@ -552,7 +552,7 @@ function endlessMode(mode, haveGroup = true) {
             // 烧魂按钮
             let fireB = document.createElement("button");
             fireB.id = "refreshB";
-            fireB.innerText = "烧魂/10";
+            fireB.innerText = "烧魂/30";
             fireB.addEventListener("click", () => {
                  world.user.money -= 30;
                  for(let item of world.getAllBuildingArr())
