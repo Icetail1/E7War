@@ -175,15 +175,10 @@ class MonsterGroup {
 
                     if (modeStr === "easy") {
                         m.hpInit(m.maxHp + Functions.levelMonsterHpAddedEasy(this.level));
-                        m.addPrice = 0;
                     } else if (modeStr === "normal") {
                         m.hpInit(m.maxHp + Functions.levelMonsterHpAddedNormal(this.level));
-                        m.colishDamage += Functions.levelCollideAdded(this.level);
-                        m.addPrice = 0;
                     } else if (modeStr === "hard") {
                         m.hpInit(m.maxHp + Functions.levelMonsterHpAddedHard(this.level));
-                        m.colishDamage += Functions.levelCollideAddedHard(this.level);
-                        m.addPrice = 0;
                     }
                     if (this.world.monsters.size < this.world.maxMonsterNum) {
                         this.world.monsters.add(m);
