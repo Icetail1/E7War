@@ -549,6 +549,29 @@ function endlessMode(mode, haveGroup = true) {
             });
 
             panelEle.appendChild(levelupB);
+            // 烧魂按钮
+            let fireB = document.createElement("button");
+            fireB.id = "refreshB";
+            fireB.innerText = "烧魂/10";
+            fireB.addEventListener("click", () => {
+                 world.user.money -= 30;
+                 for(let item of world.getAllBuildingArr())
+                 {
+                   if(item.gameType === "Tower"){
+                        item.damage += 1000;
+                        item.atkSpeed += 50;
+                        item.rangeR += 200;
+                    }
+                 }
+                 world.fireB= true;
+            });
+            initPanelSelect = false;
+            panelEle.appendChild(refreshB);
+            let priceB =  world.mainLevel * 2;   
+            
+            
+            
+            
             
             // 测试按钮
             let test = document.createElement("button");
