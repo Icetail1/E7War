@@ -497,7 +497,7 @@ class World {
                 if(this.fireB){
                      for(let item of this.batterys)
                          {  
-                           if(fireOn)
+                           if(item.fireOn)
                            {
                             item.damage -= 1000;
                             item.atkSpeed -= 50;
