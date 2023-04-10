@@ -645,7 +645,7 @@ class TowerFinally {
         b.classType = "thief";
         b.atkSpeed = 5;
         b.clock = 30;
-        b.rayLen = 5;  // 射线的长度
+        b.rayLen = 20;  // 射线的长度
         b.rayColor = new MyColor(103, 150, 138, 0.5);
         b.width = 5;
         b.rayRepel = 0.1;
