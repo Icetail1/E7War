@@ -627,8 +627,8 @@ class TowerFinally {
         res.classType = "warrior";
         res.hpInit(2000);
         res.atkSpeed = 2;
-        res.rayLen=30;
-        res.width =30;
+        res.rayLen=100;
+        res.width =100;
         res.damage = 30;
         res.rangeR = 200;
         res.bar = res.initBar();
