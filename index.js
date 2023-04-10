@@ -267,8 +267,9 @@ function endlessMode(mode, haveGroup = true) {
             pauseBtn.innerHTML = "暂停";
         }
     })
+    let world = new World(canvasEle.width, canvasEle.height);
     restartBtn.addEventListener("click", () => {
-        world.rootBuilding.hp -= 1000;
+        world.rootBuilding.isdead = true;
     })
 
     /**
@@ -278,7 +279,7 @@ function endlessMode(mode, haveGroup = true) {
     // 背景音乐切换
     Sounds.switchBgm("war");
 
-    let world = new World(canvasEle.width, canvasEle.height);
+
     world.resizeCanvas(canvasEle);
     if(mode != "infinitehard"){
         world.mode = mode;
